@@ -1,4 +1,3 @@
-# Created by .ignore support plugin (hsz.mobi)
 ### Composer template
 composer.phar
 /vendor/
@@ -38,3 +37,21 @@ fabric.properties
 .project
 .buildpath
 .settings/
+
+# Ignore Clover PHP Plugin 
+clover.xml
+
+# Ignore paths that contain user-generated content.
+# */uploads
+# */files
+# */data
+
+# Ignore paths that contain app-generated content
+# Covers: File Cache, Twig Compile Cache 
+# */cache
+# */twig-cache 
+
+# Ignore possible configuration paths 
+# */config/
+# */settings/
+
