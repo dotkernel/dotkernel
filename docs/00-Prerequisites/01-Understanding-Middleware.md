@@ -1,3 +1,9 @@
+# Scratchpad
+
+Middleware 
+
+
+
 ## Understanding Middleware
 
 For a better understanding this will be a step by step tutorial.
@@ -48,9 +54,9 @@ $middlewareFunction = function ($request, $response, $next) {
 
 class MyMiddleware
 {
-    public function invoke()
+    public function __invoke()
     {
-        // 
+        //
     }
 }
 ```
