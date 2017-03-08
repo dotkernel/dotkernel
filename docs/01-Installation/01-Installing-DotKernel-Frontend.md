@@ -57,7 +57,7 @@ The `ConfigProvider`'s can be left un-injected as the requested configurations a
 * Import `data/dot-frontend.sql` in your database.
 * Copy `config/autoload/local.php.dist` to `config/autoload/local.php`
   * Fill the database configuration
-* Copy `config/development.config.php.dist` to `config/development.config.php`
+* (development mode) Copy `config/development.config.php.dist` to `config/development.config.php`
 * (optional) `config/autoload/errorhandler.local.php.dist` to `config/autoload/errorhandler.local.php`
 * remove `data/config-cache.php` if present
 > Charset recommendation: utf8mb4
