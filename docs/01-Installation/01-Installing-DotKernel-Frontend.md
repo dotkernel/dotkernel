@@ -52,13 +52,14 @@ If you choose `[1] config/config.php` Zend's `ConfigProvider` from `session` wil
 The `ConfigProvider`'s can be left un-injected as the requested configurations are already loaded.
 
 
-### Configuration
-Import `data/dot-frontend.sql` in your database.
+### Configuration - First Run
 
-In `config/autoload`:
-* Copy `local.php.dist` to `local.php`
-* Fill the database configuration
-* remove `data/config-cache.php`
+* Import `data/dot-frontend.sql` in your database.
+* Copy `config/autoload/local.php.dist` to `config/autoload/local.php`
+  * Fill the database configuration
+* Copy `config/development.config.php.dist` to `config/development.config.php`
+* (optional) `config/autoload/errorhandler.local.php.dist` to `config/autoload/errorhandler.local.php`
+* remove `data/config-cache.php` if present
 > Charset recommendation: utf8mb4
 > If `config-cache.php` is present that config will be loaded regardless of the `ConfigAggregator::ENABLE_CACHE` in `config/autoload/zend-expressive.global.php`
 
