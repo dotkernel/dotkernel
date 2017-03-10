@@ -1,9 +1,11 @@
 Copyright  Notice Guide
 ==================
 
-1. Files that belong to a package
+
+### 1. Files that belong to a package
 -----------
-All files in src folders must start with the copyright notice 
+
+All files in src folders must start with the Copyright notice 
 
 ```php
 <?php
@@ -15,11 +17,10 @@ All files in src folders must start with the copyright notice
  ```
 
 
-@see  need to be generated automatically  from the package location
- 
-@license need to be generated automatically  from the package location
+The `@see` section must be generated automatically from the `package's repository location`.
+The `@license` section must be generated automatically from the `package's repository location`.
 
-2. Application specific files
+### 2. Application specific files
 -----------
 
 ```php
