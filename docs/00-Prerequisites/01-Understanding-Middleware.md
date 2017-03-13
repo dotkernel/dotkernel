@@ -1,10 +1,4 @@
-# Scratchpad
-
-Middleware 
-
-
-
-## Understanding Middleware
+# Understanding Middleware
 
 For a better understanding this will be a step by step tutorial.
 
@@ -14,15 +8,29 @@ Middleware is code that exists between the request and response, and which can t
 ##### The purpose
 Middleware makes it easier for software developers to implement communication and input/output, so they can focus on the specific purpose of their application.
 
-![alt text](00-Resources/00-01.svg "Middleware")
+
 In web services the `Input` represents the `Request` received and `Output` represents the `Response` to be sent.
 
-
-![alt text](00-Resources/00-01.svg "Middleware-Calls")
 How using middleware in applications actually looks like.
+
+### Middleware use 
+
+Middleware can be used but not limited to the following purposes:
+
+* A/B Testing
+* Debugging
+* Caching
+* CORS
+* Authentication (HTTP Basic Auth, OAuth 2.0, OpenID)
+* CSRF Protection
+* Rate Limiting
+* Referrals
+* IP Restriction
+[https://philsturgeon.uk/php/2016/05/31/why-care-about-php-middleware/]
 
 
 #### Why Middleware?
+# INCOMPLETE STATEMENT !!!
 As seen before, the middleware is called somewhere between
 
 ##### Usage
@@ -61,117 +69,55 @@ class MyMiddleware
 }
 ```
 
+#### Which one to use?
+The function definition version can be used when working with simple examples / very small projects for a better understanding.
+Depending on the programming principles you use and what's more convenient you can also use function definitions instead of invokable classes.
+We strongly recommend that you use the invokable class version.
+
+#### Why Invokable Classses
+Where is the catch? Why use Invokable classes if the functions do the same thing. 
+It all narrows to the point where external resources are involved.
+
+What is the difference between a class  and a function?
+* has access to other methods
+* has access to dependencies
+
+##### How does it have access to external resources
+
+The middleware has access to `injected` external resources if created using the `factory` design pattern.
+
+Not all middleware needs a factory.
+
+# *** FACTORY *** 
+# *** DI ***  
 
 #### How is a middleware called?
+To call one of the above middleware you must either instatiate a new `MyMiddleware` object, or store a function definition in a variable.
 ```php
 <?php
 // assuming the request, response and next variables already exist
 $middleware($request, $response, $next);
 ```
 
-# Scratch -----------
+## Middleware in (simple) theory
 
+The following example will illustrate how the middleware is called.
 
-### Example
-The following example will teach you how to process a string with different aproaches.
-`Note: the purpose of this document is to explain the middleware principle, not to implement the best method. `
-
-##### The requirements
-We have the given string `HeLlo wOrlD!`, which is obviously not well formatted. 
-The well-formatted string expected is `Hello World`
-For the string to be well formatted,  it first needs to be converted to lowercase (using `strtolower()`) and have the each word's letter capitalized (using `ucfirst()`).
-
-##### First approach - The simple procedural way
-This is the simplest approach and the 100% working version.
-```php
-<?php
-
-function wellFormat($inputString)
-    $inputString = 'HeLlo wOrlD!';
-    // first copy the string
-    $outputString = $inputString;
-    $outputString = strtolower($outputString);
-    $outputString = ucwords($outputString);
-    // return the modified string
-    return $outputString;
-}
-
-$inputString = 'HeLlo wOrlD!';
-// write the string
-$outputString = wellFormat($inputString);
-echo $outputString;
-```
-
-##### Second approach - Still procedural
-The variable `$inputString` was copied in `$outputString` for a reason. As you might already noticed we only work on the `$outputString` variable. At this point we are getting closer to the middleware concept.
-
-A `request` can be considered read-only because the script executes on a request-basis and each request is unique.
-The request will never be received again in the same context sothere is no reason to change it.
+An array with functions with the same pattern will be built.
+Each function will execute an operation.
+In this example the `next` parameter won't be used because the calling order will be sequential.
 
 ```php
-<?php
-
-function wellFormat($inputString)
-    $inputString = 'HeLlo wOrlD!';
-    // first copy the string
-    $outputString = $inputString;
-    $outputString = strtolower($outputString);
-    $outputString = ucwords($outputString);
-    // return the modified string
-    return $outputString;
-}
-
-$inputString = 'HeLlo wOrlD!';
-// write the string
-$outputString = wellFormat($inputString);
-echo $outputString;
+$middleware = [];
+// function 1 - displays one message
+$middleware[] = function($request, $response, $next) {
+    // do something
+    
+    // pass the control to next middleware
+};
 ```
 
+## Middleware in practice
 
+An application will handle the middleware 
 
-
-
-Note: the `$outputString` variable is not the same within and outside the function. [Why?]('http://php.net/manual/en/language.variables.scope.php' "PHP Variable Scopes")
-
-```php
-<?php
-
-function wellFormat($inputString) {
-    $outputString = $inputString;
-    $outputString = strtolower($outputString);
-    $outputString = ucwords($outputString);
-    return $outputString;
-}
-
-$inputString = 'HeLlo wOrlD!';
-// write the string
-$outputString = wellFormat($inputString);
-echo $outputString;
-```
-
-
-
-#### Third approach - Making it look like middleware
-```php
-<?php
-function middlewareUcFirst($input, &$output, ) {
-    $outputString = ucwords($input);
-    // no return yet
-}
-
-function middlewareStrToLower($input, &$output) {
-    $outputString = ucwords($input);
-    // no return yet
-}
-$inputString = 'HeLlo wOrlD!';
-$outputString = $inputString;
-middlewareStrToLower($inputString, $outputString)
-```
-First the functions must be separated, as a function should have only one responsability.
-// don't touch input .. 
-`Note: as currently working with strings, the & operand is used to work with the variables by reference, if working with objects PHP will automatically work with reference`
-
-## Recommended links
-* [What is PSR-7?]('http://www.php-fig.org/psr/psr-7/')
-* [Zend Stratigility - Middleware]('https://github.com/zendframework/zend-stratigility/blob/master/doc/book/middleware.md')
-* [Zend Expressive - Features]('https://zendframework.github.io/zend-expressive/getting-started/features/')
