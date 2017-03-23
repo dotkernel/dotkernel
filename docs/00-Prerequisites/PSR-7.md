@@ -13,7 +13,14 @@ These interfaces are representing HTTP messages, and URIs for use with HTTP mess
 
 *source: [PSR-7: HTTP message interfaces](http://www.php-fig.org/psr/psr-7/)*
 
+
+
+
+
+
+
 ## Interfaces
+In this section the Interfaces methods will be listed. The purpose of this list is to help in finding the methods when working with PSR-7. This can be considered as a cheatsheet for PSR-7 interfaces.
 The interfaces defined in PSR-7 are the following:
 
 | Class Name | Description |
@@ -42,55 +49,135 @@ The interfaces defined in PSR-7 are the following:
 | `getBody()`                        | Get the HTTP Message Body | Returns object implementing `StreamInterface`|
 | `withBody(StreamInterface $body)`  | Sets the HTTP Message Body | |
 
+
 #### `Psr\Http\Message\RequestInterface` Methods
+Same methods as `Psr\Http\Message\MessageInterface`  + the following methods:
+| Method Name                        | Description | Notes |
+|------------------------------------| ----------- | ----- |
+| `getRequestTarget()`                | Retrieves the message's request target              | origin-form, absolute-form, authority-form, asterisk-form ([RFC7230](https://www.rfc-editor.org/rfc/rfc7230.txt)) |
+| `withRequestTarget($requestTarget)` | Return an instance with the specific request-target |      |
+| `getMethod()`                       | Retrieves the HTTP method of the request.  |  GET, HEAD, POST, PUT, DELETE, CONNECT, OPTIONS, TRACE (defined in [RFC7231](https://tools.ietf.org/html/rfc7231)), PATCH (defined in [RFC5789](https://tools.ietf.org/html/rfc5789)) |
+| `withMethod($method)`               | Return an instance with the provided HTTP method  | |
+| `getUri()`                 | Retrieves the URI instance | |
+| `withUri(UriInterface $uri, $preserveHost = false)` | Returns an instance with the provided URI |  |
+
+
+#### `Psr\Http\Message\ServerRequestInterface` Methods
+
+Same methods as `Psr\Http\Message\RequestInterface`  + the following methods:
 
 | Method Name                        | Description | Notes |
 |------------------------------------| ----------- | ----- |
-| `getRequestTarget()`                | x           |      |
-| `withRequestTarget($requestTarget)` | x          |      |
-| `getMethod()`                       | x               |      |
-| `withMethod($method)`               | x  | |
-| `getUri()`                 | x | |
-| `withUri(UriInterface $uri, $preserveHost = false) | x |  |
-| `withHeader($name, $value)`        | Sets a HTTP Header | If header already exists, value will be overwritten |
-| `withAddedHeader($name, $value)`   | Appends value to given header | If header already exists value will be appended, if not a new header will be created |
-| `withoutHeader($name)`             | Removes HTTP Header with given name| |
-| `getBody()`                        | Get the HTTP Message Body | Returns object implementing `StreamInterface`|
-| `withBody(StreamInterface $body)`  | Sets the HTTP Message Body | |
+| `getServerParams() `               | Retrieve server parameters  | Typically derived from `$_SERVER`  |
+| `getCookieParams()`                | Retrieves cookies sent by the client to the server. | Typically derived from `$_COOKIES` |
+| `withCookieParams(array $cookies)` |  Return an instance with the specified cookies      |   | 
+| `withQueryParams(array $query)` | Return an instance with the specified query string arguments  |  |
+| `getUploadedFiles()` | Retrieve normalized file upload data  |  |
+| `withUploadedFiles(array $uploadedFiles)` | Create a new instance with the specified uploaded files  |  |
+| `getParsedBody()` | Retrieve any parameters provided in the request body  |  |
+| `withParsedBody($data)` | Return an instance with the specified body parameters  |  |
+| `getAttributes()` | Retrieve attributes derived from the request  |  |
+| `getAttribute($name, $default = null)` | Retrieve a single derived request attribute  |  |
+| `withAttribute($name, $value)` | Return an instance with the specified derived request attribute  |  |
+| `withoutAttribute($name)` | Return an instance that removes the specified derived request attribute  |  |
 
-### Interfaces used in Middleware
+#### Psr\Http\Message\ResponseInterface` Methods:
+
+Same methods as `Psr\Http\Message\MessageInterface`  + the following methods:
+
+| Method Name                        | Description | Notes |
+|------------------------------------| ----------- | ----- |
+| `getStatusCode()` | Gets the response status code. | |
+| `withStatus($code, $reasonPhrase = '')` | Return an instance with the specified status code and, optionally, reason phrase. | |
+| `getReasonPhrase()` | Gets the response reason phrase associated with the status code. | |
+
+####  `Psr\Http\Message\StreamInterface` Methods
+
+| Method Name                        | Description | Notes |
+|------------------------------------| ----------- | ----- |
+| `__toString()` | Reads all data from the stream into a string, from the beginning to end. | |
+| `close()` | Closes the stream and any underlying resources. | |
+| `detach()` | Separates any underlying resources from the stream. | |
+| `getSize()` | Get the size of the stream if known. | |
+| `eof()` | Returns true if the stream is at the end of the stream.| |
+| `isSeekable()` |  Returns whether or not the stream is seekable. | |
+| `seek($offset, $whence = SEEK_SET)` | Seek to a position in the stream. | |
+| `rewind()` | Seek to the beginning of the stream. | |
+| `isWritable()` | Returns whether or not the stream is writable. | |
+| `write($string)` | Write data to the stream. | |
+| `isReadable()` | Returns whether or not the stream is readable. | |
+| `read($length)` | Read data from the stream. | |
+| `getContents()` | Returns the remaining contents in a string | |
+| `getMetadata($key = null)()` | Get stream metadata as an associative array or retrieve a specific key. | |
+
+#### `Psr\Http\Message\UriInterface` Methods
+
+
+| Method Name                        | Description | Notes |
+
+|------------------------------------| ----------- | ----- |
+| `getScheme()` | Retrieve the scheme component of the URI. | |
+| `getAuthority()` | Retrieve the authority component of the URI. | |
+| `getUserInfo()` | Retrieve the user information component of the URI. | |
+| `getHost()` | Retrieve the host component of the URI. | |
+| `getPort()` | Retrieve the port component of the URI. | |
+| `getPath()` | etrieve the path component of the URI. | |
+| `getQuery()` | Retrieve the query string of the URI. | |
+| `getFragment()` | Retrieve the fragment component of the URI. | |
+| `withScheme($scheme)` | Return an instance with the specified scheme. | |
+| `withUserInfo($user, $password = null)` | Return an instance with the specified user information. | |
+| `withHost($host)` | Return an instance with the specified host. | |
+| `withPort($port)` | Return an instance with the specified port. | |
+| `withPath($path)` | Return an instance with the specified path. | |
+| `withQuery($query)` | Return an instance with the specified query string. | |
+| `withFragment($fragment)` | Return an instance with the specified URI fragment. | |
+| `__toString()` | Return the string representation as a URI reference. | |
+
+`Psr\Http\Message\UploadedFileInterface`
+
+| `getStream()` | Retrieve a stream representing the uploaded file. | |
+| `moveTo($targetPath)` | Move the uploaded file to a new location. | |
+| `getSize()` | Retrieve the file size. | |
+| `getError()` | Retrieve the error associated with the uploaded file. | |
+| `getClientFilename()` | Retrieve the filename sent by the client. | |
+| `getClientMediaType()` | Retrieve the media type sent by the client. | |
+
+### PSR-7 Usage
 
 All PSR-7 applications comply with these interfaces 
 They were created to establish a standard between middleware implementations.
 
-The main interfaces used in `middleware` are:
-
-* Psr\Http\Message\ServerRequestInterface
-* Psr\Http\Message\ResponseInterface
-
-`Psr\Http\Message\ServerRequestInterface` interface extends `Psr\Http\Message\RequestInterface`.
-All interfaces extend `Psr\Http\Message\MessageInterface`.
-When using `Psr\Http\Message\ServerRequestInterface`, both `Psr\Http\Message\RequestInterface` and `Psr\Http\Message\MessageInterface` methods are considered.
+> `Psr\Http\Message\ServerRequestInterface` interface extends `Psr\Http\Message\RequestInterface`.
+> `RequestInterface`, `ServerRequestInterface`, `ResponseInterface` .
+> When using `Psr\Http\Message\ServerRequestInterface`, both `Psr\Http\Message\RequestInterface` and `Psr\Http\Message\MessageInterface` methods are considered.
 
 > Note: `Psr\Http\Message\MessageInterface` is used because `Request` and `Response` are `HTTP Messages`
 
 Enough with the talking, let's put things in practice.
-#### Examples
 
-##### Using Zend Diactoros
+The following examples will illustrate how basic operations are done in PSR-7.
+
+##### Examples (using Zend Diactoros)
+
 Zend Diactoros is an implementation for PSR-7 interfaces. It will be used to illustrate these examples.
 Installation guide for Zend Diactoros: [Zend Diactoros Documentation - Installation](https://zendframework.github.io/zend-diactoros/install/)
 
+> All other PSR-7 implementations should have the same behaviour.
 
 To use the `Zend Diactoros` classes add this at the beggining of the php file:
 ```php
 <?php
+
+// autoloading
+
 use Zend\Diactoros\ServerRequestFactory;
 use Zend\Diactoros\Response;
 
 $request = ServerRequestFactory::fromGlobals($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $response = new Response();
 ```
+
+##### Working with HTTP Headers
 
 Adding headers to response:
 ```php
@@ -107,7 +194,7 @@ Checking if header exists:
 $request->hasHeader('My-Custom-Header'); // will return false
 $response->hasHeader('My-Custom-Header'); // will return true
 ```
-> Note: My-Custom-Header was only added in the Request
+> Note: My-Custom-Header was only added in the Response
 
 Getting comma-separated values from a header (also applies to request)
 ```php
@@ -124,6 +211,19 @@ $request->getHeader('Content-Type'); // will return: ["text/html", "charset=UTF-
 // getting value from response headers
 $response->getHeader('My-Custom-Header'); // will return:  ["My Custom Message",  "The second message"]
 ```
+
+Removing headers from HTTP Messages
+```php
+// removing a header from Request, removing deprecated "Content-MD5" header
+$request->withoutHeader('Content-MD5'); 
+
+// removing a header from Response
+// effect: the browser won't know the size of the stream
+// the browser will download the stream till it ends
+$response->withoutHeader('Content-Length');
+```
+
+##### Working with HTTP Message Body
 
 
 
