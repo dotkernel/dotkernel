@@ -46,7 +46,6 @@ The interfaces defined in PSR-7 are the following:
 #### `Psr\Http\Message\RequestInterface` Methods
 
 Same methods as `Psr\Http\Message\MessageInterface`  + the following methods:
-
 | Method Name                        | Description | Notes |
 |------------------------------------| ----------- | ----- |
 | `getRequestTarget()`                | Retrieves the message's request target              | origin-form, absolute-form, authority-form, asterisk-form ([RFC7230](https://www.rfc-editor.org/rfc/rfc7230.txt)) |
@@ -145,7 +144,6 @@ They were created to establish a standard between middleware implementations.
 > `RequestInterface`, `ServerRequestInterface`, `ResponseInterface` extend `MessageInterface`  because the `Request` and the `Response` are `HTTP Messages`.
 > When using `ServerRequestInterface`, both `RequestInterface` and `Psr\Http\Message\MessageInterface` methods are considered.
 
-> Note: `MessageInterface` is used because `Request` and `Response` are `HTTP Messages`
 
 Enough with the talking, let's put things in practice.
 The following examples will illustrate how basic operations are done in PSR-7.
