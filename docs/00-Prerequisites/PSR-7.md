@@ -75,7 +75,7 @@ Same methods as `Psr\Http\Message\RequestInterface`  + the following methods:
 | `withAttribute($name, $value)` | Return an instance with the specified derived request attribute  |  |
 | `withoutAttribute($name)` | Return an instance that removes the specified derived request attribute  |  |
 
-#### Psr\Http\Message\ResponseInterface` Methods:
+#### `Psr\Http\Message\ResponseInterface` Methods:
 
 Same methods as `Psr\Http\Message\MessageInterface`  + the following methods:
 
