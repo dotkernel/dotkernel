@@ -12,10 +12,10 @@ DotKernel authentication service abstractions component
  * dot-authorization
 DotKernel authorization service abstractions component
  
-* dot-event
+ * dot-event
 DotKernel event component extending and customizing zend-eventmanager
 
-* dot-mail
+ * dot-mail
 DotKernel mail component based on zend-mail
 
  * dot-helpers

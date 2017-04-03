@@ -1,27 +1,15 @@
 # DotKernel3 Docs (WIP)
 ---
 
-* Overview
-* Prerequisites
+## Before starting
+* [Overview](Overview/README.md)
+* [Prerequisites](Prerequisites/README.md)
+* Requirements(to be added)
 
+## Introduction to DK3
+* [Getting Started](Getting-Started/README.md)
 
-### Getting Started
-* Installing DotKernel3 - dot-frontend
-* DotKernel3 file structure
-* DotKernel3 packages
-* DotKernel3 features
+## Working with DK3
+* [Guidelines](Guidelines/README.md)
+* [dot-* packages](Packages/README.md)
 
-
-### Creating a DotKernel3 package
-* Requirements
-* Running/Testing (inside DotKernel3, Testing inside another project, Standalone testing)
-
-
-
-
-### Guidelines
-* path to [guidelines](./Guidelines)
-* Creating an open source DotKernel3 package
-* Creating a private DotKernel3 package
-
-## Dot Packages
