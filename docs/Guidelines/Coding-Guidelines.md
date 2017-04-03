@@ -10,6 +10,7 @@ DotKernel3 follows the rules described in `PHP-FIG` PSR-2 document.
 ### Entity
 
 The `entity` is the representation of an object.
+
 ##### Example:
 * a `post`
 * a `document`
