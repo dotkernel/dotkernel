@@ -1,7 +1,7 @@
 # Contributing to DotKernel3
 
 ## Bug Reports & Feature Requests
-The pimcore team heavily uses (and loves!) GitHub for all of our software management. 
+The `Apidemia` team heavily uses (and loves!) GitHub for all of our software management. 
 We use GitHub issues exclusively to track all bugs and features.
 
 * **Open an issue**  here on GitHub. URL: `https://github.com/dotkernel/`**repo**`/issues`
@@ -30,13 +30,13 @@ The following terms are used throughout this agreement:
 * **You** - the person or legal entity including its affiliates asked to accept this agreement. An affiliate is any 
 entity that controls or is controlled by the legal entity, or is under common control with it.
 
-* **Project** - is an umbrella term that refers to any and all Pimcore projects.
+* **Project** - is an umbrella term that refers to any and all `Apidemia` projects.
 
 * **Contribution** - any type of work that is submitted to a Project, including any modifications or additions to 
 existing work.
 
 * **Submitted** - conveyed to a Project via a pull request, commit, issue, or any form of electronic, written, or 
-verbal communication with Pimcore, contributors or maintainers.
+verbal communication with `Apidemia`, contributors or maintainers.
 
 #### 1. Grant of Copyright License.
 Subject to the terms and conditions of this agreement, You grant to the Projects’ maintainers, contributors, users and 
