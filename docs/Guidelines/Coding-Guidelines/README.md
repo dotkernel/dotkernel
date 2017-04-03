@@ -3,7 +3,7 @@
 ## Coding Standard
 DotKernel3 follows the rules described in `PHP-FIG` PSR-2 document.
 
-### [PSR-2](./PSR-2.md)
+### [PSR-2](../PSR/PSR-2.md)
 
 ## Entities and Collections
 
