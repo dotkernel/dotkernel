@@ -1,13 +1,13 @@
 # Contributing to DotKernel3
 
 ## Bug Reports & Feature Requests
-The `Apidemia` team heavily uses (and loves!) GitHub for our software management. 
+The `Apidemia` team heavily uses GitHub for our open source software management. 
 We use GitHub issues to track all bugs and features.
 
 * **Open an issue**  here on GitHub. URL: `https://github.com/dotkernel/`**repo**`/issues`
 If you can, **please provide a fix and create a pull request (PR) instead**; this will automatically create an issue for you.
 * Report security issues only to security@dotkernel.com
-* Please be patient as not all items will be tested immediately - remember, DotKernel3 is open source and free of charge. 
+* Please be patient as not all items will be tested immediately - remember, DotKernel 3 is open source and free of charge. 
 * Occasionally we'll close issues if they appear stale or are too vague - please don't take this personally! 
 Please feel free to re-open issues we've closed if there's something we've missed and they still need to be addressed.
 
