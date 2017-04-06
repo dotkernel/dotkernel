@@ -137,7 +137,7 @@ Same methods as `Psr\Http\Message\MessageInterface`  + the following methods:
 | `getClientFilename()` | Retrieve the filename sent by the client. | |
 | `getClientMediaType()` | Retrieve the media type sent by the client. | |
 
-### PSR-7 Usage
+# PSR-7 Usage
 
 All PSR-7 applications comply with these interfaces 
 They were created to establish a standard between middleware implementations.
@@ -146,10 +146,9 @@ They were created to establish a standard between middleware implementations.
 > When using `ServerRequestInterface`, both `RequestInterface` and `Psr\Http\Message\MessageInterface` methods are considered.
 
 
-Enough with the talking, let's put things in practice.
 The following examples will illustrate how basic operations are done in PSR-7.
 
-##### Examples (using Zend Diactoros)
+## Examples (using Zend Diactoros)
 
 Zend Diactoros is an implementation for PSR-7 interfaces. It will be used to illustrate these examples.
 Installation guide for Zend Diactoros: [Zend Diactoros Documentation - Installation](https://zendframework.github.io/zend-diactoros/install/)
