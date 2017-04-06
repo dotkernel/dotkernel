@@ -1,11 +1,10 @@
 # Understanding Middleware
+---
 
-For a better understanding this will be a step by step tutorial.
-
-##### Definition
+## Definition
 Middleware is code that exists between the request and response, and which can take the incoming request, perform actions based on it, and either complete the response or pass delegation on to the next middleware in the queue.
 
-##### The purpose
+## The purpose
 Middleware makes it easier for software developers to implement communication and input/output, so they can focus on the specific purpose of their application.
 
 
@@ -13,7 +12,7 @@ In web services the `Input` represents the `Request` received and `Output` repre
 
 How using middleware in applications actually looks like.
 
-### Middleware use 
+# Middleware use 
 
 Middleware can be used but not limited to the following purposes:
 
@@ -26,14 +25,16 @@ Middleware can be used but not limited to the following purposes:
 * Rate Limiting
 * Referrals
 * IP Restriction
-[https://philsturgeon.uk/php/2016/05/31/why-care-about-php-middleware/]
 
 
-#### Why Middleware?
-# INCOMPLETE STATEMENT !!!
-As seen before, the middleware is called somewhere between
 
-##### Usage
+## Why Middleware?
+
+As seen before, the middleware is called somewhere between receiving the request and emmiting the response.
+
+> Note: the response object is subject to changes until emitted
+
+## Usage
 
 According to `http-interop-middleware`, any callable with the parameters `$request, $response, $next` in that order is a middleware
 
@@ -43,9 +44,10 @@ According to `http-interop-middleware`, any callable with the parameters `$reque
 | `$response` |  \Psr\Http\Message\ResponseInterface       | The PSR7 response object     |
 | `$next`     |  callable                                  | The next middleware callable |
 
+Middleware returns an `\Psr\Http\Message\ResponseInterface` object.
 
 
-#### As a function 
+## As a closure
 
 ```php
 <?php
@@ -55,13 +57,18 @@ $middlewareFunction = function ($request, $response, $next) {
 };
 ```
 
-#### As an invokable class 
+## As an invokable object 
 
 ```php
 <?php
 
 class MyMiddleware
 {
+    public function __construct(MyDependencyInterface $myDependency)
+    {
+        $this->myDependency = $myDependency;
+    }
+    
     public function __invoke()
     {
         //
@@ -69,12 +76,14 @@ class MyMiddleware
 }
 ```
 
-#### Which one to use?
+> An invokable object is an instance of a class with the `__invoke()` magic method declared
+
+## Which one to use?
 The function definition version can be used when working with simple examples / very small projects for a better understanding.
 Depending on the programming principles you use and what's more convenient you can also use function definitions instead of invokable classes.
 We strongly recommend that you use the invokable class version.
 
-#### Why Invokable Classses
+### Why Invokable Objects
 Where is the catch? Why use Invokable classes if the functions do the same thing. 
 It all narrows to the point where external resources are involved.
 
@@ -82,16 +91,18 @@ What is the difference between a class  and a function?
 * has access to other methods
 * has access to dependencies
 
-##### How does it have access to external resources
+How does it have access to external resources?
+
+Dependencies are `injected` trough the class constructor. (as seen in `MyMiddleware` class)
+For `decoupling` dependencies are represented in `Interfaces`, therefore custom implementations can be made if needed.
+
+> Coupling is the degree of interdependence between software modules.
+> Decoupling or loose coupling means components are independent and are not aware of each other.
 
 The middleware has access to `injected` external resources if created using the `factory` design pattern.
 
-Not all middleware needs a factory.
 
-# *** FACTORY *** 
-# *** DI ***  
-
-#### How is a middleware called?
+## How is a middleware called?
 To call one of the above middleware you must either instatiate a new `MyMiddleware` object, or store a function definition in a variable.
 ```php
 <?php
@@ -103,21 +114,41 @@ $middleware($request, $response, $next);
 
 The following example will illustrate how the middleware is called.
 
+
 An array with functions with the same pattern will be built.
 Each function will execute an operation.
 In this example the `next` parameter won't be used because the calling order will be sequential.
 
 ```php
 $middleware = [];
-// function 1 - displays one message
+// function 1 - displays one message, function 2 - displays another message. etc.
 $middleware[] = function($request, $response, $next) {
     // do something
     
-    // pass the control to next middleware
+    // pass the control to next middleware, can also be called before "doing something"
+    // $response = $next($request, $response);
+    return $response;
 };
 ```
 
+Once the `$middleware` array is complete with closures and/or invokable objects it can be iterated.
+
+```
+foreach ($middleware as $callable) {
+    $response = $middleware($request, $response);
+}
+```
+
+> Note: in this case $next is not needed as we call each $callable sequentially
+
 ## Middleware in practice
 
-An application will handle the middleware 
+Middleware won't be called just using a foreach statement. Requests will be routed and 
+An application will handle the middleware.
 
+Example dispatcher applications: 
+Zend Stratiglility, Zend Expressive, etc.
+
+
+Sources:
+* [Why Care About PHP Middleware?](https://philsturgeon.uk/php/2016/05/31/why-care-about-php-middleware/)

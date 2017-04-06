@@ -79,7 +79,7 @@ Describes the package type.
 * library: This is the default. It will simply copy the files to `vendor`.
 * project: This refers to a package such as a `skeleton app` or final product.
 * metapackage: An empty package that contains requirements and will trigger their installation, but contains no files and will not write anything to the filesystem.
-* composer-plugin: A package of type composer-plugin may provide an installer for other packages that have a custom type. Read more in the dedicated article.
+* composer-plugin: A package of type composer-plugin may provide an installer for other packages that have a custom type. Read more in the [dedicated article](https://getcomposer.org/doc/articles/custom-installers.md).
 
 ### Require & Require-dev
 
