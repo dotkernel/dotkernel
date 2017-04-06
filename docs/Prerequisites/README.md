@@ -8,6 +8,7 @@ Prerequisites
  * [Composer Versions](Composer-Versions.md)
  * [PSR-7 Interfaces & Zend Diactoros](PSR-7.md)
  * PSR-11
+ * [Understanding Middleware](Understanding-Middleware.md)
  * Zend Stratigility
  * Zend Expressive
  * Stratigility vs. Expressive (? Benefits of Expressive)
