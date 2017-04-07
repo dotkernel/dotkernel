@@ -1,0 +1,20 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.post{
+  /** for an easier view, we will use empty blocks of 400x200 px  **/
+  display: block;
+  width: 400px; 
+  height: 200px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+/** different colors  for already  posts **/
+.post:nth-child(6n+0){background-color: #f15025;}
+.post:nth-child(6n+1){background-color: #db5461;}
+.post:nth-child(6n+2){background-color: #533a71;}
+.post:nth-child(6n+3){background-color: #6184d8;}
+.post:nth-child(6n+4){background-color: #50c5b7;}
+.post:nth-child(6n+5){background-color: #4daa57;}
