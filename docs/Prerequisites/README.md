@@ -1,6 +1,7 @@
 Prerequisites
 ---
- * Closures & Callables
+
+ * [Closures and Callables](Closures-and-Callables.md)
  * PSR-4: Autoloading
  * OOP1: Interfaces, Abstract classes
  * ~~OOP2: Traits~~
