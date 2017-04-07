@@ -11,9 +11,9 @@ You need a developer to get started.
 
 # DotKernel Ecosystem
 
-The following list of resources should show you where to get information about Pimcore and whats going on in the whole ecosystem. 
+The following list of resources should show you where to get information about DotKernel3 and whats going on in the whole ecosystem. 
 
-* [DotKernel3 Blog](https://www.pimcore.org/en/resources/blog)
+* [DotKernel3 Blog](https://www.dotkernel.com/)
 * [DotKernel3 Documentation](../README.md)
 * [DotKernel3 at Github](https://github.com/dotkernel/)
 * [DotKernel3 at Stackoverflow](http://stackoverflow.com/questions/tagged/dotkernel3)
@@ -23,17 +23,11 @@ The following list of resources should show you where to get information about P
 # Developing for DotKernel3
 
 Start contributing to DotKernel3 and become an official Community Developer - we are thankful for your support. 
-For details on how to contribute have a look at our [Contributing Guide](https://github.com/dotkernel/dotkernel/blob/masterCONTRIBUTING.md).
 
  
 ## Short Summary: 
 ##### Bug Fixes
 Please create a pull request including a step by step description to reproduce the problem. 
-
-##### Contribute Features
-Contact the core-team before you start developing (contribute@pimcore.org) so we can 
-coordinate feature development and avoid parallel development of similar features. 
-Don't forget about the documentation for your new feature! 
 
 ##### Security Vulnerabilities
 Please contact us (security@dotkernel.com)
@@ -44,8 +38,7 @@ URL Format: `https://github.com/dotkernel/`**repo**
 
 
 ## PSRs (PHP-FIG) & Standards in General
-Pimcore is an active member of the [PHP-FIG](http://www.php-fig.org/) and committed to standards and interoperability, therefore we always try to implement the latest standards.
-At the moment Pimcore implements the following PSRs: 
+At the moment DotKernel3 implements the following PSRs: 
 * PSR-1 (Basic Coding Standard)
 * PSR-2 (Coding Style Guide)
 * PSR-4 (Autoloading Standard) 
