@@ -1,25 +1,6 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-
-.post{
-  /** for an easier view, we will use empty blocks of 400x200 px  **/
-  display: block;
-  width: 400px; 
-  height: 200px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-/** different colors  for already  posts **/
-.post:nth-child(6n+0){background-color: #f15025;}
-.post:nth-child(6n+1){background-color: #db5461;}
-.post:nth-child(6n+2){background-color: #533a71;}
-.post:nth-child(6n+3){background-color: #6184d8;}
-.post:nth-child(6n+4){background-color: #50c5b7;}
-.post:nth-child(6n+5){background-color: #4daa57;}
-
-@CHARSET "ISO-8859-1";
 body,p{font-family:Source Sans Pro ;font-size:16px ;font-weight:300 ;}
 .navbar .navbar-nav > li > a{font-family:Montserrat ;font-size:16px ;font-weight:400 ;}
 h1, h2, h3, h4, h5, h6{font-family:Montserrat ;font-weight:500 ;}
