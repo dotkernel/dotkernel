@@ -1,15 +1,8 @@
-# DotKernel3 Docs (WIP)
+# DotKernel3 Documentation
 ---
 
-## Before starting
-* [Overview](Overview/README.md)
-* [Prerequisites](Prerequisites/README.md)
-* Requirements(to be added)
+### Dotkernel3 is a collection of PSR-7 MIddleware applications built on top of Zend Expressive microframework.
 
-## Introduction to DK3
-* [Getting Started](Getting-Started/README.md)
+### Before starting we recommend reading the articles in the Prerequisites section.
 
-## Working with DK3
-* [Guidelines](Guidelines/README.md)
-* [dot-* packages](Packages/README.md)
-
+If there's anything you feel we could do better, lease feel free to make pull requests!

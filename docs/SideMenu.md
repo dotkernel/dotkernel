@@ -4,7 +4,6 @@
 ## Before starting
 * [Overview](Overview/README.md)
 * [Prerequisites](Prerequisites/README.md)
-* Requirements(to be added)
 
 ## Introduction to DK3
 * [Getting Started](Getting-Started/README.md)

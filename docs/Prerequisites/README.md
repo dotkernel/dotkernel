@@ -4,7 +4,7 @@ Prerequisites
  * [Closures and Callables](Closures-and-Callables.md)
  * PSR-4: Autoloading
  * OOP1: Interfaces, Abstract classes
- * ~~OOP2: Traits~~
+ * OOP2: Type Hinting, Dependencies, Dependency Injection 
  * [Composer Quickstart](Composer-Quickstart.md)
  * [Composer Versions](Composer-Versions.md)
  * [PSR-7 Interfaces & Zend Diactoros](PSR-7.md)
