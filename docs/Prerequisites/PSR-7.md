@@ -304,3 +304,7 @@ $contents = 'ef'.$contents;
 $body->rewind();
 $body->write($contents)
 ```
+
+Sources:
+[PSR-7: HTTP messages](http://www.php-fig.org/psr/psr-7/)
+[zend-diactoros](https://zendframework.github.io/zend-diactoros/)

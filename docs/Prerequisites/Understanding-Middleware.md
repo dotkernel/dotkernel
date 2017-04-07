@@ -137,9 +137,12 @@ Once the `$middleware` array is complete with closures and/or invokable objects 
 foreach ($middleware as $callable) {
     $response = $middleware($request, $response);
 }
+
+echo $response->getBody(); // calls $response->getBody()->toArray() for displaying body contents
 ```
 
 > Note: in this case $next is not needed as we call each $callable sequentially
+> Note: The response must be manually converted to a string
 
 ## Middleware in practice
 

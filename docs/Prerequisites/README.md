@@ -10,6 +10,6 @@ Prerequisites
  * [PSR-7 Interfaces & Zend Diactoros](PSR-7.md)
  * PSR-11
  * [Understanding Middleware](Understanding-Middleware.md)
- * Zend Stratigility
+ * [Zend Stratigility](Zend-Stratigility.md)
  * Zend Expressive
  * Stratigility vs. Expressive (? Benefits of Expressive)
