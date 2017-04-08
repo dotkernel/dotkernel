@@ -22,7 +22,7 @@ Example:
 
 Depending on what the purpose of your project is, one of the following packages must be installed
  * `frontend` - for web applications
- * `-admin` - for administration platforms 
+ * `admin` - for administration platforms 
  
 > Note: There is a possibility that you need both versions, in which case you must install them as different projects
 
