@@ -1,4 +1,4 @@
-# Installing DotKernel3 (Dot Frontend / DotKernel Frontend)
+# Installing DotKernel3 `frontend`
 ---
 
 # Installation
