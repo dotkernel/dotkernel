@@ -102,24 +102,26 @@
 
 			</div><!-- /.main -->
 		<aside class="sidebar side-left col-sm-4 col-sm-pull-8" role="complementary">
-
+	{% if siteUrl is defined %}
+		{% set siteUrl = '' %}
+	{% endif %}
 	<div id="dk3DocsSideMenu">
 		<h2 id="docs-home"><a href="#">Documentation Main Page</a></h2>
 		<h2 id="before-starting">Before starting</h2>
 		<ul>
-			<li><a href="/dotkernel/Overview/">Overview</a></li>
-			<li><a href="/dotkernel/Prerequisites/">Prerequisites</a></li>
+			<li><a href="{{ siteUrl }}/Overview/">Overview</a></li>
+			<li><a href="{{ siteUrl }}/dotkernel/Prerequisites/">Prerequisites</a></li>
 		</ul>
 	
 		<h2 id="introduction-to-dk3">Introduction to DK3</h2>
 		<ul>
-			<li><a href="/dotkernel/Getting-Started/">Getting Started</a></li>
+			<li><a href="{{ siteUrl }}/Getting-Started/">Getting Started</a></li>
 		</ul>
 	
 		<h2 id="working-with-dk3">Working with DK3</h2>
 		<ul>
-			<li><a href="/dotkernel/Guidelines/">Guidelines</a></li>
-			<li><a href="/dotkernel/Packages/">dot-* packages</a></li>
+			<li><a href="{{ siteUrl }}/Guidelines/">Guidelines</a></li>
+			<li><a href="{{ siteUrl }}/Packages/">dot-* packages</a></li>
 		</ul>
 		<hr>
 		<h2>Links</h2>
