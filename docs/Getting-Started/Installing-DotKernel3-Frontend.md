@@ -18,7 +18,7 @@ Example:
 * absolute path `/var/www/dk3`
 * or relative path `dk3` (equivalent with `./dk3`)
 
-## Installing the `dot-frontend` Composer Package
+## Installing the `frontend` Composer Package
 
 Depending on what the purpose of your project is, one of the following packages must be installed
  * `frontend` - for web applications
@@ -28,7 +28,7 @@ Depending on what the purpose of your project is, one of the following packages 
 
 ### Installing DotKernel3 Frontend
 
-After we chose the path for DotKernel3 (`dk` for this example) and which base package to use (`dot-frontend` for this example) it must be installed. Therefore to install DotKernel3 (frontend) run the following command:
+After we chose the path for DotKernel3 (`dk` for this example) and which base package to use (`frontend` for this example) it must be installed. Therefore to install DotKernel3 (frontend) run the following command:
 
 `composer create-project dotkernel/frontend -s dev /path/to/dk3`
 
@@ -55,7 +55,7 @@ The `ConfigProvider`'s can be left un-injected as the requested configurations a
 
 # Configuration - First Run
 
-* Import `data/dot-frontend.sql` in your database.
+* Import `data/frontend.sql` in your database.
 * Copy `config/autoload/local.php.dist` to `config/autoload/local.php`
   * Fill the database configuration
 * (development mode) Copy `config/development.config.php.dist` to `config/development.config.php`
