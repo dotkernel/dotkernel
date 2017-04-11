@@ -6,7 +6,7 @@ Prerequisites
  * OOP1: Interfaces, Abstract classes
  * OOP2: Type Hinting, Dependencies, Dependency Injection 
  * [Composer Quickstart](Composer-Quickstart.md)
- * [Composer Versions](Composer-Versions.md)
+ * [Composer Package Versions](Composer-Package-Versions.md)
  * [PSR-7 Interfaces & Zend Diactoros](PSR-7.md)
  * PSR-11
  * [Understanding Middleware](Understanding-Middleware.md)
