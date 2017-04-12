@@ -92,3 +92,12 @@ Login/logout flow for web applications to use with dot-authentication service
 
  * dot-controller-plugin-flashmessenger
 DotKernel flash messenger controller plugin component
+
+<!-- This style applies only to current page -->
+<style>
+	.item { background-color: #C71F3A; margin-top: 20px; padding-bottom: 20px; }
+	.item h1 { text-align: center; color: #fff; font-size: 61px; padding-top: 20px; }
+	.item p { text-align: center; color: #fff; font-size: 23px; padding: 20px 0px; }
+	.item .code { background-color: #2E2E2D; width: 80%; margin: auto; }
+	.item .code p { padding: 15px 0px; font-size: 16px; }
+</style>
