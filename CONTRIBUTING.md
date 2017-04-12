@@ -1,4 +1,4 @@
-# Contributing to DotKernel3
+# Contributing to DotKernel 3
 
 ## Bug Reports & Feature Requests
 The `Apidemia` team heavily uses GitHub for our open source software management. 

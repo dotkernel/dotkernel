@@ -1,4 +1,4 @@
-# DotKernel3 Packages
+# DotKernel 3 Packages
 
  * dot-session
 DotKernel session component extending and customizing zend-session

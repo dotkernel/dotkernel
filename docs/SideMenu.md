@@ -1,4 +1,4 @@
-# DotKernel3 Docs
+# DotKernel 3 Docs
 ---
 
 ## Before starting

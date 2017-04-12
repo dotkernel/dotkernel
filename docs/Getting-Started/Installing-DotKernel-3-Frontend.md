@@ -1,4 +1,4 @@
-# Installing DotKernel3 `frontend`
+# Installing DotKernel 3 `frontend`
 ---
 
 # Installation
@@ -13,7 +13,7 @@ Instructions for installing:
 
 > If you never used composer before make sure you read the [`Composer Basic Usage`](https://getcomposer.org/doc/01-basic-usage.md) section in Composer's documentation
 
-## Choose a destination path for DotKernel3 Frontend installation
+## Choose a destination path for DotKernel 3 Frontend installation
 Example:
 * absolute path `/var/www/dk3`
 * or relative path `dk3` (equivalent with `./dk3`)
@@ -26,9 +26,9 @@ Depending on what the purpose of your project is, one of the following packages 
 
 > Note: There is a possibility that you need both versions, in which case you must install them as different projects
 
-### Installing DotKernel3 Frontend
+### Installing DotKernel 3 Frontend
 
-After we chose the path for DotKernel3 (`dk` for this example) and which base package to use (`frontend` for this example) it must be installed. Therefore to install DotKernel3 (frontend) run the following command:
+After we chose the path for DotKernel 3 (`dk` for this example) and which base package to use (`frontend` for this example) it must be installed. Therefore to install DotKernel 3 (frontend) run the following command:
 
 ```bash
 $ composer create-project dotkernel/frontend -s dev /path/to/dk3
@@ -45,7 +45,7 @@ Please select which config file you wish to inject 'Zend\Session\ConfigProvider'
   Make your selection (default is 0):
 ```
 
-For this option select `[0] Do not inject` because DotKernel3 already has an injected config provider which already contains the prompted configurations.
+For this option select `[0] Do not inject` because DotKernel 3 already has an injected config provider which already contains the prompted configurations.
 If you choose `[1] config/config.php` Zend's `ConfigProvider` from `session` will be injected.
 
 `Remember this option for other packages of the same type? (y/N)`
@@ -101,10 +101,6 @@ $ composer clear-config-cache
 ```
 
 > If `config-cache.php` is present that config will be loaded regardless of the `ConfigAggregator::ENABLE_CACHE` in `config/autoload/zend-expressive.global.php`
-
-**NOTE**
-
-
 
 Open a browser and access `http://localhost:8080/`
 

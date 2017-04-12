@@ -1,4 +1,4 @@
-DotKernel3 Logos
+DotKernel 3 Logos
 ---
 
 This folder contains DK3 icon logos.
