@@ -29,7 +29,7 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 #dk3DocsSideMenu ul li a { font-size: 14px; }
 
 .edit_button { float: right; background-color: transparent; border: none; }
-.main { padding-top: 20px; }
+.main { padding-top: 20px; color: #5c5c5c; }
 
 @media (max-width: 991px) {
 	header.navbar .container { padding: 0px 20px; }
@@ -49,3 +49,4 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 	.page-title.left { padding-right: 0px; }
 	.page-title.left h1 { font-size: 170%; line-height: 30px; }
 	.navbar-toggle { left: 20px; top: 15px; }
+}
