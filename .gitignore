@@ -55,3 +55,6 @@ clover.xml
 # */config/
 # */settings/
 
+# jekyll generated site
+docs/_site
+docs/test.md
