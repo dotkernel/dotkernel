@@ -23,22 +23,22 @@ Example:
 Depending on what the purpose of your project is, one of the following packages must be installed
  * `frontend` - for web applications
  * `admin` - for administration platforms 
- 
+
 > Note: There is a possibility that you need both versions, in which case you must install them as different projects
 
 ### Installing DotKernel3 Frontend
 
 After we chose the path for DotKernel3 (`dk` for this example) and which base package to use (`frontend` for this example) it must be installed. Therefore to install DotKernel3 (frontend) run the following command:
 
-`composer create-project dotkernel/frontend -s dev /path/to/dk3`
+```bash
+$ composer create-project dotkernel/frontend -s dev /path/to/dk3
+```
 
-This command will begin by downloading the `frontend` package, after successfully downloading it the `dependencies` will be installed.
+This command will begin by downloading the `frontend` package, after successfully downloading it the `dependencies` will be downloaded and installed.
 
-The setup script will prompt for some custom settings.
+The setup script will prompt for some custom settings. When encountering a question like the one below:
 
 ```shell
-Created project in ./dk3
-
 Please select which config file you wish to inject 'Zend\Session\ConfigProvider' into:
   [0] Do not inject
   [1] config/config.php
@@ -50,30 +50,61 @@ If you choose `[1] config/config.php` Zend's `ConfigProvider` from `session` wil
 
 `Remember this option for other packages of the same type? (y/N)`
 `YES`
+
 The `ConfigProvider`'s can be left un-injected as the requested configurations are already loaded.
 
 
 # Configuration - First Run
 
-* Import `data/frontend.sql` in your database.
-* Copy `config/autoload/local.php.dist` to `config/autoload/local.php`
-  * Fill the database configuration
-* (development mode) Copy `config/development.config.php.dist` to `config/development.config.php`
-* (optional) `config/autoload/errorhandler.local.php.dist` to `config/autoload/errorhandler.local.php`
-* remove `data/config-cache.php` if present
-> Charset recommendation: utf8mb4
-> If `config-cache.php` is present that config will be loaded regardless of the `ConfigAggregator::ENABLE_CACHE` in `config/autoload/zend-expressive.global.php`
+* import the database schema, if you are using MySQL or MariaDb, which can be found in `data/frontend.sql`
+* remove the `.dist` extension of the file `local.php.dist` located in `config/autoload`
+* edit `local.php` according to your dev machine. Fill in the `database` configuration and smtp credentials if you want your application to send mails on registration etc.
+* get a recaptcha key pair and configure the `local.php` with them
+* if you use the create-project command, after installing, the project will go into development mode automatically
+* you can also toggle development mode by using the composer commands
+```bash
+$ composer development-enable
+$ composer development-disable
+```
+* if not already done on installation, copy file `development.global.php.dist` to `development.global.php`
+
+This will enable dev mode by turning debug flag to true and turning configuration caching off. It will also make sure that any previously config cache is cleared.
+
+> Charset recommendation: utf8mb4_general_ci
 
 # Testing (Running)
 
-Composer's `serve` script can be used to start the PHP's built-in webserver.
-In `dotkernel3/frontend` root folder run `composer serve`
 
+**Do not enable dev mode in production**
+
+* Run the following command in your project's directory:
+
+```bash
+$ php -S 0.0.0.0:8080 -t public
+```
+
+> Composer's `serve` script can be used to start the PHP's built-in webserver.
+> In `dotkernel3/frontend` root folder run `composer serve`
 > `composer serve` will run `> php -S 0.0.0.0:8080 -t public/ public/index.php`
 
 `0.0.0.0` means server is open to all incoming connections
-`127.0.0.1` means server can only be accessed locally 
-`8080` the port on which the server is started
+`127.0.0.1` means server can only be accessed locally (localhost only)
+`8080` the port on which the server is started (the listening port for the server)
+
+
+* visit `http://localhost:8080` in your browser
+
+**NOTE:**
+If you are still getting exceptions or errors regarding some missing services, try running the following command
+```bash
+$ composer clear-config-cache
+```
+
+> If `config-cache.php` is present that config will be loaded regardless of the `ConfigAggregator::ENABLE_CACHE` in `config/autoload/zend-expressive.global.php`
+
+**NOTE**
+
+
 
 Open a browser and access `http://localhost:8080/`
 
