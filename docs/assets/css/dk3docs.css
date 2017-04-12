@@ -1,7 +1,7 @@
 @CHARSET "ISO-8859-1";
 body,p{font-family:Source Sans Pro ;font-size:16px ;font-weight:300 ;}
 .navbar .navbar-nav > li > a{font-family:Montserrat ;font-size:16px ;font-weight:400 ;}
-h1, h2, h3, h4, h5, h6{font-family:Montserrat ;font-weight:500 ;}
+h1, h2, h3, h4, h5, h6{font-family:Montserrat ;font-weight:400 ;}
 
 .navbar .navbar-nav { float: right; margin-top: 12px; }
 
