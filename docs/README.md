@@ -1,7 +1,7 @@
 # DotKernel3 Documentation
 ---
 
-### Dotkernel3 is a collection of PSR-7 Middleware applications built on top of Zend Expressive microframework.
+### DotKernel3 is a collection of PSR-7 Middleware applications built on top of Zend Expressive microframework.
 
 ### Before starting we recommend reading the articles in the Prerequisites section.
 

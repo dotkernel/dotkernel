@@ -50,3 +50,8 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 	.page-title.left h1 { font-size: 170%; line-height: 30px; }
 	.navbar-toggle { left: 20px; top: 15px; }
 }
+
+
+.smallerFont{
+	font-size: 13px;
+}
