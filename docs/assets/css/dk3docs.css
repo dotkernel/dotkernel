@@ -1,4 +1,12 @@
 @CHARSET "ISO-8859-1";
+
+/** **NOTE**
+ * Thank you for your contribution to DotKernel 3
+ *
+ * Please, do not insert URL's here as they are subject to change
+ * Use `_includes/styling.htm` for this
+*/
+
 body,p{font-family:Source Sans Pro ;font-size:16px ;font-weight:300 ;}
 body a{ color: #2b8dd6; }
 .navbar .navbar-nav > li > a{font-family:Montserrat ;font-size:16px ;font-weight:400 ;}
