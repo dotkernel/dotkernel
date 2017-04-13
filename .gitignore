@@ -57,4 +57,5 @@ clover.xml
 
 # jekyll generated site
 docs/_site
+docs/assets/_site/
 docs/test.md
