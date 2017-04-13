@@ -81,7 +81,9 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 	.page-title.left h1 { font-size: 170%; line-height: 30px; }
 	.navbar-toggle { left: 20px; top: 15px; }
 	.caret { display: inline-block; }
-	.footer-btm-bar ul li a{  line-height: 0; font-size: 0; color: transparent; }
+	.footer-btm-bar ul li a{  line-height: 0; 
+    font-size: 0;
+    color: transparent;  }
 	.footer-btm-bar ul li { display: inline; }
 	.footer-btm-bar ul { text-align: center; }
 	.footer-btm-bar p { text-align: center; padding: 10px 0px; }
@@ -102,5 +104,6 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 
 
 button { width: 20px; height: 20px; margin-top: -25px; }
-<!-- arrows moved in styling.htm -->
+.arrow_down { background-image: url('/assets/images/arrow_down.png'); background-position: center; background-repeat: no-repeat; background-size: 14px 7px; border: none; background-color: transparent; }
+.arrow_up { background-image: url('/assets/images/arrow_down.png'); background-position: center; background-repeat: no-repeat; background-size: 14px 7px; border: none; background-color: transparent; }
 .smallerFont { font-size: 13px; }
