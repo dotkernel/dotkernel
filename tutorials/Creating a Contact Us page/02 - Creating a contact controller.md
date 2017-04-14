@@ -71,4 +71,63 @@ $app->route('/contact[/{action}]', [ContactController::class], ['GET', 'POST'], 
 
 At this point, it should be possible to access the `/contact` and `/contact/thank-you` pages. But we do not return a ResponseInterface yet, in which case you should get an error, if you defined the methods as above, with return types(as of PHP 7.1). Lets solve this right now.
 
-We know we'll have 2 templates, one for the contact form and one for the thanks you page. Lets create them, even if we don't include any content yet. Because we work in the App module, create the templates in the `/templates` folder of this module. You can create a new folder inside, or use one of the existing folder as appropriate. We'll define the templates in the `/temlates/app` folder, so when referring to the template, you must prefix it with the `app` namespace, as `app::template_name`.
+We know we'll have 2 templates, one for the contact form and one for the thank you page. Lets create them, even if we don't include any content yet. Because we work in the App module, create the templates in the `/templates` folder of this module. You can create a new folder inside, or use one of the existing folder as appropriate. We'll define the templates in the `/temlates/app` folder, so when referring to the template, you must prefix it with the `app` namespace, as `app::template_name`.
+
+##### contact.html.twig
+```html
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
+                <h1>Contact Us</h1>
+                <div class="form-content">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+```
+
+##### thank-you.html.twig
+```html
+{% extends '@layout/default.html.twig' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
+                <h1>Thank you!</h1>
+                <div class="form-content">
+                    {{ messagesPartial('partial::alerts') }}
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+```
+
+* Now go back to the contact controller and return this parsed templates
+
+```php
+class ContactController extends AbstractActionController
+{
+    public function indexAction(): ResponseInterface
+    {
+        return new HtmlResponse($this->template('app::contact'));
+    }
+    
+    public function thankYouAction(): ResponseInterface
+    {
+        return new HtmlResponse($this->template('app::thank-you'));
+    }
+}
+```
