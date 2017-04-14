@@ -7,8 +7,15 @@
  * Use `_includes/styling.htm` for this
 */
 
+html, body { min-height: 100%; height: 100%; }
+body {  min-height: 100%; height: 100%; }
+#wrapper { min-height: 100%; height: auto !important; margin-bottom: -100px; margin-left: auto; margin-right: auto; margin-top: 0; }
+
+
 body,p{font-family:Source Sans Pro ;font-size:16px ;font-weight:300 ;}
 body a{ color: #2b8dd6; }
+
+
 .navbar .navbar-nav > li > a{font-family:Montserrat ;font-size:16px ;font-weight:400 ;}
 h1, h2, h3, h4, h5, h6{font-family:Montserrat ;font-weight: 500 ; color: #515151;}
 
@@ -41,7 +48,7 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 
 .inner-container { background-color: #fff; padding-bottom: 50px; }
 
-
+#push, footer { height: 100px; clear:both;}
 .footer-btm-bar { background-attachment: scroll; background-clip: border-box; background-color: #F7F7F7; background-image: none; background-origin: padding-box; background-position-x: 0;background-position-y: 0; background-repeat: repeat; background-size: auto auto; width: 100%; padding: 25px 0px 15px 0px; }
 .footer-btm-bar span { font-size: 16px; color: #808080; font-weight: 500; }
 .footer-btm-bar ul { list-style-type: none; padding-left: 0px; }
