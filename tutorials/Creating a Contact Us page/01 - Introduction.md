@@ -8,7 +8,7 @@ The application follows the modular architecture suggested by Zend Expressive. G
 
 `.local.php` is for configuration used by the current machine on which runs the application. These are not included into the repository, and should be created after deployment, on the machine that is used. You will usually put here the database credentials, account data, api keys etc. DotKernel frontend application provides distribution local configuration files with the extension `.local.dist`. These serve as templates for what needs to be configured.
 
-Configuration files are merged on application runtime and cached(in production environment). The order in which they are merged is global files and after that local files. So local files cand override global configuration files. This is customizable though.
+Configuration files are merged on application runtime and cached(in production environment). The order in which they are merged is global files and after that local files. So local files can override global configuration files. This is customizable though.
 
 ### Source code files
 
@@ -16,7 +16,7 @@ The source code is in the `/src` folder. Inside, you'll see another set of folde
 
 The frontend application comes with 2 default modules: the  `App` module and the `User` module. The App module should serve to hold application wide code and configuration, or the stuff that is not worth to modularize yet. It also holds the application templates, like the layout, error templates and so on.
 
-In the user module, you'll find code and templates that extend the functionality provided by the [dotkernel/dot-user](https://github.com/dotkernel/dot-user) module. This was made to provide additional functionality for the user module, and at the same time, a proof of concept or demo of how you should work and extend that module. Among others, these module extension provides mailing functionality for user related events, authentication customization and validation, template overwrites and so on. For now, we'll not digg deeper into this. It is the subject of another tutorial.
+In the user module, you'll find code and templates that extend the functionality provided by the [dotkernel/dot-user](https://github.com/dotkernel/dot-user) module. This was made to provide additional functionality for the user module, and at the same time, a proof of concept or demo of how you should work and extend that module. Among provided functionality,  it is worth to mention mailing functionality for user related events, authentication customization and validation, template overwrites and so on. For now, we'll not digg deeper into this. It is the subject of another tutorial.
 
 Please note that these modules also provide module specific configuration in the `ModuleName/src/ConfigProvider` class, which is merged in the final configuration.
 
