@@ -21,8 +21,3 @@ In the user module, you'll find code and templates that extend the functionality
 Please note that these modules also provide module specific configuration in the `ModuleName/src/ConfigProvider` class, which is merged in the final configuration.
 
 Next, we'll focus on creating a simple contact us page, and we will cover forms, input filters, content validation, events, e-mail composition, and how to compine all this into a web page.
-
-## Step 1: Creating a contact us controller
-
-We refer here to DotKernel controllers, which are middleware that can handle requests based on an action parameter. One method per action is used. Controllers help organize code by keeping related code together. We recommend you to check the documentation for [dot-controller](https://github.com/dotkernel/dot-controller)
-
