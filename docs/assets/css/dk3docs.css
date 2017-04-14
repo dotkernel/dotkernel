@@ -46,7 +46,7 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 .footer-btm-bar span { font-size: 16px; color: #808080; font-weight: 500; }
 .footer-btm-bar ul { list-style-type: none; padding-left: 0px; }
 .footer-btm-bar ul li img { width: 50px;  padding-right: 5px; }
-.footer-btm-bar ul li { padding: 0px 0px 10px 0px; }
+.footer-btm-bar ul li { padding: 0px 10px 10px 0px; display: inline-block; }
 .footer-btm-bar ul li a { color: #808080; }
 
 
