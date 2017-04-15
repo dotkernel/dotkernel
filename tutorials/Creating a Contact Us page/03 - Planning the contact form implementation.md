@@ -1,4 +1,4 @@
-# Creating and setting up a contact form
+# Planning the contact form implementation
 
 For form creation, input filtering and validation we'll use the following packages
 * [dot-form](https://github.com/dotkernel/dot-form)
