@@ -26,7 +26,7 @@ This is a large subject to treat here. We'll leave you with the independent DotK
 
 ## Plan ahead
 
-Before the actual implementation, you should establish the requirements and make a plan on how to implement it. In order to cover as much we can regarding DotKernel and Zend Framework packages, we will complicate things a bit. 
+Before the actual implementation, you should establish the requirements and make a plan on how to implement it. In order to cover as much as we can regarding DotKernel and Zend Framework packages, we will complicate things a bit. 
 
 We took the following decisions
 * save the user message in the backend - this way we will cover the [dot-mapper](https://github.com/dotkernel/dot-mapper) package
@@ -35,4 +35,4 @@ We took the following decisions
 * create the actual form to be displayed. This will use the above fieldset as the base fieldset. It can also add other form elements, specific to the form(create form, edit form etc.). One element that is suitable to add in the form, not in the fieldset, is the submit button, csrf token, captcha etc.
 * an input filter for input validation and filtering. This is used by the form object to validate incoming data. We recomment using one of the following 2 methods: create a separate input filter class, that you set as the form's input filter on form creation(in the form factory for example). This is usefull if you need to reuse the input filter. Or you can make your form implement the `InputFilterProviderInterface` interface and configure the input filter in the form itself. This act as a default input filter, you can still set another input filter on runtime is needed so. Thoughout DotKernel's web application, we use mainly the second approach, as it is more clearer and manageable.
 
-Lets proceed to implement this step by step, in the logical
+Lets proceed to implement this step by step, in the logical order.
