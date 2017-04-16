@@ -102,3 +102,5 @@ So what is a hydrator you may ask. An hydrator must implement zend's `HydratorIn
 Hydrators can be used on their own, but Zend Framework and consequently DotKernel provide hydrator integration with forms and fieldset, to automatically to the job of hydration. Also, DotKernel packages that deal with entity manipulation, often rely on configured hydrators, in order to seemlessly extract and hydrate objects.
 
 Returning to our case, we said that for this simple case, and the way the entity class is defined, the `ClassMethodsCamelCase` is perfect for our needs. Keep in mind we'll use this. This hydrator takes the array keys and call the appropriate setters to hydrate the object.
+
+Having these classes defined, we are ready to implement our contact fieldset and form. Go ahead to the next lesson.
