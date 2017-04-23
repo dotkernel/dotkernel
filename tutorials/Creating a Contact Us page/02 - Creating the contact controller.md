@@ -156,3 +156,7 @@ return [
     ]
 ]
 ```
+
+The route option `reuse_result_params` needs a bit of explanation here. It is an option supported by the Zend Expressive's UrlHelper class. It is rather a new addition, in order to tell the uri generator helper to NOT merge the matched route params in the generated uri.
+
+In our example, we need this because our route is defined as `/contact[/{action}]`. If the above option would have been set to `true`(as it is by default), if we would have been on a page like `/contact/thank-you`, the menu item will point to the same URI, because the matched `action` parameter would have been merged into the undefined route parameters. This is not the desired behaviour, so anytime you encounter a problem like this, remember to disable this option as described above. 
