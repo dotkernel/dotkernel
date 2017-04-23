@@ -104,11 +104,7 @@ We know we'll have 2 templates, one for the contact form and one for the thank y
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
                 <h1>Thank you!</h1>
-                <div class="form-content">
-                    {{ messagesPartial('partial::alerts') }}
-
-
-                </div>
+                
             </div>
         </div>
     </div>
