@@ -6,6 +6,9 @@ In our case, we we'll need just one fieldset, that matches one to one the entity
 Lets create a new folder in `src/App/src` and call it `Form`. We'll keep here all our fieldsets and forms. You can go further and create a Fieldset directory instead, to keep things even more organized, just make sure to use the right namespace when defining the class.
 
 Create a new php class file in the newly created directory. The class needs to extend the `Zend\Form\Fieldset` class. It also implements the `Zend\InputFilter\InputFilterProviderInterface` so it can hint to a default input filter specification, which will be set on the form's input filter on form instantiation. Again, this must happen through the form manager service to happen automatically.
+
+Another thing worth to notice is that we set the entity and hydrator classes in the fieldset. When validating and getting the data back from the form, the form will use the base fieldset's hydrator to hydrate an entity class instead of returning a plain array.
+
 ##### UserMessageFieldset.php
 ```php
 declare(strict_types=1);
@@ -20,6 +23,9 @@ class UserMessageFieldset extends Fieldset implements InputFilterProviderInterfa
     public function __construct()
     {
         parent::__construct('userMessage');
+        
+        $this->setObject(new UserMessageEntity());
+        $this->setHydrator(new ClassMethodsCamelCase());
     }
 
     public function init()
