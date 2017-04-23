@@ -64,7 +64,9 @@ class UserMessageFieldset extends Fieldset implements InputFilterProviderInterfa
                 'label' => 'Message'
             ],
             'attributes' => [
-                'placeholder' => 'Message...'
+                'id' => 'userMessage_textarea',
+                'placeholder' => 'Message...',
+                'rows' => 5,
             ]
         ]);
     }
@@ -155,7 +157,8 @@ class UserMessageFieldset extends Fieldset implements InputFilterProviderInterfa
 }
 ```
 
-In the same directory create the contact form, that uses the above fieldset.
+In the same directory create the contact form, that uses the above fieldset. Also, as we use a recaptcha element on the form, we will inject the site key and secret key, from the configuration.
+
 ```php
 declare(strict_types=1);
 
@@ -165,8 +168,18 @@ use Zend\Form\Form;
 
 class ContactForm extends Form
 {
-    public function __construct($name = 'contactForm', array $options = [])
+    /** @var  array */
+    protected $recaptchaOptions;
+
+    /**
+     * ContactForm constructor.
+     * @param array $recaptchaOptions
+     * @param string $name
+     * @param array $options
+     */
+    public function __construct(array $recaptchaOptions, $name = 'contactForm', array $options = [])
     {
+        $this->recaptchaOptions = $recaptchaOptions;
         parent::__construct($name, $options);
     }
 
@@ -198,13 +211,62 @@ class ContactForm extends Form
                 'captcha' => [
                     'class' => 'recaptcha',
                     'options' => [
-                        'site_key' => 'recaptcha site key',
-                        'secret_key' => 'recaptcha secret key',
+                        'site_key' => $this->recaptchaOptions['site_key'],
+                        'secret_key' => $this->recaptchaOptions['secret_key'],
                         'theme' => 'light',
                     ]
                 ],
             ]
         ], ['priority' => -100]);
+
+        $this->add([
+            'name' => 'submit',
+            'type' => 'submit',
+            'attributes' => [
+                'type' => 'submit',
+                'value' => 'Send message'
+            ]
+        ], ['priority' => -105]);
+    }
+}
+```
+
+In the `local.php` file, define the recaptcha options. These are already defined if you use the dot-user module, but as those are somehow specific to the user module, we'll duplicate them in a global config key so anytime a recaptcha element will be needed, we will take the keys from there.
+
+##### local.php
+```php
+return [
+    // ...
+    
+    'recaptcha' => [
+        'site_key' => 'YOUR SITE KEY',
+        'secret_key' => 'YOUR SECRET KEY'
+    ]
+];
+```
+
+Because we need to inject a dependency in the form class, we will need a factory class for this form. We can't use the annotation service in this case, because form creation is handled by the form manager, which is a specialized service manager acting as a sub-container, and the annotation factory is defined in the parent service manager. No problem, we don't need to get rid of factories completely.
+
+Create a new php class file in `src/App/src/Factory`.
+##### ContactFormFactory.php
+```php
+declare(strict_types=1);
+
+namespace Frontend\App\Factory;
+
+use Frontend\App\Form\ContactForm;
+use Psr\Container\ContainerInterface;
+
+class ContactFormFactory
+{
+    /**
+     * @param ContainerInterface $container
+     * @return ContactForm
+     */
+    public function __invoke(ContainerInterface $container)
+    {
+        $recaptchaOptions = $container->get('config')['recaptcha'];
+        return new ContactForm($recaptchaOptions);
     }
 }
 ```
@@ -241,7 +303,7 @@ class ConfigProvider
                 'factories' => [
                     //...
                     UserMessageFieldset::class => InvokableFactory::class,
-                    ContactForm::class => InvokableFactory::class,
+                    ContactForm::class => ContactFormFactory::class,
                 ],
                 'aliases' => [
                     //...
