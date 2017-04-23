@@ -127,3 +127,32 @@ class ContactController extends AbstractActionController
     }
 }
 ```
+
+## Display a contact us menu item
+
+We will used the already configured navigation service. Menu items are defined in the configuration file `config/autoload/navigation.global.php`. Add a new entry in the main_menu navigation container. The array order is reflected in the menu parsing.
+
+```php
+return [
+    'dot_navigation' => [
+        'containers' => [
+            'main_menu' => [
+                //...
+                
+                [
+                    'options' => [
+                        'label' => 'Contact',
+                        'route' => [
+                            'route_name' => 'contact',
+                            'options' => [
+                                'reuse_result_params' => false,
+                            ]
+                        ],
+                        'icon' => '',
+                    ]
+                ],
+            ]
+        ]
+    ]
+]
+```
