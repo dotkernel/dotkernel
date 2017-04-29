@@ -172,4 +172,4 @@ Here is what happens:
 - we check the service's result for further validation. If a `false` value was returned, there was an unexpected save error for whatever reasons(it could be logged exactly later). Otherwise, the original entity that was send is returned back with the id field filled in.
 - based on the result, we redirect to a thank you page or back the the contact page with a generic error message.
 
-This is the code needed in the controller, We don't have yet the service implementation. We'll cover this in the next lesson.
+This is the code needed in the controller, We don't have the service implementation yet, and you'll get and error if you try to run the code now. We'll cover the service implementation in the next lesson.
