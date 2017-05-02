@@ -193,3 +193,5 @@ The lines that we have added are the ones from the `options` key. For a complete
 As you can see the options are defined per mapper/entity. The `event_listeners` key is used to attach your defined event listeners to the listener chain.
 
 Test your code again. If you have configured the notification receivers, you should receive a notification when a contact form is successfully submitted.
+
+### [Prev: Implementing the service class](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/08-implementing-the-service-class.md)
