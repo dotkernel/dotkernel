@@ -9,7 +9,6 @@ We recommend you to check the documentation for [dot-controller](https://github.
 * next, create an `indexAction` that will handle the `/contact` request and let's also make a thank you page, after the contact form is submitted. So, create a `thankYouAction` method also. This will handle requests to path `/contact/thank-you`.
 
 ```php
-<?php
 declare(strict_types=1);
 
 namespace Frontend\App\Controller;
@@ -57,8 +56,8 @@ class ContactController extends AbstractActionController
 ```
 
 Two things you should consider:
-* make sure you import/use the right packages. We recommend you use an IDE to help you out.
-* the PHP docblock has 2 functions here. The `@method` definistions are used to tell the IDE(if supported) what unkown methods we'll be using in this class. This way, if we use controller plugins, they will not show up us warnings. You can copy paste this docblock in all your controller files. Make sure you import the classes though as use statements. These method definitions are handles all the default DotKernel controller plugins.
+* make sure you import/use the right packages. We recommend you to use an IDE to help you out.
+* the PHP docblock has 2 functions here. The `@method` definitions are used to tell the IDE(if supported) what unkown methods we'll be using in this class. This way, if we use controller plugins, they will not show up as warnings. You can copy paste this docblock in all your controller files. Make sure you import the classes though as use statements. These method definitions should get rid of all the default DotKernel controller plugins warnings.
 * The second annotation, `@Service` is used to mark the class to be handled by the [dot-annotated-services](https://github.com/dotkernel/dot-annotated-services) package. See the documentation for more information. Shortly, this allows you to get the class from the service manager, without the need to manually create and register a factory class. It can also inject dependencies, by annotating the constructor or a setter method.
 
 ### Register the controller as routed middleware
@@ -71,7 +70,7 @@ $app->route('/contact[/{action}]', [ContactController::class], ['GET', 'POST'], 
 
 At this point, it should be possible to access the `/contact` and `/contact/thank-you` pages. But we do not return a ResponseInterface yet, in which case you should get an error, if you defined the methods as above, with return types(as of PHP 7.1). Lets solve this right now.
 
-We know we'll have 2 templates, one for the contact form and one for the thank you page. Lets create them, even if we don't include any content yet. Because we work in the App module, create the templates in the `/templates` folder of this module. You can create a new folder inside, or use one of the existing folder as appropriate. We'll define the templates in the `/temlates/app` folder, so when referring to the template, you must prefix it with the `app` namespace, as `app::template_name`.
+We know we'll have 2 templates, one for the contact form and one for the thank you page. Lets create them, even if we don't include any content yet. Because we work in the App module, create the templates in the `/templates` folder of this module. You can create a new folder inside, or use one of the existing folders as appropriate. We'll define the templates in the `/temlates/app` folder, so when referring to the template, you must prefix it with the `app` namespace, as `app::template_name`.
 
 ##### contact.html.twig
 ```html
@@ -130,7 +129,7 @@ class ContactController extends AbstractActionController
 
 ## Display a contact us menu item
 
-We will used the already configured navigation service. Menu items are defined in the configuration file `config/autoload/navigation.global.php`. Add a new entry in the main_menu navigation container. The array order is reflected in the menu parsing.
+We will used the already configured navigation service. Menu items are defined in the configuration file `config/autoload/navigation.global.php`. Add a new entry in the main_menu navigation container. The array order is reflected in the menu items parsing order.
 
 ```php
 return [
