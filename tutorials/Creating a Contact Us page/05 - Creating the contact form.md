@@ -3,7 +3,7 @@
 To keep to our convention, we'll create one fieldset per entity class. A fieldset is a collection of form elements, or group of elements, even other nested fieldsets for a hierarchical structure of entities.
 
 In our case, we we'll need just one fieldset, that matches one to one the entity class.
-Lets create a new folder in `src/App/src` and call it `Form`. We'll keep here all our fieldsets and forms. You can go further and create a Fieldset directory instead, to keep things even more organized, just make sure to use the right namespace when defining the class.
+Lets create a new folder in `src/App/src` and call it `Form`. We'll keep here all our fieldsets and forms. You can go further and create a Fieldset directory instead, to keep things even more organized, just make sure to use the right namespace when defining the classes.
 
 Create a new php class file in the newly created directory. The class needs to extend the `Zend\Form\Fieldset` class. It also implements the `Zend\InputFilter\InputFilterProviderInterface` so it can hint to a default input filter specification, which will be set on the form's input filter on form instantiation. Again, this must happen through the form manager service to happen automatically.
 
@@ -251,7 +251,7 @@ return [
 ];
 ```
 
-Because we need to inject a dependency in the form class, we will need a factory class for this form. We can't use the annotation service in this case, because form creation is handled by the form manager, which is a specialized service manager acting as a sub-container, and the annotation factory is defined in the parent service manager. No problem, we don't need to get rid of factories completely.
+Because we need to inject a dependency in the form class, we will need a factory class for this form. We can't use the annotation service in this case, because form creation is handled by the form manager, which is a specialized service manager acting as a sub-container, and the annotation factory is defined only for the parent service manager. No problem, we don't need to get rid of factories completely.
 
 Create a new php class file in `src/App/src/Factory`.
 ##### ContactFormFactory.php
@@ -277,9 +277,9 @@ class ContactFormFactory
 }
 ```
 
-The forms are created, the last things to do is register the form and fieldset in the form element manager and display the form in the contact controller.
+The form is created, the last thing to do is register the form and fieldset in the form element manager and display the form in the contact controller.
 
-### Register the forms in the service manager
+### Register the form in the service manager
 Forms and fieldsets need to be registered in the form manager. This can be done using the configuration. We'll use the `ConfigProvider` class of the `App` module to register them.
 
 The form related configuration must be placed under the `dot_form` configuration key. The form manager configuration key is `form_manager` under the dot_form key.
@@ -322,5 +322,5 @@ class ConfigProvider
 }
 ```
 
-At this point, you can access the form object from within the contact controller through the provided form manager controller plugin. You can use the FQN or the alias that was defined, as we recommend.
+At this point, you can access the form object from within the contact controller through the provided form manager controller plugin. You can use the FQN or the alias that was defined to access the form. We recommend using aliases in this case.
 
