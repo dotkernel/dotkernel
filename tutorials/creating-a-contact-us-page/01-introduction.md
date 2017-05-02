@@ -21,3 +21,6 @@ In the user module, you'll find code and templates that extend the functionality
 Please note that these modules also provide module specific configuration in the `ModuleName/src/ConfigProvider` class, which is merged in the final configuration.
 
 Next, we'll focus on creating a simple contact us page, and we will cover forms, input filters, content validation, events, e-mail composition, and how to combine all this into a web page.
+
+
+### [Next: Creating the contact controller](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/02-creating-the-contact-controller.md)
