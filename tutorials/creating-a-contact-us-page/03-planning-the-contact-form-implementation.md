@@ -36,3 +36,5 @@ We took the following decisions
 * an input filter for input validation and filtering. This is used by the form object to validate incoming data. We recommend using one of the following 2 methods: create a separate input filter class, that you can set as the form's input filter on form creation(in the form factory for example). This is useful if you need to reuse the input filter. Or you can make your fieldset implement the `InputFilterProviderInterface` interface and configure the input filter in the fieldset itself. This act as a default input filter, you can still set another input filter at runtime if needed so. Throughout DotKernel frontend application, we use mainly the second approach, as it is more clearer and manageable.
 
 Lets proceed to implement this step by step, in the logical order.
+
+### [Prev: Creating the contact controller](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/02-creating-the-contact-controller.md) | [Next: Backend setup, entities and hydrators](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/04-backend-setup-entity-and-hydrators.md)
