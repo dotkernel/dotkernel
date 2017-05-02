@@ -177,3 +177,5 @@ Here is what happens:
 - based on the result, we redirect to a thank you page or back the the contact page with a generic error message.
 
 This is the code needed in the controller, We don't have the service implementation yet, and you'll get and error if you try to run the code now. We'll cover the service implementation in the next lesson.
+
+### [Prev: Display the contact form](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/06-display-the-contact-form.md) | [Next: Implementing the service class](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/08-implementing-the-service-class.md)
