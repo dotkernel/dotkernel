@@ -17,6 +17,8 @@ namespace Frontend\App\Form;
 
 use Zend\Form\Fieldset;
 use Zend\InputFilter\InputFilterProviderInterface;
+use Dot\Hydrator\ClassMethodsCamelCase;
+use Frontend\App\Entity\UserMessageEntity;
 
 class UserMessageFieldset extends Fieldset implements InputFilterProviderInterface
 {
