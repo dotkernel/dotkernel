@@ -62,7 +62,7 @@ Two things you should consider:
 
 ### Register the controller as routed middleware
 
-* in your **route.php** file, register this controller, the same way as a regular middleware. The requirement is that you add an optional `action` route parameter.
+* in your **routes.php** (`config/routes.php`) file, register this controller, the same way as a regular middleware. The requirement is that you add an optional `action` route parameter.
 
 ```php
 $app->route('/contact[/{action}]', [ContactController::class], ['GET', 'POST'], 'contact');
