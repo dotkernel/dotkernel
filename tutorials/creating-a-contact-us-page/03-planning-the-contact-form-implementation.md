@@ -4,7 +4,7 @@ For form creation, input filtering and validation we'll use the following packag
 * [dot-form](https://github.com/dotkernel/dot-form)
 * [dot-inputfilter](https://github.com/dotkernel/dot-inputfilter)
     * [dot-filter](https://github.com/dotkernel/dot-filter)
-    * [dot-validator](https://github/dotkernel/dot-validator)
+    * [dot-validator](https://github.com/dotkernel/dot-validator)
 
 The dot-filter and dot-validator are direct dependencies to dot-inputfilter. These DotKernel packages are just extension of the respective zend framework packages. Apart from defining some custom validators, it overwrites the factories and abstract factories of the original zend packages, in order to customize the configuration keys.
 
