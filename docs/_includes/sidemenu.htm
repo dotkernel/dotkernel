@@ -1,23 +1,107 @@
 <!-- BEGIN sidemenu -->
+
+<!-- NEW MENU DESIGN -->
+
 <h3 id="before-starting">Before starting</h3>
-<ul>
-	<li><a href="{{ site.url }}/Overview/">Overview</a></li>
-	<li><a href="{{ site.url }}/Prerequisites/">Prerequisites</a></li>
-</ul>
+<div class="panel-group">
 
-<h3 id="introduction-to-dk3">Introduction</h3>
-<ul>
-	<li><a href="{{ site.url }}/Getting-Started/">Getting Started</a></li>
-</ul>
+    <div class="panel panel-default">
+        <div class="panel-heading"  >
+            <div class="panel-title" >
+                <button class="arrow_down" data-toggle="collapse" data-target="#overview_collapse"></button>
+                <a  href="{{ site.url }}/Overview/" >Overview</a>
+            </div>
+        </div>
+        <div id="overview_collapse" class="panel-collapse collapse">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{{ site.url }}/Overview/Developing-for-DotKernel-3.html">Developing for DotKernel 3</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Overview/DotKernel-3-Overview.html">DotKernel 3 Overview</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="panel">
+        <div class="panel-heading"  >
+            <div class="panel-title" >
+                <button class="arrow_down" data-toggle="collapse" data-target="#prerequisites_collapse"></button>
+                <a  href="{{ site.url }}/Prerequisites/" >Prerequisites</a>
+            </div>
+        </div>
+        <div id="prerequisites_collapse" class="panel-collapse collapse">
 
-<h3 id="working-with-dk3">Working with DotKernel 3</h3>
-<ul>
-	<li><a href="{{ site.url }}/Guidelines/">Guidelines</a></li>
-	<li><a href="{{ site.url }}/Packages/">dot-* packages</a></li>
-</ul>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Closures-and-Callables.html">Closures and Callables</a></li>
+                <li class="list-group-item">PSR-4: Autoloading</li>
+<!--                 <li class="list-group-item">OOP1: Interfaces, Abstract classes</li> -->
+<!--                 <li class="list-group-item">OOP2: Type Hinting, Dependencies, Dependency Injection</li> -->
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Composer-Quickstart.html">Composer Quickstart</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Composer-Package-Versions.html">Composer Package Versions</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/PSR-7.html">PSR-7 Interfaces &amp; Zend Diactoros</a></li>
+                <li class="list-group-item">PSR-11</li>
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Understanding-Middleware.html">Understanding Middleware</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Zend-Stratigility.html">Zend Stratigility</a></li>
+                <li class="list-group-item">Zend Expressive</li>
+                <!--  <li class="list-group-item">Stratigility vs. Expressive (? Benefits of Expressive)</li>  -->
+            </ul>
+
+        </div>
+    </div>
 
 
+<h3 id="before-starting">Introduction</h3>
+    <div class="panel">
+        <div class="panel-heading"  >
+            <div class="panel-title" >
+                <button class="arrow_down" data-toggle="collapse" data-target="#getting_started_collapse"></button>
+                <a  href="{{ site.url }}/Getting-Started/" >Getting Started</a>
+            </div>
+        </div>
+        <div id="getting_started_collapse" class="panel-collapse collapse">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{{ site.url }}/Getting-Started/Server-Requirements.html">Server Requirements</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Getting-Started/Installing-DotKernel-3-Frontend.html">Installing DotKernel 3 <code class="highlighter-rouge">frontend</code></a></li>
+                <li class="list-group-item">DotKernel 3 file structure</li>
+                <li class="list-group-item">DotKernel 3 packages</li>
+                <li class="list-group-item">DotKernel 3 features</li>
+            </ul>
+        </div>
+    </div>
+
+<h3 id="before-starting">Working with DotKernel 3</h3>
+
+    <div class="panel">
+        <div class="panel-heading"  >
+            <div class="panel-title" >
+                <button class="arrow_down" data-toggle="collapse" data-target="#guidelines_collapse"></button>
+                <a  href="{{ site.url }}/Guidelines/" >Guidelines</a>
+            </div>
+        </div>
+        <div id="guidelines_collapse" class="panel-collapse collapse">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/PSR/">PSR Guidelines</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/Coding-Guidelines/">Coding Guidelines</a></li>
+                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/Documentation-Guidelines/">Documentation Guidelines</a></li>
+                <li class="list-group-item">Creating an open source DotKernel 3 package (soon)</li>
+                <li class="list-group-item">Creating a private DotKernel 3 package (soon)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel">
+        <div class="panel-heading"  >
+            <div class="panel-title" >
+                <button class="arrow_down" data-toggle="collapse" data-target="#dot_packages_collapse"></button>
+                <a  href="{{ site.url }}/Packages/" >dot-* packages</a>
+            </div>
+        </div>
+        <div id="dot_packages_collapse" class="panel-collapse collapse">
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{{ site.url }}/Packages/README.html">View dot-* package list</a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<!-- END NEW MENU DESIGN -->
 
 <!-- END sidemenu -->
-
-

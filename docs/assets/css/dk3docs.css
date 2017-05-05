@@ -109,7 +109,7 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 .panel-default > .panel-heading { background-image: none; background-color: #fff; border: none; }
 .panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body { border: none; }
 .list-group { box-shadow: none; border-radius: 0; background-color: #fff; }
-.list-group-item { background-color: #fff; }
+.list-group-item { background-color: #fff; margin-top: 10px; }
 #dk3DocsSideMenu ul { padding-left: 40px; }
 #dk3DocsSideMenu ul li { border: none; }
 #dk3DocsSideMenu a:hover { text-decoration: none; }
