@@ -74,11 +74,11 @@ We know we'll have 2 templates, one for the contact form and one for the thank y
 
 ##### contact.html.twig
 ```html
-{% extends '@layout/default.html.twig' %}
+\{% extends '@layout/default.html.twig' %\}
 
-{% block title %}Contact Us{% endblock %}
+\{% block title %\}Contact Us\{% endblock %\}
 
-{% block content %}
+\{% block content %\}
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
@@ -89,16 +89,16 @@ We know we'll have 2 templates, one for the contact form and one for the thank y
             </div>
         </div>
     </div>
-{% endblock %}
+\{% endblock %\}
 ```
 
 ##### thank-you.html.twig
 ```html
-{% extends '@layout/default.html.twig' %}
+\{% extends '@layout/default.html.twig' %\}
 
-{% block title %}Contact Us{% endblock %}
+\{% block title %\}Contact Us\{% endblock %\}
 
-{% block content %}
+\{% block content %\}
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
@@ -107,7 +107,7 @@ We know we'll have 2 templates, one for the contact form and one for the thank y
             </div>
         </div>
     </div>
-{% endblock %}
+\{% endblock %\}
 ```
 
 * Now go back to the contact controller and return this parsed templates
