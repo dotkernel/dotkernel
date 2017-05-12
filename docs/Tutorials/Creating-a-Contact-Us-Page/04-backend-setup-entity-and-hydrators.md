@@ -107,5 +107,5 @@ Having these classes defined, we are ready to implement our contact fieldset and
 
 ### [Prev: Planning the form implementation](03-planning-the-contact-form-implementation.md) | [Next: Creating the contact form](05-creating-the-contact-form.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)

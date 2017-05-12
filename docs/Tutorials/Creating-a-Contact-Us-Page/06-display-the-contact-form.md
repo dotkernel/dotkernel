@@ -65,5 +65,5 @@ Next, we will take this further, by processing the POST data and saving it to th
 
 ### [Prev: Creating the contact form](05-creating-the-contact-form.md) | [Next: Processing the user message](07-processing-the-user-message.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)

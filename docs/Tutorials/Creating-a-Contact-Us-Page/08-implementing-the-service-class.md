@@ -171,5 +171,5 @@ If all good, you should have seen the thank you page which right now it is empty
 
 ### [Prev: Processing the user message](09-sending-notification-emails-to-a-list.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)

@@ -180,5 +180,5 @@ This is the code needed in the controller, We don't have the service implementat
 
 ### [Prev: Display the contact form](06-display-the-contact-form.md) | [Next: Implementing the service class](08-implementing-the-service-class.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)

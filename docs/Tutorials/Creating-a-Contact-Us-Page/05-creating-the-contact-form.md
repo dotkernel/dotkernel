@@ -329,5 +329,5 @@ At this point, you can access the form object from within the contact controller
 
 ### [Prev: Backend setup, entities and hydrators](04-backend-setup-entity-and-hydrators.md) | [Next: Display the contact form](06-display-the-contact-form.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)

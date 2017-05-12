@@ -39,5 +39,5 @@ Lets proceed to implement this step by step, in the logical order.
 
 ### [Prev: Creating the contact controller](02-creating-the-contact-controller.md) | [Next: Backend setup, entities and hydrators](04-backend-setup-entity-and-hydrators.md)
 
-### [View tutorial page](../README.md)
-### [View tutorials list](../../README.md)
+### [View tutorial page](README.md)
+### [View tutorials list](../README.md)
