@@ -327,4 +327,4 @@ class ConfigProvider
 At this point, you can access the form object from within the contact controller through the provided form manager controller plugin. You can use the FQN or the alias that was defined to access the form. We recommend using aliases in this case.
 
 
-### [Prev: Backend setup, entities and hydrators](creating-a-contact-us-page/04-backend-setup-entity-and-hydrators.md) | [Next: Display the contact form](creating-a-contact-us-page/06-display-the-contact-form.md)
+### [Prev: Backend setup, entities and hydrators](04-backend-setup-entity-and-hydrators.md) | [Next: Display the contact form](06-display-the-contact-form.md)

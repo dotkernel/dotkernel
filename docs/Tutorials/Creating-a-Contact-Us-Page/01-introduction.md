@@ -23,4 +23,4 @@ Please note that these modules also provide module specific configuration in the
 Next, we'll focus on creating a simple contact us page, and we will cover forms, input filters, content validation, events, e-mail composition, and how to combine all this into a web page.
 
 
-### [Next: Creating the contact controller](creating-a-contact-us-page/02-creating-the-contact-controller.md)
+### [Next: Creating the contact controller](02-creating-the-contact-controller.md)

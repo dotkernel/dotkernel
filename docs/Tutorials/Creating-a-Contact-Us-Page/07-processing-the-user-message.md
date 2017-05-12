@@ -178,4 +178,4 @@ Here is what happens:
 
 This is the code needed in the controller, We don't have the service implementation yet, and you'll get and error if you try to run the code now. We'll cover the service implementation in the next lesson.
 
-### [Prev: Display the contact form](creating-a-contact-us-page/06-display-the-contact-form.md) | [Next: Implementing the service class](creating-a-contact-us-page/08-implementing-the-service-class.md)
+### [Prev: Display the contact form](06-display-the-contact-form.md) | [Next: Implementing the service class](08-implementing-the-service-class.md)

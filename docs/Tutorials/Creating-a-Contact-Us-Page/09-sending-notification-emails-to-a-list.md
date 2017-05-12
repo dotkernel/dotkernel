@@ -194,4 +194,6 @@ As you can see the options are defined per mapper/entity. The `event_listeners` 
 
 Test your code again. If you have configured the notification receivers, you should receive a notification when a contact form is successfully submitted.
 
-### [Prev: Implementing the service class](creating-a-contact-us-page/08-implementing-the-service-class.md)
+### [Prev: Implementing the service class](08-implementing-the-service-class.md)
+
+### [Back to tutorials page](../README.md)
