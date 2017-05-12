@@ -165,3 +165,6 @@ In our example, we need this because our route is defined as `/contact[/{action}
 
 
 ### [Prev: Introduction](01-introduction.md) | [Next: Planning the contact form implementation](03-planning-the-contact-form-implementation.md)
+
+### [View tutorial page](../README.md)
+### [View tutorials list](../../README.md)

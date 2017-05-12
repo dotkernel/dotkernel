@@ -64,3 +64,6 @@ Check the contact page in the browser, it should display properly now.
 Next, we will take this further, by processing the POST data and saving it to the backend if valid.
 
 ### [Prev: Creating the contact form](05-creating-the-contact-form.md) | [Next: Processing the user message](07-processing-the-user-message.md)
+
+### [View tutorial page](../README.md)
+### [View tutorials list](../../README.md)

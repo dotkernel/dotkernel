@@ -24,3 +24,6 @@ Next, we'll focus on creating a simple contact us page, and we will cover forms,
 
 
 ### [Next: Creating the contact controller](02-creating-the-contact-controller.md)
+
+### [View tutorial page](../README.md)
+### [View tutorials list](../../README.md)

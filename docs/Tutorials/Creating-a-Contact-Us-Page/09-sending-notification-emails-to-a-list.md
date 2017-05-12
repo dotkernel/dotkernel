@@ -196,4 +196,5 @@ Test your code again. If you have configured the notification receivers, you sho
 
 ### [Prev: Implementing the service class](08-implementing-the-service-class.md)
 
-### [Back to tutorials page](../README.md)
+### [View tutorial page](../README.md)
+### [View tutorials list](../../README.md)

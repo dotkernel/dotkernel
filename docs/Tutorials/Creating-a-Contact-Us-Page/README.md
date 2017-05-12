@@ -10,3 +10,4 @@
  * [Implementing the service class](08-implementing-the-service-class.md)
  * [Sending notification e-mails to a list](09-sending-notification-emails-to-a-list.md)
 
+### [View tutorials list](../README.md)

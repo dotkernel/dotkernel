@@ -106,3 +106,6 @@ Returning to our case, we said that for this simple case, and the way the entity
 Having these classes defined, we are ready to implement our contact fieldset and form. Go ahead to the next lesson.
 
 ### [Prev: Planning the form implementation](03-planning-the-contact-form-implementation.md) | [Next: Creating the contact form](05-creating-the-contact-form.md)
+
+### [View tutorial page](../README.md)
+### [View tutorials list](../../README.md)
