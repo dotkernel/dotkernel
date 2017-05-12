@@ -146,11 +146,11 @@ The code is ready to be tested. If a valid input is provided and you have corect
 If all good, you should have seen the thank you page which right now it is empty. We'll leave this up to you to change as desired. We will put some text and a link to go back to the home page for now.
 ##### thank-you.html.twig
 ```html
-{% extends '@layout/default.html.twig' %}
+{ % extends '@layout/default.html.twig' %}
 
-{% block title %}Contact Us{% endblock %}
+{ % block title %}Contact Us{ % endblock %}
 
-{% block content %}
+{ % block content %}
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
@@ -166,7 +166,7 @@ If all good, you should have seen the thank you page which right now it is empty
             </div>
         </div>
     </div>
-{% endblock %}
+{ % endblock %}
 ```
 
 ### [Prev: Processing the user message](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/07-processing-the-user-message.md) | [Next: Sending notification emails to a list](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/09-sending-notification-emails-to-a-list.md)
