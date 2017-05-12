@@ -30,11 +30,11 @@ In our case, the first one is appropriate. In order to display the form, as requ
 
 ##### contact.html.twig
 ```html
-{% extends '@layout/default.html.twig' %}
+{ % extends '@layout/default.html.twig' %}
 
-{% block title %}Contact Us{% endblock %}
+{ % block title %}Contact Us{ % endblock %}
 
-{% block content %}
+{ % block content %}
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-6 col-lg-offset-3 no-padding forms">
@@ -53,8 +53,10 @@ In our case, the first one is appropriate. In order to display the form, as requ
             </div>
         </div>
     </div>
-{% endblock %}
+{ % endblock %}
 ```
+
+> Note: due to technical restrictions the `{` and `%` must be separated.
 
 The `{{ messagesPartial('partial::alerts') }}` is not form related, it is a twig extension defined by DotKernel to simplify the flash messenger parsing. We put this here in order to display the form errors if any, or other types of messages above the form.
 
