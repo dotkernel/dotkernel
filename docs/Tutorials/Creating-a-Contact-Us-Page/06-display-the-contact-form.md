@@ -42,10 +42,10 @@ In our case, the first one is appropriate. In order to display the form, as requ
                 <div class="form-content">
                     {{ messagesPartial('partial::alerts') }}
 
-                    {% set dummy = form.prepare() %}
+                    { % set dummy = form.prepare() %}
                     {{ form().openTag(form) | raw }}
 
-                    {% include '@partial/form-display.html.twig' with {'form': form, 'showLabels': true} %}
+                    { % include '@partial/form-display.html.twig' with {'form': form, 'showLabels': true} %}
 
                     {{ form().closeTag() | raw }}
 
