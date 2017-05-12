@@ -169,4 +169,4 @@ If all good, you should have seen the thank you page which right now it is empty
 { % endblock %}
 ```
 
-### [Prev: Processing the user message](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/07-processing-the-user-message.md) | [Next: Sending notification emails to a list](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/09-sending-notification-emails-to-a-list.md)
+### [Prev: Processing the user message](09-sending-notification-emails-to-a-list.md)

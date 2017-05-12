@@ -63,4 +63,4 @@ The `{{ messagesPartial('partial::alerts') }}` is not form related, it is a twig
 Check the contact page in the browser, it should display properly now.
 Next, we will take this further, by processing the POST data and saving it to the backend if valid.
 
-### [Prev: Creating the contact form](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/05-creating-the-contact-form.md) | [Next: Processing the user message](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/07-processing-the-user-message.md)
+### [Prev: Creating the contact form](creating-a-contact-us-page/05-creating-the-contact-form.md) | [Next: Processing the user message](creating-a-contact-us-page/07-processing-the-user-message.md)

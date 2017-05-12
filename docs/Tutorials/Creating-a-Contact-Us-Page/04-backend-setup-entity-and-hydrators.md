@@ -105,4 +105,4 @@ Returning to our case, we said that for this simple case, and the way the entity
 
 Having these classes defined, we are ready to implement our contact fieldset and form. Go ahead to the next lesson.
 
-### [Prev: Planning the form implementation](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/03-planning-the-contact-form-implementation.md) | [Next: Creating the contact form](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/05-creating-the-contact-form.md)
+### [Prev: Planning the form implementation](creating-a-contact-us-page/03-planning-the-contact-form-implementation.md) | [Next: Creating the contact form](creating-a-contact-us-page/05-creating-the-contact-form.md)

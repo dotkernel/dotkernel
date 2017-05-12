@@ -37,4 +37,4 @@ We took the following decisions
 
 Lets proceed to implement this step by step, in the logical order.
 
-### [Prev: Creating the contact controller](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/02-creating-the-contact-controller.md) | [Next: Backend setup, entities and hydrators](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/04-backend-setup-entity-and-hydrators.md)
+### [Prev: Creating the contact controller](creating-a-contact-us-page/02-creating-the-contact-controller.md) | [Next: Backend setup, entities and hydrators](creating-a-contact-us-page/04-backend-setup-entity-and-hydrators.md)

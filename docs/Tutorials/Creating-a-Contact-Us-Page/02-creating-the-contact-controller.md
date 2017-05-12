@@ -164,4 +164,4 @@ The route option `reuse_result_params` needs a bit of explanation here. It is an
 In our example, we need this because our route is defined as `/contact[/{action}]`. If the above option would have been set to `true`(as it is by default), if we would have been on a page like `/contact/thank-you`, the menu item will point to the same URI, because the matched `action` parameter would have been merged into the undefined route parameters. This is not the desired behaviour, so anytime you encounter a problem like this, remember to disable this option as described above.
 
 
-### [Prev: Introduction](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/01-introduction.md) | [Next: Planning the contact form implementation](https://github.com/dotkernel/dotkernel/blob/master/tutorials/creating-a-contact-us-page/03-planning-the-contact-form-implementation.md)
+### [Prev: Introduction](creating-a-contact-us-page/01-introduction.md) | [Next: Planning the contact form implementation](creating-a-contact-us-page/03-planning-the-contact-form-implementation.md)
