@@ -6,5 +6,5 @@ We'll use the existing contact us module that we've written in [this tutorial](h
 
 ## Prerequisites
 
-* follow the (Create a contact us page tutorial)[https://github.com/dotkernel/dotkernel/tree/master/tutorials/creating-a-contact-us-page]
+* follow the [Create a contact us page tutorial](https://github.com/dotkernel/dotkernel/tree/master/tutorials/creating-a-contact-us-page)
 * create a new git repository where we'll keep this package
