@@ -159,10 +159,10 @@ To use the `Zend Diactoros` classes add this at the beggining of the php file:
 ```php
 <?php
 
-// autoloading
-
 use Zend\Diactoros\ServerRequestFactory;
 use Zend\Diactoros\Response;
+
+// autoloading
 
 $request = ServerRequestFactory::fromGlobals($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $response = new Response();
