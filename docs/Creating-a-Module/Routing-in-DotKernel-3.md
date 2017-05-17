@@ -103,10 +103,10 @@ $app->route(
 
 ## Route allowing GET & POST and conditional paramter with multiple middleware 
 
- * one parameter
+ * One parameter
    * `productId` is required and must be a digit (`\d+` is the regex pattern for digits)
- * two middleware
- * responds to GET & POST
+ * Two middleware
+ * Responds to GET & POST
    * `GET` - display the product data (before editing)
    * `POST` - change the product data
 
