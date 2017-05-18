@@ -110,7 +110,7 @@ We know we'll have 2 templates, one for the contact form and one for the thank y
 { % endblock %}
 ```
 
-> Note: due to technical restrictions the `{` and `%` must be separated.
+> Note: due to technical restrictions the `{` and `%` are separated in the documentation. Please remove the space between them manually. 
 
 
 * Now go back to the contact controller and return this parsed templates

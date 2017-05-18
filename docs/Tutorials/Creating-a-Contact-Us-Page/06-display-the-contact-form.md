@@ -56,7 +56,7 @@ In our case, the first one is appropriate. In order to display the form, as requ
 { % endblock %}
 ```
 
-> Note: due to technical restrictions the `{` and `%` must be separated.
+> Note: due to technical restrictions the `{` and `%` are separated in the documentation. Please remove the space between them manually. 
 
 The `{{ messagesPartial('partial::alerts') }}` is not form related, it is a twig extension defined by DotKernel to simplify the flash messenger parsing. We put this here in order to display the form errors if any, or other types of messages above the form.
 
