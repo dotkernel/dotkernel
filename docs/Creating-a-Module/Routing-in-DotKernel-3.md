@@ -19,14 +19,14 @@ Routing based on path:
 * `http://example.com/product/list/electronics` - will do a product listing on electronics category
 * `http://example.com/product/view/16` - will display details of product with `id=16`
 
-These
+
 
 Routing based on queries:
 * `http://example.com/index.php?action=product-list` - will do a product list
 * `http://example.com/index.php?action=product-list&category=electronics` - will do a product list
 * `http://example.com/index.php?action=product-list&category=electronics` - will do a product list
 
-The Router
+
 
 The DotKernel 3 routing signature is the following:
 
