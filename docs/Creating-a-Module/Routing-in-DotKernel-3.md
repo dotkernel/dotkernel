@@ -14,7 +14,7 @@ To add a route edit the "route list" defined in the `config/router.php` file:
 ```php
 $app->route(
     '/myModule/',  // route path
-    [Frontend\MyModule\Controller\MyModuleController::class], // middleware stack
+    [MyModule\Controller\MyModuleController::class], // middleware stack
     ['GET', 'POST'], // HTTP methods
     'app.mymodule' // route name
 );
@@ -23,7 +23,7 @@ $app->route(
 Or the short version:
 
 ```php
-$app->route('/myModule/', [Frontend\MyModule\Controller\MyModuleController::class], ['GET', 'POST'], 'app.mymodule');
+$app->route('/myModule/', [MyModule\Controller\MyModuleController::class], ['GET', 'POST'], 'app.mymodule');
 ```
 
 Parameters:
@@ -34,7 +34,7 @@ Parameters:
 
 # Examples
 
-All the classes and routes below are fictional and 
+> Note: All `My Module` related classes are assumed and may not exist in your project.
 
 ## Simple Route
 
@@ -46,7 +46,7 @@ All the classes and routes below are fictional and
 ```php
 $app->route(
     '/product/list',  // route path
-    Frontend\MyModule\Controller\ProductListController::class, // only one middleware
+    MyModule\Controller\ProductListController::class, // only one middleware
     ['GET'], // HTTP methods, only get
     'shop.product' // route name
 );
@@ -62,7 +62,7 @@ $app->route(
 ```php
 $app->route(
     '/product/list/{categoryId}',  // route path
-    Frontend\MyModule\Controller\ProductListController::class, // only one middleware
+    MyModule\Controller\ProductListController::class, // only one middleware
     ['GET'], // HTTP methods
     'shop.list-category' // route name
 );
@@ -78,7 +78,7 @@ $app->route(
 ```php
 $app->route(
     '/product/list[/{categoryId}]',  // route path
-    Frontend\MyModule\Controller\ProductListController::class, // only one middleware
+    MyModule\Controller\ProductListController::class, // only one middleware
     ['GET'], // HTTP methods
     'shop.list-category-optional' // route name
 );
@@ -95,7 +95,7 @@ $app->route(
 ```php
 $app->route(
     '/product/list/{categoryId}/[/{sort}]',  // route path
-    Frontend\MyModule\Controller\ProductListController::class, // only one middleware
+    MyModule\Controller\ProductListController::class, // only one middleware
     ['GET'], // HTTP methods
     'shop.list-category-optional' // route name
 );
@@ -103,10 +103,10 @@ $app->route(
 
 ## Route allowing GET & POST and conditional paramter with multiple middleware 
 
- * One parameter
+ * one parameter
    * `productId` is required and must be a digit (`\d+` is the regex pattern for digits)
- * Two middleware
- * Responds to GET & POST
+ * two middleware
+ * responds to GET & POST
    * `GET` - display the product data (before editing)
    * `POST` - change the product data
 
@@ -115,8 +115,8 @@ $app->route(
 $app->route(
     '/product/edit/{productId:\d+}',  // route path
     [
-        Frontend\MyModule\Validator\ProductDataValidator::class,
-        Frontend\MyModule\Controller\ProductListController::class,
+        MyModule\Validator\ProductDataValidator::class,
+        MyModule\Controller\ProductListController::class,
     ], // only one middleware
     ['GET', 'POST'], // HTTP methods
     'shop.list-category-optional' // route name
