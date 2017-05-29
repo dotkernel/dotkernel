@@ -3,7 +3,7 @@
 ## What is PSR-7
 
 PSR-7 is a set of common interfaces defined by PHP Framework Interop Group.
-These interfaces are representing HTTP messages, and URIs for use with HTTP messages.
+These interfaces are representing HTTP messages, and URIs for use when communicating trough HTTP.
 
 > HTTP messages are the foundation of web development. Web browsers and HTTP clients such as cURL create HTTP request messages that are sent to a web server, which provides an HTTP response message. Server-side code receives an HTTP request message, and returns an HTTP response message.
 
@@ -159,10 +159,10 @@ To use the `Zend Diactoros` classes add this at the beggining of the php file:
 ```php
 <?php
 
-// autoloading
-
 use Zend\Diactoros\ServerRequestFactory;
 use Zend\Diactoros\Response;
+
+// autoloading
 
 $request = ServerRequestFactory::fromGlobals($_SERVER, $_GET, $_POST, $_COOKIE, $_FILES);
 $response = new Response();
