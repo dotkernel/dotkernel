@@ -1,7 +1,3 @@
----
-layout: default
----
-
 # DotKernel 3 Documentation
 ---
 
