@@ -1,7 +1,7 @@
 # Routing in DotKernel 3
 ---
 
-DotKernel 3 is based on [Zend Expressive](https://docs.zendframework.com/zend-expressive/)and most parts of this article should be compatible with Zend Expressive as well.
+DotKernel 3 is based on [Zend Expressive](https://docs.zendframework.com/zend-expressive/) and most parts of this article should be compatible with Zend Expressive as well.
 
 ## What is Routing?
 
