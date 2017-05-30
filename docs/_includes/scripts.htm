@@ -10,7 +10,16 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
+<!-- Summary hide on docs.dotkernel.com -->
+<script type="text/javascript">
+$( document ).ready(function(){
+	// check if host is docs.dotkernel.com
+	if( window.location.href.indexOf('docs.dotkernel.com') > -1) {
+		// $('#beforeSummary').next().hide();
+		$('#beforeSummary').next().replaceWith('<a href="{{ site.url }}/Disappear-Message.html"> Did something just disappear? </a>');
+	}
+});
+</script>
 
 <!-- END Scripts -->
 
