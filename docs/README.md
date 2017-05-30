@@ -10,7 +10,7 @@ If there's anything you feel we could do better, please feel free to make pull r
 <!-- This menu was hardcoded because .md files cannot be included directly in github repository -->
 <!-- Note: Always work on _includes/menu.md and copy it here. NEVER MODIFY MENU DIRECTLY on this page -->
 <!-- Replace "{{ site.url }}/" with "" -->
-<!-- Replace ".html" with ".md" -->
+<!-- Replace '.html' with '.md' as html files are actually files generated from md files and will be replaced automatically  -->
 
 
 <!-- DO NOT ADD ANYTHING BETWEEN THE DIVs AND THE MARKDOWN BELOW -->
