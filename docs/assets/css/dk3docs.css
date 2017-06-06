@@ -121,3 +121,8 @@ header.navbar .container { max-width: 100%; padding-bottom: 0; padding-left: 50p
 .arrow_down { width: 20px; height: 13px; margin-top: -18px; }
 <!-- arrows moved in styling.htm -->
 .smallerFont { font-size: 13px; }
+
+table { width: 100%; }
+table thead th { background-color: #fff; padding: 8px; }
+table tr:nth-of-type(2n+1) { background-color: #f9f9f9; }
+table, tr, td { border: 1px solid #ddd; padding: 8px; }
