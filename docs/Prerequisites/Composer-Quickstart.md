@@ -126,7 +126,7 @@ To create a new composer package based on an existing composer package simply ru
 * `vendor` - dependencies folder
 * `composer.json` - composer package file
 * `src` - the source code for specified project
-* `LICENSE.md` - License file (markdown format)
+* `LICENSE` - License file (plain text format)
 * `README.md` - Project's instructions (markdown format)
 
 Other directory recommendations:
