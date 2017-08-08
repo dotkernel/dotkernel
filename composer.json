@@ -4,7 +4,7 @@
   "require" : {
     "php" : "^7.1"
   },
-  "license" : "MIT License",
+  "license" : "MIT",
   "keywords" : [ "framework", "dk", "dot", "dotkernel", "expressive" ],
   "type" : "metapackage",
   "homepage" : "https://www.dotkernel.com"
