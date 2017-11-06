@@ -1,2 +1,7 @@
 layout: default
 url: https://docs.dotkernel.com
+
+defaults:
+  -
+    values:
+      layout: "default"
