@@ -1,4 +1,4 @@
-### Creating a DotKernel 3 Module
+# Creating a DotKernel 3 Module
 * [Requirements](Requirements.md)
 * [Creating a Module](Creating-a-simple-Module.md)
 * Running/Testing (inside DotKernel 3, Testing inside another project, Standalone testing)

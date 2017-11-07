@@ -1,7 +1,7 @@
 # Coding Guidelines
 
 ## Coding Standard
-DotKernel 3 follows the rules described in `PHP-FIG` PSR-2 document.
+DotKernel 3 follows the rules described in the `PHP-FIG` PSR-2 document.
 
 ### [PSR-2](../PSR/PSR-2.md)
 
@@ -32,7 +32,7 @@ Classes that represent entities are following the following structure:
 ### Colection
 
 The `collection` is the representation of a list of objects.
-Programatically speaking: a `collection` is an iterable set of `entities`. 
+Programatically speaking: a `collection` is an iterable set of `entities`.
 
 
 ##### Example:
@@ -49,7 +49,7 @@ Classes that represent entities are following the following structure:
  * `PostCollection` - represents a blog post list
  * `DocumentCollection` - represents a document list
  * `LocationCollection` - represents a location list
- 
+
 
 
 ## Middleware just calls the code
@@ -70,6 +70,6 @@ PATCH
 DELETE
 
 Your `services`/`modules`^TNE^ will have interfaces for
-If using `EMS` 
+If using `EMS`
 
 ^TNE^ - term needs explanation

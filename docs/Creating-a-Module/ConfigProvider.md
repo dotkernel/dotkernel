@@ -1,4 +1,4 @@
-### The DotKernel 3 ConfigProvider
+# The DotKernel 3 ConfigProvider
 
 The ConfigProvider is what's responsible for making sure your Module will be loaded and the config will be added to the global array.
 
@@ -71,8 +71,7 @@ class ConfigProvider
 
 We can see that in the ConfigProvider's `invoke` method, we register our dependencies, and other configuration setup.
 
-The dependencies include [factories]() and other settings that goes into the [service container]().
-
-The commands being registered here are console-commands, which can be run from the `php dot` command
+* The dependencies include [factories]() and other settings that goes into the [service container]().
+* The commands being registered here are console-commands, which can be run from the `php dot` command
 
 Simply put, it's where you link your Module to the main application.

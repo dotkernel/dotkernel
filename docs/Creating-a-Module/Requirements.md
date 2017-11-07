@@ -1,4 +1,4 @@
-### Requirements for creating a DotKernel 3 Module
+# Requirements for creating a DotKernel 3 Module
 
 DotKernel 3 modules are fairly simple to create, as they work pretty much just like a normal application, with just minor changes.
 > The [ConfigProvider.php](ConfigProvider.md) being the most important change.
