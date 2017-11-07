@@ -8,7 +8,7 @@ DotKernel 3 is based on [Zend Expressive](https://docs.zendframework.com/zend-ex
 Routing is assigning a behaviour to a specific URL pattern.
 
 According to the Zend Framework 1 documentation:
-> Routing is the process of taking a URI endpoint (that part of the URI which comes after the base URL) and decomposing it into parameters to determine which module, controller, and action of that controller should receive the request.
+> Routing is the process of taking a URI endpoint (that part of the URI which comes after the base URL) and decomposing it into parameters to determine which Module, controller, and action of that controller should receive the request.
 
 When using middleware the routing is made by pointing patterns to the desired middleware class(es).
 
@@ -96,7 +96,7 @@ $app->route(
 ## Route with optional parameter
 
 * One (optional) parameter
-  * if `categoryId` is defined show products with given category id, else show all product 
+  * if `categoryId` is defined show products with given category id, else show all product
 * Only one middleware
 * Responding exclusively to `GET` HTTP method
 
@@ -126,7 +126,7 @@ $app->route(
 );
 ```
 
-## Route allowing GET & POST and conditional paramter with multiple middleware 
+## Route allowing GET & POST and conditional paramter with multiple middleware
 
  * one parameter
    * `productId` is required and must be a digit (`\d+` is the regex pattern for digits)
