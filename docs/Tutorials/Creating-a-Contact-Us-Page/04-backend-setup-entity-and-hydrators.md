@@ -1,14 +1,22 @@
-# Backend setup, entity and hydrators
+# Backend setup, Entity and hydrators
 
 First of all, we should establish the database structure. We'll store contact messages in one table, lets call it `user_message`. We need at least the following columns: id, email, name, subject, message, created. Go ahead and create the table. We'll store the email, because the contact form is public, users won't need to authenticate in order to send a message.
 
-## User message entity class
+They have the following definitions:
+* id - Unsigned integer, autoincrement, primary key
+* email - varchar(200)
+* name - varchar(120)
+* subject - varchar(120)
+* message - text
+* created - timestamp
 
-An entity class is a class that represents a model in our code. Others prefer to call it model class instead of entity. DotKernel uses the entity label to refer to a model as a convention. Entities should be modeled around the database. Usually an entity models one row from a table, in the simplest case, but can also compose other entities, or have propeties that come from other tables.
+## User message Entity class
 
-In our case, we fall on the simple side of the problem. Our object is pretty simple. We'll use an entity class to model the database row without any relationships. So, lets create the entity class, based on the user_message table. Please make sure to name the properties the same way as the column names. This will make things easier, as you won't need to do any mapping.
+An Entity class is a class that represents a model in our code. Others prefer to call it a Model class instead of Entity. DotKernel uses the Entity label to refer to a Model as a convention. Entities should be modeled around the database. Usually an Entity models one row from a table, in the simplest case, but can also include other Entities, or have propeties that come from other tables or providers.
 
-Create a new folder inside `src/App/src` and call it `Entity`, in case it does not already exists. We'll use this folder to store all our entity classes defined in this module.
+Our object is pretty simple, we'll use an Entity class to model the database row without any relationships. Lets create the Entity class, based on the `user_message` table. Please make sure to name the properties the same way as the column names. This will make things easier, as you won't need to do any mapping.
+
+Create a new folder inside `src/App/src` and call it `Entity`, in case it does not already exists. We'll use this folder to store all our Entity classes defined in this module.
 
 In this folder, create the `UserMessageEntity` class
 ##### UserMessageEntity.php
@@ -73,7 +81,7 @@ class UserMessageEntity
     {
         $this->subject = $subject;
     }
-    
+
     public function getMessage(): string
     {
         return $this->message ?? '';
@@ -86,22 +94,22 @@ class UserMessageEntity
 }
 ```
 
-Our convention, when creating the entity, is to declare its properties as protected and generate getters/setters pair for each one. This may seem a lot, but we recommend using and IDE that supports getter/setter generation.
+Our convention, when creating the Entity, is to declare its properties as protected and generate getters/setters pair for each one. This may seem a lot, but we recommend using and IDE that supports getter/setter generation.
 
 ## Entity hydrators
 
-DotKernel uses its [dot-hydrator](https://github.com/dotkernel/dot-hydrator) package to define hydrators, which is entirely based on zend framework's [zend-hydrator](https://github.com/zendframework/zend-hydrator). Please make sure to check both links for documentation and understand what an hydrator is.
+DotKernel uses its [dot-hydrator](https://github.com/dotkernel/dot-hydrator) package to define hydrators, which is entirely based on zend framework's [zend-hydrator](https://github.com/zendframework/zend-hydrator). Please make sure to check both links for documentation and and informatoin as to what a hydrator is.
 
-Our dot-hydrator package is just an extension to the zend framework hydrator package. In addition, it provides 2 custom hydrators that extends zend framework's `ClassMethods` hydrator. One is `ClassMethodsCamelCase` that we will use to hydrate our entity. Custom hydrators can be used where appropriate. If writing a custom hydrator, just make sure to register it in the hydrator manager service. See provided links on how to do this.
+Our dot-hydrator package is just an extension to the zend framework hydrator package. In addition, it provides 2 custom hydrators that extends zend framework's `ClassMethods` hydrator. One is `ClassMethodsCamelCase` that we will use to hydrate our Entity. Custom hydrators can be used where appropriate. If you choose to write a custom hydrator, just make sure to register it in the hydrator manager service. See provided links on how to do this.
 
-So what is a hydrator you may ask. An hydrator must implement zend's `HydratorInterface` which defines 2 methods: `extract($object)` and `hydrate($data, $prototype)`. An hydrator's role is to convert an object(entity) to a php array and vice-versa using the defined hydrator methods.
+A hydrator must implement Zends `HydratorInterface` which defines 2 methods: `extract($object)` and `hydrate($data, $prototype)`. A hydrators role is to convert an object(Entity) to a php array and vice-versa using the defined hydrator methods.
 
-* when we want to save an entity to the database, we'll extract the data and send it to the database abstraction layer.
-* when fetching an entity, it will come in array form which will be hydrated into an entity object.
+* When we want to save an Entity to the database, we'll extract the data and send it to the database abstraction layer.
+* When fetching an Entity, it will come in array form which will be hydrated into an Entity object.
 
-Hydrators can be used on their own, but Zend Framework and consequently DotKernel provide hydrator integration with forms and fieldsets, to automatically do the job of hydration. Also, DotKernel packages that deal with entity manipulation, often rely on configured hydrators, in order to seemlessly extract and hydrate objects.
+Hydrators can be used on their own, but Zend Framework, and consequently, DotKernel provide hydrator integration with forms and fieldsets, to automatically do the hydration. Also, DotKernel packages that deal with Entity manipulation, often rely on configured hydrators, in order to seemlessly extract and hydrate objects.
 
-Returning to our case, we said that for this simple case, and the way the entity class is defined, the `ClassMethodsCamelCase` is perfect for our needs. Keep in mind we'll use this. This hydrator takes the array keys and call the appropriate setters to hydrate the object.
+The way the Entity class is defined, the `ClassMethodsCamelCase` is perfect for our needs, as we want our class methods to be camel-cased. Keep in mind we'll use this. This hydrator takes the array keys and call the appropriate setters to hydrate the object.
 
 Having these classes defined, we are ready to implement our contact fieldset and form. Go ahead to the next lesson.
 

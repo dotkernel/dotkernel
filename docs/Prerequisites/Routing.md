@@ -15,20 +15,20 @@ When using middleware the routing is made by pointing patterns to the desired mi
 ### Examples
 
 Routing based on path:
-* `http://example.com/product/list` - will do a product listing
-* `http://example.com/product/list/electronics` - will do a product listing on electronics category
+* `http://example.com/product/list` - will display a product listing
+* `http://example.com/product/list/electronics` - will display a product listing on electronics category
 * `http://example.com/product/view/16` - will display details of product with `id=16`
 
 
 
 Routing based on queries:
-* `http://example.com/index.php?action=product-list` - will do a product list
-* `http://example.com/index.php?action=product-list&category=electronics` - will do a product list
-* `http://example.com/index.php?action=product-list&category=electronics` - will do a product list
+* `http://example.com/index.php?action=product-list` - will display a product list
+* `http://example.com/index.php?action=product-list&category=electronics` - will display a product listing on electronics category
+* `http://example.com/index.php?action=product&id=16` - will display details of product with `id=16`
 
 
 
-The DotKernel 3 routing signature is the following:
+#### The DotKernel 3 routing signature is the following:
 
 ```php
 public function route(string $path, array|callable $middleware = null, string|array $methods = null, string $name = null);
@@ -55,7 +55,7 @@ Parameters:
 * `$path` - string path to match against (can also be a regex pattern)
 * `$middleware` - `callable` or `array` of callables, the middlewares to execute on specified path
 * `$methods` - HTTP methods to respond for (usually GET & POST), but can also respond to `PUT`, `PATCH` and `DELETE`
-* `$name` - a friendly name for the route, it can be used for internal communication when reffering to the specified route
+* `$name` - a name for the route, used for URL generation, to make sure the route is always generated correctly, even if it changes
 
 # Examples
 
@@ -119,7 +119,7 @@ $app->route(
 
 ```php
 $app->route(
-    '/product/list/{categoryId}/[/{sort}]',  // route path
+    '/product/list/{categoryId}[/{sort}]',  // route path
     MyModule\Controller\ProductListController::class, // only one middleware
     ['GET'], // HTTP methods
     'shop.list-category-sort-optional' // route name

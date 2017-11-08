@@ -4,7 +4,7 @@
 PSR-7 middleware foundation for building and dispatching middleware pipelines.
 
 This package relies on `zendframework/zend-diactoros`, which is Zend's implementation of PSR-7 interfaces.
-With Stratigility applications can be built out of middleware.
+Using Stratigility, we can build applications out of middleware.
 
 
 # Example
@@ -16,7 +16,7 @@ Below is an example of piping middlewares to different routes.
 > Note: Multiple middleware can be piped to routes.
 
 ## Initializing Application (Stratigility\MiddlewarePipe)
- 
+
 ```php
 <?php
 //declare the fully qualified class names that we use at the beginning of the file

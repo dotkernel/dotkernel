@@ -11,7 +11,7 @@ DotKernel authentication service abstractions component
 
  * dot-authorization
 DotKernel authorization service abstractions component
- 
+
  * dot-event
 DotKernel event component extending and customizing zend-eventmanager
 
