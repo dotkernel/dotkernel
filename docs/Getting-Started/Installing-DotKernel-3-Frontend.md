@@ -18,7 +18,7 @@ Example:
 * absolute path `/var/www/dk3`
 * or relative path `dk3` (equivalent with `./dk3`)
 
-## Installing the `frontend` Composer Package
+## Installing the `frontend` Composer package
 
 Depending on what the purpose of your project is, one of the following packages must be installed
  * `frontend` - for web applications

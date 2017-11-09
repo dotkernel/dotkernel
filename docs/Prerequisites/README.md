@@ -6,7 +6,7 @@ Prerequisites
  * PSR-4: Autoloading
  * OOP1: Interfaces, Abstract classes
  * OOP2: Type Hinting, Dependencies, Dependency Injection
- * Factories
+ * [Factories](Factories)
  * Services
  * [Composer Quickstart](Composer-Quickstart.md)
  * [Composer Package Versions](Composer-Package-Versions.md)
