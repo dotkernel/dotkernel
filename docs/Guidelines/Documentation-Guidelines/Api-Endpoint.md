@@ -1,4 +1,4 @@
-# Guidelines for writing an API Endpoint Documentation
+# Writing an API Endpoint Documentation
 ### Draft
 
 Before writing any code there must be a specification regarding the format/content negociation

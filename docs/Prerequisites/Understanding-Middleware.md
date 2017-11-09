@@ -8,13 +8,11 @@ Middleware is code that exists between the request and response, and which can t
 Middleware makes it easier for software developers to implement communication and input/output, so they can focus on the specific purpose of their application.
 
 
-In web services the `Input` represents the `Request` received and `Output` represents the `Response` to be sent.
+In web services the `Input` represents the `Request` received, and `Output` represents the `Response` to be sent.
 
-How using middleware in applications actually looks like.
+# Using middlewares
 
-# Middleware use 
-
-Middleware can be used but not limited to the following purposes:
+Middleware can be used to, but is not limited to, the following purposes:
 
 * A/B Testing
 * Debugging
@@ -57,7 +55,7 @@ $middlewareFunction = function ($request, $response, $next) {
 };
 ```
 
-## As an invokable object 
+## As an invokable object
 
 ```php
 <?php
@@ -68,7 +66,7 @@ class MyMiddleware
     {
         $this->myDependency = $myDependency;
     }
-    
+
     public function __invoke()
     {
         //
@@ -81,15 +79,16 @@ class MyMiddleware
 ## Which one to use?
 The function definition version can be used when working with simple examples / very small projects for a better understanding.
 Depending on the programming principles you use and what's more convenient you can also use function definitions instead of invokable classes.
-We strongly recommend that you use the invokable class version.
+
+> We strongly recommend that you use the invokable class option.
 
 ### Why Invokable Objects
-Where is the catch? Why use Invokable classes if the functions do the same thing. 
+Where is the catch? Why use Invokable classes if the functions do the same thing.
 It all narrows to the point where external resources are involved.
 
-What is the difference between a class  and a function?
-* has access to other methods
-* has access to dependencies
+What is the difference between a class and a function?
+* A class has access to other methods
+* a class has access to dependencies
 
 How does it have access to external resources?
 
@@ -124,7 +123,7 @@ $middleware = [];
 // function 1 - displays one message, function 2 - displays another message. etc.
 $middleware[] = function($request, $response, $next) {
     // do something
-    
+
     // pass the control to next middleware, can also be called before "doing something"
     // $response = $next($request, $response);
     return $response;
@@ -146,10 +145,10 @@ echo $response->getBody(); // calls $response->getBody()->toArray() for displayi
 
 ## Middleware in practice
 
-Middleware won't be called just using a foreach statement. Requests will be routed and 
-An application will handle the middleware.
+> Note: Middlewares won't be called just using a foreach statement.
+Requests will be jandled by the application, which will call the correct middlewares.
 
-Example dispatcher applications: 
+Example dispatcher applications:
 Zend Stratiglility, Zend Expressive, etc.
 
 

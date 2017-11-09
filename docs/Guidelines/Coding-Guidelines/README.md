@@ -1,9 +1,9 @@
 # Coding Guidelines
 
 ## Coding Standard
-DotKernel 3 follows the rules described in `PHP-FIG` PSR-2 document.
+DotKernel 3 follows the rules described in the `PHP-FIG` [PSR-2 document](../PSR/PSR-2.md).
 
-### [PSR-2](../PSR/PSR-2.md)
+### PSR-2
 
 ## Entities and Collections
 
@@ -14,7 +14,7 @@ The `entity` is the representation of an object.
 ##### Example:
 * a `post`
 * a `document`
-* a `location`
+* a `user` relation
 
 #### Class Naming
 Classes that represent entities are following the following structure:
@@ -25,20 +25,20 @@ Classes that represent entities are following the following structure:
 ##### Example:
  * `PostEntity` - represents a blog post
  * `DocumentEntity` - represents a document
- * `LocationEntity` - represents a location
+ * `DocuentUserEntity` - represents a document with a user relation
 
 > Note: our recommendation is to name the class attributes (object properties) the same as the column names in persistent storage (database)
 
 ### Colection
 
 The `collection` is the representation of a list of objects.
-Programatically speaking: a `collection` is an iterable set of `entities`. 
+Programatically speaking: a `collection` is an iterable set of `entities`.
 
 
 ##### Example:
 * a list of `posts`
 * a list of `documents`
-* a list of `locations`
+* a list of `users` in relation to the document
 
 #### Class Naming
 Classes that represent entities are following the following structure:
@@ -48,12 +48,10 @@ Classes that represent entities are following the following structure:
 ##### Example:
  * `PostCollection` - represents a blog post list
  * `DocumentCollection` - represents a document list
- * `LocationCollection` - represents a location list
- 
+ * `DocumentUserCollection` - represents a list of users
 
 
-## Middleware just calls the code
-Entities^TNE^ Classes^TNE^
+## Middleware simply calls the code
 
 The "Resources" or the "Middleware" should contain only base operation.
 For instance, queries like `SELECT * FROM (...)` won't be written directly in the middleware
@@ -69,7 +67,4 @@ PUT
 PATCH
 DELETE
 
-Your `services`/`modules`^TNE^ will have interfaces for
-If using `EMS` 
-
-^TNE^ - term needs explanation
+Your `services`/`modules` will have interfaces to make them compatible with any PSR-7 Middleware application-stack.

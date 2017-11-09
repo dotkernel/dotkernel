@@ -1,4 +1,4 @@
-### Important blogs to follow 
+### Important blogs to follow
 * [Zend Expressive Official website] (http://zendframework.github.io/zend-expressive/)
 * [Master Zend Framework] (http://www.masterzendframework.com/)
 * [Matthew Weier O'Phinney blog] (https://mwop.net/blog/)
@@ -6,7 +6,7 @@
 
 
 ## Starting Point
-### Useful links related to middleware, expressive and so on
+### Useful links related to middleware, Zend Expressive, etc.
 #### Videos
 * [Zfmastery Videos ] (https://vimeo.com/groups/397257)
 * [Enrico Zimuel - Build middleware applications with Zend Framework 3 - phpDay 2016] (https://vimeo.com/176067284)

@@ -16,17 +16,17 @@ public function indexAction(): ResponseInterface
     ]));
 }
 ```
-At this point, the form object is accessible in the template, lets display it in the interface. There are more than one option to do this, each one is acceptable, depending on your needs.
+At this point, the form object is accessible in the template, so let's display it in the interface. There are more than one option to do this, each one is acceptable, depending on your needs.
 
 The more tedious way is to fetch each element by its name, configure and display it using the form view helpers provided by Zend Framework. DotKernel made them available in Twig too, with the same name. We'll not use this method here, but if you are curious, the Frontend application uses this method for some of the forms. It offers the greatest form display control.
 
-DotKernel frontend application provides 2 helper templates to automate the form display. You can find them in `src/App/templates/partials`. The `form-display.html.twig` can be used for any form that needs to be displayed entirely(all its defined elements). It will display the elements considering their priority order that was defined.
+DotKernel frontend application provides 2 helper templates to automate the form display. You can find them in `src/App/templates/partials`. The `form-display.html.twig` can be used for any form that needs to be displayed entirely(all its defined elements). It will display the elements in regards to the priority they were given.
 
-The `form-display-validationgroup.html.twig` is a variation of the first one, that displays the form considering its defined validation group.
+The `form-display-validationgroup.html.twig` is a variation of the first one, this one takes the validationgroup into consideration too.
 
-Which one to choose? If you don't define a validation group, that restricts what elements needs filtering and validation, use the first one, otherwise use the second one.
+Which one to choose? If you don't define a validation group that defines which elements needs filtering and validation, use the first one, otherwise use the second one.
 
-In our case, the first one is appropriate. In order to display the form, as required by zend-form, it should first be prepared, open the form tags and display the elements.
+In our case, the first one is fine. In order to display the form, it should first be prepared, open the form tags and display the elements.
 
 ##### contact.html.twig
 ```html
@@ -56,12 +56,12 @@ In our case, the first one is appropriate. In order to display the form, as requ
 { % endblock %}
 ```
 
-> Note: due to technical restrictions the `{` and `%` are separated in the documentation. Please remove the space between them manually. 
+> Note: due to technical restrictions the `{` and `%` are separated in the documentation. Please remove the space between them in your code.
 
 The `{{ messagesPartial('partial::alerts') }}` is not form related, it is a twig extension defined by DotKernel to simplify the flash messenger parsing. We put this here in order to display the form errors if any, or other types of messages above the form.
 
-Check the contact page in the browser, it should display properly now.
-Next, we will take this further, by processing the POST data and saving it to the backend if valid.
+Check the contact page in the browser, it should be displayed now.
+Next, we will be processing the POST data and saving it to the backend, if valid.
 
 ### [Prev: Creating the contact form](05-creating-the-contact-form.md) | [Next: Processing the user message](07-processing-the-user-message.md)
 

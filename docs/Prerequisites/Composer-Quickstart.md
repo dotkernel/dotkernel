@@ -3,9 +3,9 @@
 
 Composer is a per-project dependency manager for PHP.
 
-This means the `composer` command must be run in the project's folder.
+This means the `composer` command must be run in the project's root folder.
 
-Composer can be downloaded from getcomposer.org. 
+Composer can be downloaded from getcomposer.org.
 
 ### [Composer Download](https://getcomposer.org/download/)
 
@@ -13,7 +13,7 @@ Composer can be downloaded from getcomposer.org.
 # The Composer JSON file
 
 To start using Composer in your project, all you need is a `composer.json` file. This file describes the dependencies of your project and may contain other metadata as well.
-Source: [Composer - Basic Usage](https://getcomposer.org/doc/01-basic-usage.md)
+> Source: [Composer - Basic Usage](https://getcomposer.org/doc/01-basic-usage.md)
 
 ## Sample Composer JSON
 
@@ -26,8 +26,8 @@ Source: [Composer - Basic Usage](https://getcomposer.org/doc/01-basic-usage.md)
     "type": "project",
     "authors": [
         {
-            "name": "John Doe",
-            "email": "jdoe@example.com",
+            "name": "D. Kernel",
+            "email": "dot@kernel.com",
             "homepage": "http://www.example.dev",
             "role": "Developer"
         }
@@ -51,12 +51,12 @@ Source: [Composer - Basic Usage](https://getcomposer.org/doc/01-basic-usage.md)
 Project name
 Examples: `my-brand/my-project`, `psr/http-message`, etc.
 
-> Note: if project is dependency of another project it will be stored in the `vendor/vendor-name/project-name` folder, eg.:
-`vendor/my-brand/my-project` 
+> Note: all your projects dependencies will be stored in their respective `vendor/vendor-name/project-name` folder, eg.:
+`vendor/my-brand/my-project`
 
 ### Description
 
-Project description.
+Give a brief description of your project.
 
 ### Version
 
@@ -64,17 +64,17 @@ Project version.
 
 Examples: `1.0.1`, `v2.3`, `1.5.3-RC2`, `v1.5.3-RC2`, `e35fa0d` (for specific git commit), 'feature-v.1.2' (version 1.2 for specific git branch)
 
-[More about package versions](Composer-Versions.md)
+[More about package versions](Composer-Package-Versions.md)
 
 ### Authors
 
-JSON array with authors. Each author is stored in a dictionary.
+JSON array with authors. Each author is stored in an array of objects.
 
-A `dictionary` is the representation of associative array in JSON.
+Each author is a JSON object stored in the array.
 
 ### Type
 
-Describes the package type. 
+Describes the package type.
 
 * library: This is the default. It will simply copy the files to `vendor`.
 * project: This refers to a package such as a `skeleton app` or final product.
@@ -84,7 +84,7 @@ Describes the package type.
 ### Require & Require-dev
 
 `require`: List of project dependencies for production use.
-`require-dev`: List of project dependencies for development purposes.
+`require-dev`: List of project dependencies for development purposes, these should not be installed in production.
 
 ### Autoload & Autoload-dev
 
@@ -138,7 +138,7 @@ Other directory recommendations:
 # Composer package simulation
 
 Package simulation is useful when testing a new package with an existing package before publishing it.
-Package simulatoion is intended for local testing before publishing package anywhere, **do not use this in production**.
+Package simulation is intended for local testing before publishing package anywhere, **do not use this in production**.
 
 The new package (to be tested) will be named `the small package`.
 The old package (to be tested on) will be named `the great package`.
@@ -149,9 +149,9 @@ Instructions:
 * open the great package `composer.lock` file, add the `composer.json` contents in the small project in the `packages` section or add the contents in the `vendor/composer/installed.json` as the last array value
 * run `composer dump-autoload`
 
-> Note: Assuming the new package name is `me/my-project`. 
+> Note: Assuming the new package name is `me/my-project`.
 
 
-Sources: 
+Sources:
 * [Composer Cheat Sheet for developers](http://composer.json.jolicode.com/)
 * [The composer.json schema](https://getcomposer.org/doc/04-schema.md)
