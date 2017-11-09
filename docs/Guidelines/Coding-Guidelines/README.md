@@ -1,9 +1,9 @@
 # Coding Guidelines
 
 ## Coding Standard
-DotKernel 3 follows the rules described in the `PHP-FIG` PSR-2 document.
+DotKernel 3 follows the rules described in the `PHP-FIG` [PSR-2 document](../PSR/PSR-2.md).
 
-### [PSR-2](../PSR/PSR-2.md)
+### PSR-2
 
 ## Entities and Collections
 
@@ -51,7 +51,7 @@ Classes that represent entities are following the following structure:
  * `DocumentUserCollection` - represents a list of users
 
 
-## Middleware just calls the code
+## Middleware simply calls the code
 
 The "Resources" or the "Middleware" should contain only base operation.
 For instance, queries like `SELECT * FROM (...)` won't be written directly in the middleware

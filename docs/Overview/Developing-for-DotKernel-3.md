@@ -10,7 +10,7 @@ Please create a pull request including a step by step description to reproduce t
 ##### Security Vulnerabilities
 Please contact us ([security@dotkernel.com](mailto:security@dotkernel.com))
 
-So, in very short - just fork the repository you wish to, and feel free contribute via pull requests.
+So, in very short - just fork the repository you wish to contribute to, and submit a pull request.
 
 URL Format: `https://github.com/dotkernel/`**package**
 
