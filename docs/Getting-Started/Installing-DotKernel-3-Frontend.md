@@ -58,7 +58,7 @@ Simply type `y` here, and hit `enter`
 
 * remove the `.dist` extension of the file `local.php.dist` located in `config/autoload`
 * edit `local.php` according to your dev machine. Fill in the `database` configuration and smtp credentials if you want your application to send mails on registration etc.
-* Run the migrations with the command: `php vendor/bin/phinx migrate --config="config/migrations.php"
+* Run the [migrations](../Overview/Migrations.md) with the command: `php vendor/bin/phinx migrate --config="config/migrations.php"
 * [get a recaptcha key pair](https://www.google.com/recaptcha/admin) and configure the `local.php` with them
 * if you use the create-project command, after installing, the project will go into development mode automatically
 * you can also toggle development mode by using the composer commands
