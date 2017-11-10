@@ -1,12 +1,12 @@
 # The DotKernel 3 ConfigProvider
 
 - [The DotKernel 3 ConfigProvider](#the-dotkernel-3-configprovider)
-    - [How does it look](#how-does-it-look)
+    - [Show me some code](#show-me-some-code)
     - [How does it work](#how-does-it-work)
 
 The ConfigProvider is what's responsible for making sure your Module will be loaded and the config will be added to the global array.
 
-## How does it look
+## Show me some code
 
 Here is an example from [dot-queue](https://github.com/dotkernel/dot-queue).
 
