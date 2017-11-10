@@ -1,8 +1,21 @@
 # Implementing the service class
 
+- [Implementing the service class](#implementing-the-service-class)
+    - [UserMessageService.php](#usermessageservicephp)
+    - [UserMessageEntity.php](#usermessageentityphp)
+    - [ConfigProvider.php](#configproviderphp)
+    - [The entity mapper](#the-entity-mapper)
+    - [UserMessageDbMapper.php](#usermessagedbmapperphp)
+        - [The thank you page](#the-thank-you-page)
+            - [thank-you.html.twig](#thank-youhtmltwig)
+    - [Previous | Next](#previous-next)
+        - [Tutorial index](#tutorial-index)
+        - [All tutorials](#all-tutorials)
+
 The service class will be responsible for the user message's bussiness logic. For our simple case, this will mean saving the user message to the backend.
 
 To give you some details about how to use mappers
+
 - You'll need access to the mapper manager
 - There should be a mapper associated with the entity
 - The entity must extend the `Dot\Mapper\Entity\Entity` class
@@ -11,7 +24,9 @@ To give you some details about how to use mappers
 > We cannot go into full details about the mappers here, so make sure you check out our official package documentation.
 
 Create a new class in the `Service` folder of the `App` module.
-##### UserMessageService.php
+
+## UserMessageService.php
+
 ```php
 declare(strict_types=1);
 
@@ -45,7 +60,9 @@ class UserMessageService implements UserMessageServiceInterface, MapperManagerAw
 - Use the mapper to save the entity to the database
 
 Also make sure to change your entity in order to extend the `Entity` class defined in the dot-mapper package
-##### UserMessageEntity.php
+
+## UserMessageEntity.php
+
 ```php
 //...
 use Dot\Mapper\Entity\Entity;
@@ -58,7 +75,8 @@ class UserMessageEntity extends Entity
 ```
 
 Next, go the the `App` module's `ConfigProvider` in order to register our service class.
-##### ConfigProvider.php
+## ConfigProvider.php
+
 ```php
 public function getDependencies(): array
 {
@@ -90,7 +108,8 @@ The mapper should implement `MapperInterface` or extend one of the provided abst
 - Create a new folder, call it `Mapper`
 - Create a new class in this folder with the following content
 
-##### UserMessageDbMapper.php
+## UserMessageDbMapper.php
+
 ```php
 declare(strict_types=1);
 
@@ -109,7 +128,8 @@ Next register this mapper in the mapper manager and associate an entity to it.
 Do this by going to the `ConfigProvider`, create a new config key called `dot_mapper`, and in this key, create another key called `mapper_manager`.
 In the `mapper_manager` key, register the mapper as you would do it in the service manager. Note that we use a specialy defined factory `DbMapperFactory` which you should use for all your mappers. This makes sure the mapper is properly initialized. You can also extend or rewrite this mapper factory if you need special initialization of the mapper.
 
-##### ConfigProvider.php
+> ConfigProvider.php
+
 ```php
 //...
 class ConfigProvider
@@ -147,7 +167,9 @@ The code is ready to be tested. If a valid input is provided and you have setup 
 
 You should seen the thank you page, albeit empty at the moment, after a successful form submit.
 Let's put some basic information on the page, but feel free to customize it to your desire.
-##### thank-you.html.twig
+
+#### thank-you.html.twig
+
 ```html
 { % extends '@layout/default.html.twig' %}
 
@@ -172,7 +194,14 @@ Let's put some basic information on the page, but feel free to customize it to y
 { % endblock %}
 ```
 
-### [Prev: Processing the user message](09-sending-notification-emails-to-a-list.md)
+## Previous | Next
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+**[Prev: Processing the user message](07-processing-the-user-message.md)[Next: Sending notification emails to a list](09-sending-notification-emails-to-a-list.md)**
+
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)

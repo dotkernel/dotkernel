@@ -1,10 +1,18 @@
 # Display the contact form
 
+- [Display the contact form](#display-the-contact-form)
+    - [ContactController.php](#contactcontrollerphp)
+        - [contact.html.twig](#contacthtmltwig)
+    - [Previous | Next](#previous-next)
+        - [Tutorial index](#tutorial-index)
+        - [All tutorials](#all-tutorials)
+
 Go back to the contact controller class. All we have to do here is fetch a contact form object from the form manager and send it to the template for displaying.
 
 DotKernel controllers have already access to the form manager through a plugin called `forms`. To access the form do the following:
 
-###### ContactController.php
+## ContactController.php
+
 ```php
 //....
 
@@ -16,6 +24,7 @@ public function indexAction(): ResponseInterface
     ]));
 }
 ```
+
 At this point, the form object is accessible in the template, so let's display it in the interface. There are more than one option to do this, each one is acceptable, depending on your needs.
 
 The more tedious way is to fetch each element by its name, configure and display it using the form view helpers provided by Zend Framework. DotKernel made them available in Twig too, with the same name. We'll not use this method here, but if you are curious, the Frontend application uses this method for some of the forms. It offers the greatest form display control.
@@ -28,7 +37,8 @@ Which one to choose? If you don't define a validation group that defines which e
 
 In our case, the first one is fine. In order to display the form, it should first be prepared, open the form tags and display the elements.
 
-##### contact.html.twig
+### contact.html.twig
+
 ```html
 { % extends '@layout/default.html.twig' %}
 
@@ -63,7 +73,14 @@ The `{{ messagesPartial('partial::alerts') }}` is not form related, it is a twig
 Check the contact page in the browser, it should be displayed now.
 Next, we will be processing the POST data and saving it to the backend, if valid.
 
-### [Prev: Creating the contact form](05-creating-the-contact-form.md) | [Next: Processing the user message](07-processing-the-user-message.md)
+## Previous | Next
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+**[Prev: Creating the contact form](05-creating-the-contact-form.md)** | **[Next: Processing the user message](07-processing-the-user-message.md)**
+
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)

@@ -1,14 +1,23 @@
 # Backend setup, Entity and hydrators
 
+- [Backend setup, Entity and hydrators](#backend-setup-entity-and-hydrators)
+    - [User message Entity class](#user-message-entity-class)
+        - [UserMessageEntity.php](#usermessageentityphp)
+    - [Entity hydrators](#entity-hydrators)
+    - [Previous | Next](#previous-next)
+        - [Tutorial index](#tutorial-index)
+        - [All tutorials](#all-tutorials)
+
 First of all, we should establish the database structure. We'll store contact messages in one table, lets call it `user_message`. We need at least the following columns: id, email, name, subject, message, created. Go ahead and create the table. We'll store the email, because the contact form is public, users won't need to authenticate in order to send a message.
 
 They have the following definitions:
-* id - Unsigned integer, autoincrement, primary key
-* email - varchar(200)
-* name - varchar(120)
-* subject - varchar(120)
-* message - text
-* created - timestamp
+
+- id - Unsigned integer, autoincrement, primary key
+- email - varchar(200)
+- name - varchar(120)
+- subject - varchar(120)
+- message - text
+- created - timestamp
 
 ## User message Entity class
 
@@ -19,7 +28,9 @@ Our object is pretty simple, we'll use an Entity class to model the database row
 Create a new folder inside `src/App/src` and call it `Entity`, in case it does not already exists. We'll use this folder to store all our Entity classes defined in this module.
 
 In this folder, create the `UserMessageEntity` class
-##### UserMessageEntity.php
+
+### UserMessageEntity.php
+
 ```php
 declare(strict_types=1);
 
@@ -104,8 +115,8 @@ Our dot-hydrator package is just an extension to the zend framework hydrator pac
 
 A hydrator must implement Zends `HydratorInterface` which defines 2 methods: `extract($object)` and `hydrate($data, $prototype)`. A hydrators role is to convert an object(Entity) to a php array and vice-versa using the defined hydrator methods.
 
-* When we want to save an Entity to the database, we'll extract the data and send it to the database abstraction layer.
-* When fetching an Entity, it will come in array form which will be hydrated into an Entity object.
+- When we want to save an Entity to the database, we'll extract the data and send it to the database abstraction layer.
+- When fetching an Entity, it will come in array form which will be hydrated into an Entity object.
 
 Hydrators can be used on their own, but Zend Framework, and consequently, DotKernel provide hydrator integration with forms and fieldsets, to automatically do the hydration. Also, DotKernel packages that deal with Entity manipulation, often rely on configured hydrators, in order to seemlessly extract and hydrate objects.
 
@@ -113,7 +124,14 @@ The way the Entity class is defined, the `ClassMethodsCamelCase` is perfect for 
 
 Having these classes defined, we are ready to implement our contact fieldset and form. Go ahead to the next lesson.
 
-### [Prev: Planning the form implementation](03-planning-the-contact-form-implementation.md) | [Next: Creating the contact form](05-creating-the-contact-form.md)
+## Previous | Next
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+ **[Prev: Planning the form implementation](03-planning-the-contact-form-implementation.md)** | **[Next: Creating the contact form](05-creating-the-contact-form.md)**
+
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)

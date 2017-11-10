@@ -90,7 +90,7 @@ class UserTableSeeder extends AbstractSeed
     {
         $currentTime = new \DateTime();
         $currentTime = $currentTime->format('Y-m-d H:i:s');
-        
+
         $table = $this->table('user');
         $table->insert([
             [

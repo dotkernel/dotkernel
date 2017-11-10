@@ -10,6 +10,7 @@ Create a new php class file in the newly created directory. The class needs to e
 Another thing worth noticing is that we set the entity and hydrator classes in the fieldset. When validating and getting the data back from the form, the form will use the base fieldsets hydrator to hydrate an entity class instead of returning a plain array.
 
 ##### UserMessageFieldset.php
+
 ```php
 declare(strict_types=1);
 
@@ -242,6 +243,7 @@ class ContactForm extends Form
 In the `local.php` file, define the recaptcha options. These are already defined if you use the dot-user module, but as those are somewhat customary to the user module, we'll duplicate them in a global config key, so anytime a recaptcha element will be needed, we will take the keys from there.
 
 ##### local.php
+
 ```php
 return [
     // ...
@@ -256,7 +258,9 @@ return [
 We need to inject a dependency in the form class, and will need a factory class for this. We can't use the annotation service in this case, because form creation is handled by the form manager, which is a specialized service manager acting as a sub-container, and the annotation factory is defined only for the parent service manager. No problem, we don't need to get rid of factories altogether.
 
 Create a new php class file in `src/App/src/Factory`.
+
 ##### ContactFormFactory.php
+
 ```php
 declare(strict_types=1);
 
@@ -282,11 +286,13 @@ class ContactFormFactory
 After the form has been created, we just need to register the form and fieldset in the form element manager and display the form in the `ContactController`.
 
 ### Register the form in the service manager
+
 Forms and fieldsets need to be registered in the form manager. This can be done using the configuration. We'll use the `ConfigProvider` class of the `App` module to register them.
 
 The form related configuration must be placed under the `dot_form` configuration key. The form manager configuration key is `form_manager` under the dot_form key.
 
-##### src/App/src/ConfigProvider.php
+#### src/App/src/ConfigProvider.php
+
 ```php
 namespace Frontend\App;
 
@@ -326,8 +332,14 @@ class ConfigProvider
 
 At this point, you can access the form object from within the contact controller through the provided form manager controller plugin. You can use the FQCN or the alias that was defined to access the form. We recommend using aliases in this case.
 
+## Previous | Nex
 
-### [Prev: Backend setup, entities and hydrators](04-backend-setup-entity-and-hydrators.md) | [Next: Display the contact form](06-display-the-contact-form.md)
+**[Prev: Backend setup, entities and hydrators](04-backend-setup-entity-and-hydrators.md)** | **[Next: Display the contact form](06-display-the-contact-form.md)**
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)

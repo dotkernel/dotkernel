@@ -1,5 +1,12 @@
 # Implementing a contact form in DotKernel Frontend application
 
+- [Implementing a contact form in DotKernel Frontend application](#implementing-a-contact-form-in-dotkernel-frontend-application)
+    - [Frontend application structure](#frontend-application-structure)
+        - [Source code files](#source-code-files)
+        - [Next: Creating the contact controller](#next-creating-the-contact-controller)
+        - [Tutorial index](#tutorial-index)
+        - [All tutorials](#all-tutorials)
+
 In this tutorial, we'll implement the contact page in the frontend application, as it is missing at the time this tutorial is made. We'll cover various topics, which hopefully will get you more accustomed to DotKernel, Zend Expressive and Zend Framework.
 
 ## Frontend application structure
@@ -22,8 +29,14 @@ Please note that these modules also provide module specific configuration in the
 
 Next, we'll focus on creating a simple contact us page, and we will cover forms, input filters, content validation, events, e-mail composition, and how to combine all this into a web page.
 
+### Next: Creating the contact controller
 
-### [Next: Creating the contact controller](02-creating-the-contact-controller.md)
+Go to the next tutorial: **[Creating the contact controller]((02-creating-the-contact-controller.md))**
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)
