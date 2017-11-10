@@ -9,8 +9,8 @@
             - [Creating a new value](#creating-a-new-value)
             - [Changing the value](#changing-the-value)
             - [Deleting the value](#deleting-the-value)
-    - [Entities](#entities)
-        - [MyEntity](#myentity)
+            - [Format](#format)
+                - [MyEntity](#myentity)
         - [Performing actions on MyEntity](#performing-actions-on-myentity)
             - [Request](#request)
                 - [Example Request types](#example-request-types)
@@ -54,11 +54,9 @@ First write a summary. After the summary write the actions that can be performed
 
 > Request Type, Parameters, Body(if needed), Expected Error responses, Expected succes Response
 
-## Entities
-
-### MyEntity
-
-Entity specifications can be represented in any form. But it is recommended that you represent it in the way your API represents it. (`JSON` for this example)
+#### Format
+##### MyEntity
+Entity specifications can be represented in any form, but it is recommended that you represent it in the way your API represents it. (`JSON` in this example)
 
 ```json
 {
@@ -67,12 +65,10 @@ Entity specifications can be represented in any form. But it is recommended that
     "value": 23
 }
 ```
-
 > A brief description of the fields. It can contain explanations if necessary
-
-- `id` - integer unsigned value,  used for indexing and is a `PRIMARY KEY` in the `MySQL` database
-- `name` - string value, max `200` characters, used for naming `MyEntity` names
-- `value` - integer value, used to represent `MyEntity` values
+ * `id` - integer unsigned value,  used for indexing and is a `PRIMARY KEY` in the `MySQL` database
+ * `name` - string value, max `200` characters, used for naming `MyEntity` names
+ * `value` - integer value, used to represent `MyEntity` values
 
 ### Performing actions on MyEntity
 
@@ -169,7 +165,6 @@ The request `body` is the actual parameters representation. (`json` in this case
 `422 Unprocessable Entity` - Data received is not valid (and body with wrong parameters and error message)
 
 #### Succes response
-
 `200 OK` - Operation succesfully done
 `201 Created` - Entity created
 
