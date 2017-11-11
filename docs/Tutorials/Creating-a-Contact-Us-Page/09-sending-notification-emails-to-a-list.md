@@ -1,5 +1,16 @@
 # Sending notification e-mails to a list
 
+- [Sending notification e-mails to a list](#sending-notification-e-mails-to-a-list)
+    - [Creating a notification e-mail service class](#creating-a-notification-e-mail-service-class)
+        - [NotificationMailService.php](#notificationmailservicephp)
+        - [local.php](#localphp)
+    - [Listening to mapper events](#listening-to-mapper-events)
+        - [UserMessageMapperEventListener.php](#usermessagemappereventlistenerphp)
+        - [ConfigProvider.php](#configproviderphp)
+    - [Previous](#previous)
+        - [Tutorial index](#tutorial-index)
+        - [All tutorials](#all-tutorials)
+
 We'll add one more feature in this tutorial. We need to notify someone that a user has sent a message.
 
 We won't add the e-mail sending logic directly in the controller or service class. We want to do this in a more decoupled way. And by doing so, we will also cover a bit more of Zend Framework and DotKernel.
@@ -14,7 +25,8 @@ We'll use one of the mapper's save events in order to send a notification e-mail
 
 We will wrap the default mail service into a higher level service class which compose the mail message that needs to be sent on various notification ocasions. Create a new PHP class file in the `Service` folder
 
-##### NotificationMailService.php
+### NotificationMailService.php
+
 ```php
 declare(strict_types=1);
 
@@ -83,13 +95,17 @@ class NotificationMailService
     }
 }
 ```
+
 A few things to note about this class
+
 - We use our annotation service component to automatically inject dependencies without a factory class
 - We use the default mail service, which you already have configured if you are using the frontend application
 - We inject a configuration key that we don't have it defined yet, which will be the receiver email addresses as an array
 
 In your `local.php` file define the notification receiver list(the admins or someone responsible to manage user messages)
-##### local.php
+
+### local.php
+
 ```php
 return [
     'contact' => [
@@ -112,7 +128,8 @@ For our case we are interested in the `onAfterSaveCommit` event, this is when we
 Mapper event listeners must implement the `MapperEventListenerInterface` provided by the mapper package. We recommend you to extend the `AbstractMapperEventListener` or use the `MapperEventListenerTrait` to have a good starting point.
 Create a new folder in the `App` module, call it `Listener`. In this folder, create a new PHP class file
 
-##### UserMessageMapperEventListener.php
+### UserMessageMapperEventListener.php
+
 ```php
 declare(strict_types=1);
 
@@ -161,7 +178,8 @@ This class is self-explanatory. We are using annotations to inject the notificat
 
 We have one last thing to do, tell the user message mapper that this is a listener of its events. There are more than one possible solution. The dot-mapper package provides an easy method for doing this, simply go to the `ConfigProvider` mapper section and add the following configuration
 
-##### ConfigProvider.php
+### ConfigProvider.php
+
 ```php
 public function getMappers(): array
 {
@@ -193,7 +211,14 @@ As you can see the options are defined per mapper/entity. The `event_listeners` 
 
 If you have configured the notification receivers, you should now receive an email when the contact form is successfully submitted.
 
-### [Prev: Implementing the service class](08-implementing-the-service-class.md)
+## Previous
 
-### [View tutorial page](README.md)
-### [View tutorials list](../README.md)
+**[Prev: Implementing the service class](08-implementing-the-service-class.md)**
+
+### Tutorial index
+
+Go to the **[tutorial page](README.md)**
+
+### All tutorials
+
+View all tutorials by going to the [tutorials list](../README.md)

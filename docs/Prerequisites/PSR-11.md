@@ -2,7 +2,6 @@
 
 ...
 
-@todo: document about PSR-11 
+@todo: document about PSR-11
 
-@todo: make examples for and with PSR-11 
-
+@todo: make examples for and with PSR-11
