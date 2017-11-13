@@ -9,8 +9,8 @@
             - [Creating a new value](#creating-a-new-value)
             - [Changing the value](#changing-the-value)
             - [Deleting the value](#deleting-the-value)
-            - [Format](#format)
-                - [MyEntity](#myentity)
+    - [Format](#format)
+        - [MyEntity](#myentity)
         - [Performing actions on MyEntity](#performing-actions-on-myentity)
             - [Request](#request)
                 - [Example Request types](#example-request-types)
@@ -25,7 +25,8 @@
 
 Before writing any code there must be a specification regarding the format/content negociation
 
-First write a summary. After the summary, write the actions that can be performed on the endpoint.
+First write a summary, after the summary, write the actions that can be performed on the endpoint.
+
 > The notes in this summary were added for guiding purposes and are not required in your summary
 
 ## Summary Example
@@ -54,8 +55,10 @@ First write a summary. After the summary, write the actions that can be performe
 
 > Request Type, Parameters, Body(if needed), Expected Error responses, Expected succes Response
 
-#### Format
-##### MyEntity
+## Format
+
+### MyEntity
+
 Entity specifications can be represented in any form, but it is recommended that you represent it in the way your API represents it. (`JSON` in this example)
 
 ```json
@@ -65,16 +68,19 @@ Entity specifications can be represented in any form, but it is recommended that
     "value": 23
 }
 ```
-> A brief description of the fields. It can contain explanations, if necessary.
- * `id` - integer unsigned value,  used for indexing and is a `PRIMARY KEY` in the `MySQL` database
- * `name` - string value, max `200` characters, used for naming `MyEntity` names
- * `value` - integer value, used to represent `MyEntity` values
+
+> A brief description of the fields. It can contain explanations if necessary
+
+- `id` - integer unsigned value,  used for indexing and is a `PRIMARY KEY` in the `MySQL` database
+- `name` - string value, max `200` characters, used for naming `MyEntity` names
+- `value` - integer value, used to represent `MyEntity` values
 
 ### Performing actions on MyEntity
 
 #### Request
 
 Request representation structure is the following
+
 - `RequestType` (GET, POST, PUT, PATCH, DELETE)
 - url `endpoint`
 - Parameters for GET requests are represented within the url
@@ -128,6 +134,7 @@ DELETE my.api.com/myentity/2
 #### Headers
 
 If headers are needed they will be added after the request type.
+
 ##### Example headers
 
 Using `json` for negotiating content and Bearer Token Authorization
@@ -166,7 +173,8 @@ The request `body` is the actual parameters representation. (`json` in this case
 - `400 Bad Request` - Malformed `json`/`request body` reveiced
 - `422 Unprocessable Entity` - Data sent to the server was not valid
 
-#### Succes responses
+#### Succes response
+
 `200 OK` - Operation succesfully done
 `201 Created` - Entity created
 
