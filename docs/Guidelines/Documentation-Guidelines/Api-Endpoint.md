@@ -25,7 +25,7 @@
 
 Before writing any code there must be a specification regarding the format/content negociation
 
-First write a summary. After the summary write the actions that can be performed on the endpoint.
+First write a summary. After the summary, write the actions that can be performed on the endpoint.
 > The notes in this summary were added for guiding purposes and are not required in your summary
 
 ## Summary Example
@@ -65,7 +65,7 @@ Entity specifications can be represented in any form, but it is recommended that
     "value": 23
 }
 ```
-> A brief description of the fields. It can contain explanations if necessary
+> A brief description of the fields. It can contain explanations, if necessary.
  * `id` - integer unsigned value,  used for indexing and is a `PRIMARY KEY` in the `MySQL` database
  * `name` - string value, max `200` characters, used for naming `MyEntity` names
  * `value` - integer value, used to represent `MyEntity` values
@@ -75,9 +75,11 @@ Entity specifications can be represented in any form, but it is recommended that
 #### Request
 
 Request representation structure is the following
-`RequestType` url `endpoint`
-Parameters for GET requests are represented within the url
-`RequestType my.api.com/myentity?greaterThan=15&lowerThan=40`
+- `RequestType` (GET, POST, PUT, PATCH, DELETE)
+- url `endpoint`
+- Parameters for GET requests are represented within the url
+
+which will form a string like: `POST my.api.com/myentity?greaterThan=15&lowerThan=40`
 
 ##### Example Request types
 
@@ -158,13 +160,13 @@ The request `body` is the actual parameters representation. (`json` in this case
 
  The error can be explained briefly with the code
 
-`401 Unauthorized` - User is not logged or token has expired
-`403 Forbidden` - Trying to `update` or `delete` a `MyEntity` which user doesn't own
-`404 Not found` - Entity was not found
-`400 Bad Request` - Malformed `json`/`request body` reveiced
-`422 Unprocessable Entity` - Data received is not valid (and body with wrong parameters and error message)
+- `401 Unauthorized` - User is not logged or token has expired
+- `403 Forbidden` - Trying to `update` or `delete` a `MyEntity` which user doesn't have access to
+- `404 Not found` - Entity was not found
+- `400 Bad Request` - Malformed `json`/`request body` reveiced
+- `422 Unprocessable Entity` - Data sent to the server was not valid
 
-#### Succes response
+#### Succes responses
 `200 OK` - Operation succesfully done
 `201 Created` - Entity created
 
