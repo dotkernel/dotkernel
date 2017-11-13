@@ -2,7 +2,7 @@
 
 - [Migrations in DotKernel](#migrations-in-dotkernel)
     - [Migrations](#migrations)
-        - [What is a migration?](#what-is-a-migration)
+        - [What is a migration](#what-is-a-migration)
         - [How to use](#how-to-use)
     - [Seeds](#seeds)
         - [What are seeds](#what-are-seeds)
@@ -19,7 +19,7 @@ Every migration describes an alteration in the database in some way, it can be a
 
 > This is especially brilliant, It'll run all *new* migrations. Which means you can go from any link in the chain, up to the newest version of the Schema
 
-### What is a migration?
+### What is a migration
 
 ```php
 <?php

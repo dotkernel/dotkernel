@@ -12,5 +12,6 @@
 - [PSR-7 Interfaces & Zend Diactoros](PSR-7.md)
 - PSR-11
 - [Understanding Middleware](Understanding-Middleware.md)
+- [Webpack](Webpack.md)
 - [Zend Stratigility](Zend-Stratigility.md)
 - Zend Expressive
