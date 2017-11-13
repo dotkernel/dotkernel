@@ -1,6 +1,5 @@
-Documentation Guidelines
----
+# Documentation Guidelines
 
-* [Writing an API Endpoint Documentation](Api-Endpoint.md)
+- [Writing an API Endpoint Documentation](Api-Endpoint.md)
 
 (more articles soon)

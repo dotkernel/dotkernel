@@ -1,8 +1,8 @@
-# Did something just dissapear? 
+# Did something just dissapear?
 ---
 
 ## What disappeared?
-The documentation summary (or menu) dissapeared.
+The documentation summary (or menu) disappeared.
 
 ## Why is the summary/menu hidden?
 The menu is also hidden to reduce content redundancy.
@@ -11,7 +11,7 @@ The menu is also hidden to reduce content redundancy.
 The menu is on the main page for those visitors who access this documentation through github ([see link](https://github.com/dotkernel/dotkernel/tree/master/docs))
 
 
-## How does it look like?
+## What does it look like?
 We thought you might be curios what exactly disappeared so the menu will be presented below.
 
 {% include menu.md %}

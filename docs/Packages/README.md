@@ -1,103 +1,72 @@
 # DotKernel 3 Packages
 
- * dot-session
-DotKernel session component extending and customizing zend-session
+- `dot-session` DotKernel session component extending and customizing zend-session
 
- * dot-flashmessenger
-Flash messenger library for session messages between redirects
+- `dot-flashmessenger` Flash messenger library for session messages between redirects
 
- * dot-authentication
-DotKernel authentication service abstractions component
+- `dot-authentication` DotKernel authentication service abstractions component
 
- * dot-authorization
-DotKernel authorization service abstractions component
- 
- * dot-event
-DotKernel event component extending and customizing zend-eventmanager
+- `dot-authorization` DotKernel authorization service abstractions component
 
- * dot-mail
-DotKernel mail component based on zend-mail
+- `dot-event` DotKernel event component extending and customizing zend-eventmanager
 
- * dot-helpers
-Various helper structures and classes
+- `dot-mail` DotKernel mail component based on zend-mail
 
- * dot-navigation
-DotKernel navigation component
+- `dot-helpers` Various helper structures and classes
 
- * dot-rbac
-DotKernel RBAC implementation
+- `dot-navigation` DotKernel navigation component
 
- * dot-controller-plugin-authorization
-DotKernel authorization controller plugin component
+- `dot-rbac` DotKernel RBAC implementation
 
- * dot-twigrenderer
-DotKernel component providing twig extensions and customizations
+- `dot-controller-plugin-authorization` DotKernel authorization controller plugin component
 
- * dot-user
-DotKernel user component providing configurable common user functions and extending the authentication flow
+- `dot-twigrenderer` DotKernel component providing twig extensions and customizations
 
- * dot-controller-plugin-authentication
-DotKernel authentication controller plugin component
+- `dot-user` DotKernel user component providing configurable common user functions and extending the authentication flow
 
- * dot-frontend
-Dotkernel Frontend Application
+- `dot-controller-plugin-authentication` DotKernel authentication controller plugin component
 
- * dot-admin
-Dotkernel Admin Application
+- `dot-frontend` Dotkernel Frontend Application
 
- * dot-mapper
-DotKernel mapper pattern implementation
+- `dot-admin` Dotkernel Admin Application
 
- * dot-log
-DotKernel log component extending and customizing zend-log
+- `dot-mapper` DotKernel mapper pattern implementation
 
- * dot-annotated-services
-DotKernel service creation component through zend-servicemanager and annotations
+- `dot-log` DotKernel log component extending and customizing zend-log
 
- * dot-form
-DotKernel form component extending and customizing zend-form
+- `dot-annotated-services` DotKernel service creation component through zend-servicemanager and annotations
 
- * dot-cache
-DotKernel cache component based on zend-cache, extending and customizing it
+- `dot-form` DotKernel form component extending and customizing zend-form
 
- * dot-filter
-DotKernel filter component customizing and extending zend-filter
+- `dot-cache` DotKernel cache component based on zend-cache, extending and customizing it
 
- * dot-validator
-DotKernel validator component extending and customizing zend-validator
+- `dot-filter` DotKernel filter component customizing and extending zend-filter
 
- * dot-inputfilter
-DotKernel input filter component extending and customizing zend-inputfilter
+- `dot-validator` DotKernel validator component extending and customizing zend-validator
 
- * dot-hydrator
-DotKernel hydrator component extending and customizing zend-hydrator
+- `dot-inputfilter` DotKernel input filter component extending and customizing zend-inputfilter
 
- * dot-controller-plugin-forms
-DotKernel controller plugin for easy access to application defined forms and fieldsets in any controller
+- `dot-hydrator` DotKernel hydrator component extending and customizing zend-hydrator
 
- * dot-controller-plugin-session
-DotKernel session controller plugin
+- `dot-controller-plugin-forms` DotKernel controller plugin for easy access to application defined forms and fieldsets in any controller
 
- * dot-paginator
-dot-controller-plugin-mail
+- `dot-controller-plugin-session` DotKernel session controller plugin
 
- * dot-rbac-guard
-DotKernel component for authorizing bigger parts of an application
+- `dot-paginator` dot-controller-plugin-mail
 
- * dot-authentication-service
-DotKernel authentication service component based on zend-authentication
+- `dot-rbac-guard` DotKernel component for authorizing bigger parts of an application
 
- * dot-authentication-web
-Login/logout flow for web applications to use with dot-authentication service
+- `dot-authentication-service` DotKernel authentication service component based on zend-authentication
 
- * dot-controller-plugin-flashmessenger
-DotKernel flash messenger controller plugin component
+- `dot-authentication-web` Login/logout flow for web applications to use with dot-authentication service
+
+- `dot-controller-plugin-flashmessenger` DotKernel flash messenger controller plugin component
 
 <!-- This style applies only to current page -->
 <style>
-	.item { background-color: #C71F3A; margin-top: 20px; padding-bottom: 20px; }
-	.item h1 { text-align: center; color: #fff; font-size: 61px; padding-top: 20px; }
-	.item p { text-align: center; color: #fff; font-size: 23px; padding: 20px 0px; }
-	.item .code { background-color: #2E2E2D; width: 80%; margin: auto; }
-	.item .code p { padding: 15px 0px; font-size: 16px; }
+    .item { background-color: #C71F3A; margin-top: 20px; padding-bottom: 20px; }
+    .item h1 { text-align: center; color: #fff; font-size: 61px; padding-top: 20px; }
+    .item p { text-align: center; color: #fff; font-size: 23px; padding: 20px 0px; }
+    .item .code { background-color: #2E2E2D; width: 80%; margin: auto; }
+    .item .code p { padding: 15px 0px; font-size: 16px; }
 </style>

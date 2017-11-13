@@ -1,13 +1,22 @@
 # Zend Stratigility
----
+
+- [Zend Stratigility](#zend-stratigility)
+    - [Example](#example)
+    - [Initializing Application (Stratigility\MiddlewarePipe)](#initializing-application-stratigilitymiddlewarepipe)
+    - [Piping middleware to routes](#piping-middleware-to-routes)
+        - [Piping to route "/" (also applies to all routes)](#piping-to-route-also-applies-to-all-routes)
+        - [Routes to route "/about"](#routes-to-route-about)
+    - [Running the application](#running-the-application)
+    - [Emitting the response](#emitting-the-response)
+    - [Limitations](#limitations)
 
 PSR-7 middleware foundation for building and dispatching middleware pipelines.
 
 This package relies on `zendframework/zend-diactoros`, which is Zend's implementation of PSR-7 interfaces.
-With Stratigility applications can be built out of middleware.
+Using Stratigility, we can build applications out of middleware.
 
+## Example
 
-# Example
 As mentioned in the [Understanding Middleware](Understanding-Middleware.md) article, Zend Stratigility is an application
 used to handle middleware.
 
@@ -16,7 +25,7 @@ Below is an example of piping middlewares to different routes.
 > Note: Multiple middleware can be piped to routes.
 
 ## Initializing Application (Stratigility\MiddlewarePipe)
- 
+
 ```php
 <?php
 //declare the fully qualified class names that we use at the beginning of the file
@@ -62,6 +71,7 @@ $application->pipe('/',
 ```
 
 ### Routes to route "/about"
+
 ```php
 $application->pipe('/about',
     function(ServerRequestInterface $request, ResponseInterface $response, callable $next = null) {
@@ -87,8 +97,10 @@ $emitter = new SapiEmitter();
 $emitter->emit($response);
 ```
 
-# Limitations
+## Limitations
+
 Zend Stratigility is easy to work with but there are some constraints:
+
 - routing is static (routes like `user/id/20`) cannot be automatically parsed
 - there is no template engine
 - there is no container for dependencies, they must be created manually
