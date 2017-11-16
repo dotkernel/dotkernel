@@ -1,100 +1,102 @@
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DotKernel 3 Documentation</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DotKernel 3 Documentation</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+		{% include styling.htm %}
+	</head>
 
-{% include styling.htm %}
-</head>
-
-<body>
-	<div id="wrapper">
-		<header class="navbar navbar-default navbar-static-top" role="banner" >
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div id="logo">
-						<a href="https://docs.dotkernel.com/">
+	<body>
+		<div id="wrapper">
+			<header class="header">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<a class="navbar-brand" href="https://docs.dotkernel.com/">
 						<!--  SVG Support -->
-							<!--  <img class="logo-main logo-reg" src="{{ site.url }}/assets/images/docs_logo.svg" alt="DotKernel 3 Documentation" onerror="this.onerror=null; this.src={{ site.url }}/assets/images/docs_logo.png"  height="40" width="171" /> -->
-							<img class="logo-main logo-reg" src="{{ site.url }}/assets/images/docs_logo.png" alt="DotKernel 3 Documentation" height="40" width="171" />
-						</a>
-					</div>
-				</div>
-				<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-					<ul id="menu-main-menu" class="nav navbar-nav"><li class="menu-documentation"><a href="https://docs.dotkernel.com">Documentation</a></li>
-						<li class="menu-how-tos"><a href="https://www.dotkernel.com/how-to-dotkernel-3//" target="_blank">How to&#8217;s</a></li>
-						<li class="menu-blog"><a href="https://www.dotkernel.com/blog/" target="_blank">Blog</a></li>
-						<li class="menu-contact-us"><a href="https://www.dotkernel.com/contact/" target="_blank">Contact us</a></li>
-						<li class="dropdown menu-archive"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Archive <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li class="menu-documentation-v1"><a href="https://www.dotkernel.com/docs/" target="_blank">Documentation v1</a></li>
-								<li class="menu-download-v1"><a href="https://www.dotkernel.com/download/" target="_blank">Download v1</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-		<div class="inner-container">
-			<div class="main_page_title">
-				  <div class="row">
-						<section id="themo_page_header_1" class="page-title left ">
-							<h1>DotKernel 3 Documentation</h1>
-						</section>
-					 </div>
-			</div>
-			<div class='container'>
-				<div class='row'>
-					<div class="main col-sm-8 col-sm-push-4" role="main">
-						<div>
-							<section>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="edit">
-											<a class="smallerFont edit_button" href="https://github.com/dotkernel/dotkernel/edit/master/docs/{{ page.path | replace:'.html','.md' }}" target="_blank">Edit on GitHub</a>
-										</div>
-										{{ content }}
-									</div>
+						<!--  <img class="logo-main logo-reg" src="{{ site.url }}/assets/images/docs_logo.svg" alt="DotKernel 3 Documentation" onerror="this.onerror=null; this.src={{ site.url }}/assets/images/docs_logo.png"  height="40" width="171" /> -->
+						<img class="logo-main logo-reg" src="{{ site.url }}/assets/images/docs_logo.png" alt="DotKernel 3 Documentation" height="40" width="171" />
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarCollapse">
+						<ul class="navbar-nav navbar-right ml-auto">
+							<li class="menu-documentation"><a href="https://docs.dotkernel.com">Documentation</a></li>
+							<li class="nav-item menu-how-tos"><a href="https://www.dotkernel.com/how-to-dotkernel-3//" target="_blank">How to&#8217;s</a></li>
+							<li class="nav-item menu-blog"><a href="https://www.dotkernel.com/blog/" target="_blank">Blog</a></li>
+							<li class="nav-item menu-contact-us"><a href="https://www.dotkernel.com/contact/" target="_blank">Contact us</a></li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  Archive
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								  <a class="dropdown-item" href="https://www.dotkernel.com/docs/" target="_blank">Documentation v1</a>
+								  <a class="dropdown-item" href="https://www.dotkernel.com/download/" target="_blank">Download v1</a>
 								</div>
-							</section>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			
+			<section class="main-page-title">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div id="themo_page_header_1" class="page-title left ">
+								<h1>DotKernel 3 Documentation</h1>
+							</div>
 						</div>
-					<hr/>
-					<p class="smallerFont">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</p>
-					</div><!-- /.main -->
-					<aside class="sidebar side-left col-sm-4 col-sm-pull-8" role="complementary">
-		
-					<div id="dk3DocsSideMenu">
-						{% include sidemenu.htm %}
 					</div>
 				</div>
-						</aside><!-- /.sidebar -->
+			</section>
+			
+			
+			<div class="main-content">
+				<div class="container">
+					
+					<div class="row">
+						
+						<div class="col-md-4" id="dk3DocsSideMenu">
+							{% include sidemenu.htm %}
+						</div>
+						
+						<div class="col-md-8">
+							<div class="md-html">
+								{{ content }}
+							</div>
+							<hr/>
+							<p class="smallerFont">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</p>
+							<div class="edit">
+								<a class="smallerFont edit-button" href="https://github.com/dotkernel/dotkernel/edit/master/docs/{{ page.path | replace:'.html','.md' }}" target="_blank">Edit on GitHub</a>
+							</div>
+						</div>
+						
+					</div>
+
+				</div>
 			</div>
+			
+			<div id="push"></div>
 		</div>
-		<div id="push"></div>
-	</div>
-	<div class="footer-btm-bar">
-		<div class="container">
-			<div class="footer-copyright row">
-				<div class="col-xs-12">
-					<ul>
-						<li><a href="https://www.dotkernel.com/" target="_blank"><img src="{{ site.url }}/assets/images/dk.png">DotKernel 3 Official Site</a></li>
-						<li><a href="https://github.com/dotkernel/" target="_blank"><img src="{{ site.url }}/assets/images/github.png">DotKernel 3 at Github</a></li>
-						<li><a href="https://stackoverflow.com/questions/tagged/dotkernel3" target="_blank"><img src="{{ site.url }}/assets/images/stack.png">DotKernel 3 at Stackoverflow</a></li>
-						<li><a href="https://packagist.org/search/?q=dotkernel/" target="_blank"><img src="{{ site.url }}/assets/images/packagist.png">DotKernel at Packagist</a></li>
-						<li><a href="https://gitter.im/dotkernel3" target="_blank"><img src="{{ site.url }}/assets/images/gitter.png">DotKernel 3 at Gitter</a></li>
-					</ul>
+		<div class="footer-btm-bar">
+			<div class="container">
+				<div class="footer-copyright row">
+					<div class="col-xs-12">
+						<ul>
+							<li><a href="https://www.dotkernel.com/" target="_blank"><img src="{{ site.url }}/assets/images/dk.png">DotKernel 3 Official Site</a></li>
+							<li><a href="https://github.com/dotkernel/" target="_blank"><img src="{{ site.url }}/assets/images/github.png">DotKernel 3 at Github</a></li>
+							<li><a href="https://stackoverflow.com/questions/tagged/dotkernel3" target="_blank"><img src="{{ site.url }}/assets/images/stack.png">DotKernel 3 at Stackoverflow</a></li>
+							<li><a href="https://packagist.org/search/?q=dotkernel/" target="_blank"><img src="{{ site.url }}/assets/images/packagist.png">DotKernel at Packagist</a></li>
+							<li><a href="https://gitter.im/dotkernel3" target="_blank"><img src="{{ site.url }}/assets/images/gitter.png">DotKernel 3 at Gitter</a></li>
+						</ul>
 						<p><span class='footer_copy'>&copy; 2009 - 2016 DotBoost Technologies Inc. <br />&copy; 2017 Apidemia Inc.</span>  </p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</body>
-{% include scripts.htm %}
+	</body>
+
+	{% include scripts.htm %}
 </html>

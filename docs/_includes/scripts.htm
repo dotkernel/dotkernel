@@ -8,17 +8,96 @@
 
 
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+	crossorigin="anonymous">
+	
+</script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+	crossorigin="anonymous">
+</script>
+	
 <!-- Summary hide on docs.dotkernel.com -->
 <script type="text/javascript">
 $( document ).ready(function(){
+	//set cookie name
+	var cookieSidebarName = "DocsSidebarItem";
+	
+	// get url data
+	var locationFull = window.location.href;
+
+	// SIDEBAR MENU WITH HREF
+	$(".list-group-item").each(function( index ) {
+		if ($( this ).attr("href") == locationFull)
+		{
+			var subMenuItemId = $( this ).attr("id");
+			$("#" + $( this ).attr("id")).addClass("active");
+			var subMenuItems = $( this ).attr("id").split("-");
+			var index = 0;
+			do {
+				subMenuItems.splice(-1,1);
+				var subMenuItemId = subMenuItems.join("-");
+				$("#" + subMenuItemId).addClass("in show");
+				$("a [href='#" + subMenuItemId + "']").attr("aria-expanded", "true");
+			} while (subMenuItems.length > 1)
+		}
+	});
+	
+	// SIDEBAR MENU WITH COOKIE - disabled for now
+	// reset cookie for homepage
+	/*if (locationOrigin == locationFull)
+	{
+		createCookie(cookieSidebarName,"",-1);
+	}
+	
+	$(".list-group-item").on("click", function(){
+		var expires = "";
+		var itemId = $(this).attr("id");
+		if (itemId != undefined)
+		{
+			var cookieString = cookieSidebarName + "=" + itemId + expires + "; path=/";
+			document.cookie = cookieString;
+		}
+	});
+	
+	var cookieInfo = getCookie(cookieSidebarName);
+	if (cookieInfo != null)
+	{
+		$("#" + cookieInfo).addClass("active");
+		var subMenuItems = cookieInfo.split("-");
+		var index = 0;
+		do {
+			subMenuItems.splice(-1,1);
+			var subMenuItemId = subMenuItems.join("-");
+			$("#" + subMenuItemId).addClass("in show");
+			$("a [href='#" + subMenuItemId + "']").attr("aria-expanded", "true");
+		} while (subMenuItems.length > 1)
+	}*/
+	
 	// check if host is docs.dotkernel.com
 	if( window.location.href.indexOf('docs.dotkernel.com') > -1) {
 		// $('#beforeSummary').next().hide();
 		$('#beforeSummary').next().replaceWith('<a href="{{ site.url }}/Disappear-Message.html"> Did something just disappear? </a>');
-	}
+	}	
 });
+
+function getCookie(name){
+	var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
 </script>
 
 <!-- END Scripts -->
