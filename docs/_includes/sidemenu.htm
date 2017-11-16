@@ -2,111 +2,73 @@
 
 <!-- NEW MENU DESIGN -->
 
+<nav class="bg-faded" id="sidebar">
 
-<div class="panel-group">
-    <h3 id="before-starting">Before starting</h3>
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#overview_collapse"></button>
-            <a  href="{{ site.url }}/Overview/" >Overview</a>
-        </div>
-
-        <div id="overview_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Overview/Developing-for-DotKernel-3.html">Developing for DotKernel 3</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Overview/DotKernel-3-Overview.html">DotKernel 3 Overview</a></li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#prerequisites_collapse"></button>
- 			<a  href="{{ site.url }}/Prerequisites/" >Prerequisites</a>
-        </div>
-
-        <div id="prerequisites_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Closures-and-Callables.html">Closures and Callables</a></li>
-                <li class="list-group-item">PSR-4: Autoloading</li>
-<!--                 <li class="list-group-item">OOP1: Interfaces, Abstract classes</li> -->
-<!--                 <li class="list-group-item">OOP2: Type Hinting, Dependencies, Dependency Injection</li> -->
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Composer-Quickstart.html">Composer Quickstart</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Composer-Package-Versions.html">Composer Package Versions</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/PSR-7.html">PSR-7 Interfaces &amp; Zend Diactoros</a></li>
-                <li class="list-group-item">PSR-11</li>
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Understanding-Middleware.html">Understanding Middleware</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Prerequisites/Zend-Stratigility.html">Zend Stratigility</a></li>
-                <li class="list-group-item">Zend Expressive</li>
-                <!--  <li class="list-group-item">Stratigility vs. Expressive (? Benefits of Expressive)</li>  -->
-            </ul>
-        </div>
-    </div>
-
-
-<h3 id="before-starting">Introduction</h3>
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#getting_started_collapse"></button>
-            <a  href="{{ site.url }}/Getting-Started/" >Getting Started</a>
-        </div>
-
-        <div id="getting_started_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Getting-Started/Server-Requirements.html">Server Requirements</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Getting-Started/Installing-DotKernel-3-Frontend.html">Installing DotKernel 3 <code class="highlighter-rouge">frontend</code></a></li>
-                <li class="list-group-item">DotKernel 3 file structure</li>
-                <li class="list-group-item">DotKernel 3 packages</li>
-                <li class="list-group-item">DotKernel 3 features</li>
-            </ul>
-        </div>
-    </div>
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#tutorials_collapse"></button>
-            <a  href="{{ site.url }}/Tutorials/" >Tutorials</a>
-        </div>
-
-        <div id="tutorials_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Tutorials/Creating-a-Contact-Us-Page/">Creating a Contact US Page</a></li>
-                <li class="list-group-item">More tutorials soon</li>
-            </ul>
-        </div>
-    </div>
-
-<h3 id="before-starting">Working with DotKernel 3</h3>
-
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#guidelines_collapse"></button>
-			<a  href="{{ site.url }}/Guidelines/" >Guidelines</a>
-        </div>
-
-        <div id="guidelines_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/PSR/">PSR Guidelines</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/Coding-Guidelines/">Coding Guidelines</a></li>
-                <li class="list-group-item"><a href="{{ site.url }}/Guidelines/Documentation-Guidelines/">Documentation Guidelines</a></li>
-                <li class="list-group-item">Creating an open source DotKernel 3 package (soon)</li>
-                <li class="list-group-item">Creating a private DotKernel 3 package (soon)</li>
-            </ul>
-        </div>
-    </div>
-    <div class="panel">
-		<div class="panel-title" >
-			<button class="arrow_down" data-toggle="collapse" data-target="#dot_packages_collapse"></button>
-            <a  href="{{ site.url }}/Packages/" >dot-* packages</a>
-        </div>
-
-        <div id="dot_packages_collapse" class="panel-collapse collapse">
-            <ul class="list-group">
-                <li class="list-group-item"><a href="{{ site.url }}/Packages/README.html">View dot-* package list</a></li>
-            </ul>
-        </div>
-    </div>
-
-</div>
+	<div class="list-group panel">
+	
+		<a href="#menu1" class="list-group-item collapsed menu-title" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down">Before starting</span></a>
+		<div class="collapse collapse-sublevel" id="menu1">
+		    <a href="#menu1-sub1" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">Overview</a>
+		    <div class="collapse collapse-sublevel" id="menu1-sub1">
+		    	<a href="{{ site.url }}/Overview/" class="list-group-item" data-parent="#menu1-sub1" id="menu1-sub1-item1">Overview</a>
+		    	<a href="{{ site.url }}/Overview/Developing-for-DotKernel-3.html" class="list-group-item" data-parent="#menu1-sub1" id="menu1-sub1-item2">Developing for DotKernel 3</a>
+		        <a href="{{ site.url }}/Overview/DotKernel-3-Overview.html" class="list-group-item" data-parent="#menu1-sub1" id="menu1-sub1-item3">DotKernel 3 Overview</a>
+		    </div>
+		    <a href="#menu1-sub2" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">Prerequisites</a>
+		    <div class="collapse collapse-sublevel" id="menu1-sub2">
+			    <a href="{{ site.url }}/Prerequisites/" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item1">Prerequisites</a>
+			    <a href="{{ site.url }}/Prerequisites/Closures-and-Callables.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item2">Closures and Callables</a>
+			    <a href="#" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item3">PSR-4: Autoloading</a>
+			    <a href="{{ site.url }}/Prerequisites/Composer-Quickstart.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item4">Composer Quickstart</a>
+			    <a href="{{ site.url }}/Prerequisites/Composer-Package-Versions.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item5">Composer Package Versions</a>
+			    <a href="{{ site.url }}/Prerequisites/PSR-7.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item6">PSR-7 Interfaces &amp; Zend Diactoros</a>
+			    <a href="#" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item7">PSR-11</a>
+			    <a href="{{ site.url }}/Prerequisites/Understanding-Middleware.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item8">Understanding Middleware</a>
+			    <a href="{{ site.url }}/Prerequisites/Zend-Stratigility.html" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item9">Zend Stratigility</a>
+			    <a href="#" class="list-group-item" data-parent="#menu1-sub2" id="menu1-sub2-item10">Zend Expressive</a>
+			</div>
+		</div>
+		
+		<a href="#menu2" class="list-group-item collapsed menu-title" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down">Introduction</span></a>
+		<div class="collapse collapse-sublevel" id="menu2">
+			<a href="#menu2sub1" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">Getting Started</a>
+			<div class="collapse collapse-sublevel" id="menu2sub1">
+				<a href="{{ site.url }}/Getting-Started/" class="list-group-item" class="list-group-item" data-parent="#menu2sub1">Getting Started</a>
+				<a href="{{ site.url }}/Getting-Started/Server-Requirements.html" class="list-group-item" data-parent="#menu2sub1">Server Requirements</a>
+				<a href="{{ site.url }}/Getting-Started/Installing-DotKernel-3-Frontend.html" class="list-group-item" data-parent="#menu2sub1">Installing DotKernel 3 <code class="highlighter-rouge">frontend</code></a>
+				<a href="#" class="list-group-item" data-parent="#menu2sub1">DotKernel 3 file structure</a>
+				<a href="#" class="list-group-item" data-parent="#menu2sub1">DotKernel 3 packages</a>
+				<a href="#" class="list-group-item" data-parent="#menu2sub1">DotKernel 3 features</a>
+			</div>
+			<a href="#menu2sub2" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">Tutorials</a>
+			<div class="collapse collapse-sublevel" id="menu2sub2">
+				<a href="{{ site.url }}/Tutorials/" class="list-group-item" data-parent="#menu2sub2">Tutorials</a>
+				<a href="{{ site.url }}/Tutorials/Creating-a-Contact-Us-Page/" class="list-group-item" data-parent="#menu2sub2">Creating a Contact US Page</a>
+				<a href="" class="list-group-item" data-parent="#menu2sub2">More tutorials soon</a>
+			</div>
+		</div>
+		
+		<a href="#menu3" class="list-group-item collapsed menu-title" data-toggle="collapse" data-parent="#sidebar" aria-expanded="false"><span class="hidden-sm-down">Working with DotKernel 3</span></a>
+		<div class="collapse collapse-sublevel" id="menu3">
+			<a href="#menu3sub1" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">Guidelines</a>
+			<div class="collapse collapse-sublevel" id="menu3sub1">
+				<a href="{{ site.url }}/Guidelines/" class="list-group-item" data-parent="#menu3sub1">Guidelines</a>
+				<a href="{{ site.url }}/Guidelines/PSR/" class="list-group-item" data-parent="#menu3sub1">PSR Guidelines</a>
+				<a href="{{ site.url }}/Guidelines/Coding-Guidelines/" class="list-group-item" data-parent="#menu3sub1">Coding Guidelines</a>
+				<a href="{{ site.url }}/Guidelines/Documentation-Guidelines/" class="list-group-item" data-parent="#menu3sub1">Documentation Guidelines</a>
+				<a href="#" class="list-group-item" data-parent="#menu3sub1">Creating an open source DotKernel 3 package (soon)</a>
+				<a href="#" class="list-group-item" data-parent="#menu3sub1">Creating a private DotKernel 3 package (soon)</a>
+			</div>
+			<a href="#menu3sub2" class="list-group-item submenu-title" data-toggle="collapse" aria-expanded="false">dot-* packages</a>
+			<div class="collapse collapse-sublevel" id="menu3sub2">
+				<a href="{{ site.url }}/Packages/" class="list-group-item" data-parent="#menu3sub2">dot-* packages</a>
+				<a href="{{ site.url }}/Packages/README.html" class="list-group-item" data-parent="#menu3sub2">View dot-* package list</a>
+			</div>
+		</div>
+		
+	</div>
+	
+</nav>
 
 <!-- END NEW MENU DESIGN -->
 
