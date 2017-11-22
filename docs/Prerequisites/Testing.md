@@ -3,8 +3,10 @@
 - [Testing](#testing)
     - [Types of testing](#types-of-testing)
     - [Getting started](#getting-started)
+        - [Setup](#setup)
         - [Example](#example)
     - [Test driven development](#test-driven-development)
+    - [Recap](#recap)
 
 Testing in DotKernel 3 is incredible easy, as every necessary tool has been included in the standard bundle.
 
@@ -29,7 +31,12 @@ As you can see in `composer.json`, there's already an entry under `autoload-dev`
 
 Create a directory for each type of test, `unit`, `integration` and `acceptance`, and start by creating a unit-test.
 
+### Setup
+
+A MYSQL database or the like should never be used in testing, as it's slow. Using an in-memory SQLite database will make your tests way more performant.
+
 ### Example
+
 A unit test should look something like this:
 
 ```php
@@ -60,7 +67,7 @@ class UserTest extends TestCase {
 }
 ```
 
-One file can contain multiple tests, just don't overdo it, it's important to keep a clear overview.
+One file can contain multiple tests, just don't overdo it, it's important to keep an overview.
 
 Any method with `/** @test **/` above it is considered a test, and any methods without that tag, is considered helper methods inside the test class.
 
@@ -70,3 +77,11 @@ TDD is a way of developing that focuses heavily on always having tests for every
 At first it's a bit slower than "normal" development (Domain Driven Development etc.), but as you get better, it can be just as fast.
 
 If you want to write rigorous tests for your application via TDD, we suggest picking up a book or video-course on the subject and start practicing it on your next project.
+
+## Recap
+
+Writing tests for your application can catch a lot of bugs in development, but it's of course no guarantee that all of them will be caught.
+
+> More tests also doesn't mean more bugs caught, it's all about how well the tests are written.
+
+Tests become especially important when you have to change something, because they make sure that whatever you changed didn't affect the rest of the app, and that everything still works as intended
