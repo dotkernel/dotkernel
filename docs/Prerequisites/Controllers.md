@@ -6,6 +6,7 @@
         - [Single method controllers](#single-method-controllers)
         - [Multiple method controllers](#multiple-method-controllers)
     - [Business logic](#business-logic)
+    - [The catch](#the-catch)
 
 ## MVC Pattern
 
@@ -149,3 +150,10 @@ The PageController is responsible for showing the correct page or throw the corr
 ## Business logic
 
 Business logic should be abstracted away from the controllers, and instead be injected through an interface-based service. This decouples the code, and makes it possible to change services and implementations easily.
+
+## The catch
+
+Controllers are difficult to get right, as the amount of code in a controller ranges a lot from developer to developer. Some developers see Controllers as something that lives mostly in the ether, and contains the absolute minimum amount of code, where as others are more liberal in their use of code in a controller.
+
+Finding the right approach comes down to team coordination, skill and preference.
+A large controller can be very difficult to debug, as you can't really find your way around it, but the same goes for very spaghetti-like code.
