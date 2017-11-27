@@ -2,6 +2,7 @@
 
 - [Routing](Routing.md)
 - [Closures and Callables](Closures-and-Callables.md)
+- [Config](Config.md)
 - PSR-4: Autoloading
 - OOP1: Interfaces, Abstract classes
 - OOP2: Type Hinting, Dependencies, Dependency Injection
@@ -13,5 +14,6 @@
 - PSR-11
 - [Understanding Middleware](Understanding-Middleware.md)
 - [Webpack](Webpack.md)
+- [Testing](Testing.md)
 - [Zend Stratigility](Zend-Stratigility.md)
 - Zend Expressive
