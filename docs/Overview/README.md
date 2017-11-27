@@ -7,3 +7,4 @@ We are very excited to present the newest version of DotKernel, and have worked 
 - [DotKernel 3 Overview](DotKernel-3-Overview.md)
 - [Developing for DotKernel 3](Developing-for-DotKernel-3.md)
 	- [Creating a Module](../Creating-a-Module/README.md)
+- [Deploying](Deploying.md)
