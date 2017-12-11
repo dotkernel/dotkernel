@@ -10,6 +10,8 @@
 
 ### 0.5.0
 
+> Released: - 2017.05.26 [Frontend 0.5.0 on github](https://github.com/dotkernel/frontend/tree/0.5.0)
+
 **Added**
 
 - Console capabilities through [dot-console](https://github.com/dotkernel/dot-console)
@@ -31,6 +33,8 @@
 ## Admin
 
 ### 0.4.1
+
+> Released: - 2017.06.01 [Admin 0.4.1 on github](https://github.com/dotkernel/admin/tree/0.4.1)
 
 **Added**
 
