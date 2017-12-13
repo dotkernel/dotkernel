@@ -10,7 +10,8 @@
 
 ### 0.5.0
 
-> Released: May 26, 2017 [Frontend 0.5.0 on github](https://github.com/dotkernel/frontend/tree/0.5.0)
+> Released: May 26, 2017
+> [Frontend 0.5.0 on github](https://github.com/dotkernel/frontend/tree/0.5.0)
 
 **Added**
 
@@ -34,7 +35,8 @@
 
 ### 0.4.1
 
-> Released: - June 1, 2017 [Admin 0.4.1 on github](https://github.com/dotkernel/admin/tree/0.4.1)
+> Released: - June 1, 2017
+> [Admin 0.4.1 on github](https://github.com/dotkernel/admin/tree/0.4.1)
 
 **Added**
 
