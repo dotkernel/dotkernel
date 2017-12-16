@@ -80,12 +80,12 @@ public function indexAction(): ResponseInterface
 
 ## Usage
 
-| Symbol     | Usage |
-|------------|-------|
-| { %        |  A programmatic block, used for PHP commands like loops and includes |
-| { {         | Display a variable |
-| { {$var`|e` | Display an escaped variable, the `|e` means escape |
-| { #         | Comment in the code, which won't be in the html |
+| Symbol      | Usage                                                               |
+| ----------- | ------------------------------------------------------------------- |
+| { %         | A programmatic block, used for PHP commands like loops and includes |
+| { {         | Display a variable                                                  |
+| { {$var`|e` | Display an escaped variable, the `|e` means escape                  |
+| { #         | Comment in the code, which won't be in the html                     |
 
 > Remove the space after the `{`, We have to put it there for technical reasons.
 
