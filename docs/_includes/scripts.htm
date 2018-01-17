@@ -28,63 +28,23 @@ $( document ).ready(function(){
 	
 	// get url data
 	var locationFull = window.location.href;
-	// var domain name
-	var locationBaseUrl = document.location.origin;
-	
-	var foundUrls = {};
 
 	// SIDEBAR MENU WITH HREF
 	$(".list-group-item").each(function( index ) {
-		if ($( this ).attr("href") == locationFull) {
-			foundUrls[$( this ).attr("id")] = locationFull;
-		} else {
-			var exit = false;
-			var locationPart = locationFull;
-			var urlToCheck = '';
-
-			do {
-				urlToCheck = locationPart.substr(0, locationPart.lastIndexOf('/') + 1);
-				locationPart = locationPart.substr(0, locationPart.lastIndexOf('/'));
-
-				if (locationPart == locationBaseUrl) {
-					exit = true;
-				} else {
-					if ($( this ).attr("href") == urlToCheck) {
-						foundUrls[$( this ).attr("id")] = urlToCheck;
-						exit = true;
-					}
-				}
-			} while (!exit);
-		}
-	});
-	
-	if (!jQuery.isEmptyObject( foundUrls ))
-	{
-		var menuElementId = '';
-		var maxUrlLength = 0;
-		var urlLength = 0;
-		
-		for (var key in foundUrls) {
-			urlLength = foundUrls[key].length;
-			if (urlLength > maxUrlLength) {
-				maxUrlLength = urlLength;
-				menuElementId = key;
-			}
-		}
-		
-		if (menuElementId != '') {
-			var subMenuItemId = menuElementId;
-			$("#" + menuElementId).addClass("active");
-			var subMenuItems = menuElementId.split("-");
+		if ($( this ).attr("href") == locationFull)
+		{
+			var subMenuItemId = $( this ).attr("id");
+			$("#" + $( this ).attr("id")).addClass("active");
+			var subMenuItems = $( this ).attr("id").split("-");
 			var index = 0;
 			do {
 				subMenuItems.splice(-1,1);
 				var subMenuItemId = subMenuItems.join("-");
 				$("#" + subMenuItemId).addClass("in show");
 				$("a [href='#" + subMenuItemId + "']").attr("aria-expanded", "true");
-			} while (subMenuItems.length > 1);
+			} while (subMenuItems.length > 1)
 		}
-	}
+	});
 	
 	// SIDEBAR MENU WITH COOKIE - disabled for now
 	// reset cookie for homepage
