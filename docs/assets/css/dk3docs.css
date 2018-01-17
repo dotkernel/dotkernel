@@ -30,7 +30,7 @@ body,
 p {
 	font-family: Source Sans Pro;
 	font-size: 16px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 body a {
@@ -216,7 +216,7 @@ h6 {
 	padding-left: 25px;
 	color: #6d6d6d;
 	font-size: 20px;
-	font-weight: normal;
+	font-weight: 400;
 	font-family: Montserrat;
 }
 
