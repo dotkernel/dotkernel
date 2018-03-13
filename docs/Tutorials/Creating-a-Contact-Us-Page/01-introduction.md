@@ -31,7 +31,7 @@ Next, we'll focus on creating a simple contact us page, and we will cover forms,
 
 ### Next: Creating the contact controller
 
-Go to the next tutorial: **[Creating the contact controller]((02-creating-the-contact-controller.md))**
+Go to the next tutorial: **[Creating the contact controller](02-creating-the-contact-controller.md)**
 
 ### Tutorial index
 
