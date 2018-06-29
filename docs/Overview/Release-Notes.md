@@ -2,54 +2,51 @@
 
 - [Release Notes](#release-notes)
     - [Frontend](#frontend)
-        - [0.5.0](#050)
+        - [1.0.0](#100)
     - [Admin](#admin)
-        - [0.4.1](#041)
+        - [1.0.1](#101)
 
 ## Frontend
 
-### 0.5.0
+### 1.0.0
 
-> Released: May 26, 2017
-> [Frontend 0.5.0 on github](https://github.com/dotkernel/frontend/tree/0.5.0)
+> Released: May 30, 2018
+> [Frontend 1.0.0 on github](https://github.com/dotkernel/frontend/tree/v1.0.0)
+
+
+**Changed**
+ - Updated dependencies and other packages to support Zend Framework 3 and PSR15 middlewares
 
 **Added**
-
-- Console capabilities through [dot-console](https://github.com/dotkernel/dot-console)
-- bin/console.php bootstrap file (e.g php bin/console.php <command_name>)
-- see [zf-console](https://github.com/zfcampus/zf-console) documentation for details on how to use console
+ - Migration instructions
 
 **Deprecated**
-
-- Nothing
+ - Nothing
 
 **Removed**
-
-- Nothing
+ - Old middleware implementations
 
 **Fixed**
-
-- Nothing
+ - Nothing
 
 ## Admin
 
-### 0.4.1
+### 1.0.1
 
-> Released: - June 1, 2017
-> [Admin 0.4.1 on github](https://github.com/dotkernel/admin/tree/0.4.1)
+> Released: - June 12, 2018
+> [Admin 1.0.1 on github](https://github.com/dotkernel/admin/tree/v1.0.1)
+
+**Changed**
+ - Nothing
 
 **Added**
-
-- Nothing
+ - Nothing
 
 **Deprecated**
-
-- Nothing
+ - Nothing
 
 **Removed**
-
-- Nothing
+ - Nothing
 
 **Fixed**
-
-- admin side menu glitches described in issue [#24](https://github.com/dotkernel/admin/issues/24)
+ - User pagination count issue [#32](https://github.com/dotkernel/admin/issues/32)
