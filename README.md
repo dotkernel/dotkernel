@@ -14,7 +14,7 @@ Package versioning :
 
 Requirements:
 - php 7.4 compatible 
-- doctrine 3.x ( latest) 
+- doctrine 2.7.x ( latest) 
 - twig 3.x (latest)
 
 Package list:
@@ -26,7 +26,7 @@ Package list:
 - forms 
 - helpers
 - dot _log 
-- dot_mail, extins eventual sa folsoesca mailchmp//sendgridf
+- dot_mail, extended to use mailchimp//sendgrid 
 - dot-navigation 
 - dot-twig-rendered
 
