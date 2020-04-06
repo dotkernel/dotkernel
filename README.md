@@ -10,3 +10,6 @@ Package versioning :
 2. version 2.x related to Mezzio and Laminas, without modification of the flow. No new functions, only compatibility [deprecated]
 
 3. version 3.x related to the new Mezzio and Laminas architecture , in preparation for DK3 version 3
+
+
+Requirements: php 7.4 compatible 
