@@ -4,6 +4,12 @@ DotKernel 3 Official Documentation Repository
 
 # [Documentation](docs)
 
+TARGET: 
+frontend release   v 3.x
+admin    release   v 3.x
+API      release 3.0 ?? to use v 3 of the packages 
+IDEE: api-mail ? service to send emails only 
+
 Package versioning :
 1. version 1.x related to Zend Framework  and Expressive [deprecated]
 
