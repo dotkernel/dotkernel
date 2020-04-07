@@ -27,15 +27,15 @@ Requirements:
 
 Package list:
 
-- annotating service 
-- error handler 
-- event 
-- flash messenger 
-- forms 
-- helpers
-- dot _log 
-- dot_mail, extended to use mailchimp//sendgrid 
-- dot-navigation 
-- dot-twig-rendered
+- annotating service Mario
+- error handler  Bidi 
+- event Radu
+- flash messenger Sergiu
+- forms Iulica
+- helpers  ALex
+- dot _log Andriusha
+- dot_mail, extended to use mailchimp//sendgrid  Iulica ( de vazut cu cretzu ) 
+- dot-navigation Roli ?? ( daca crede ca poate ) 
+- dot-twig-rendered  Calin, daca il tine ??? 
 
 
