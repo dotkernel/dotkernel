@@ -35,7 +35,7 @@ Package list:
 - helpers  ALex
 - dot _log Andriusha
 - dot_mail, extended to use mailchimp//sendgrid  Iulica ( de vazut cu cretzu ) 
-- dot-navigation Roli ?? ( daca crede ca poate ) 
+- dot-navigation Roli
 - dot-twig-rendered  Calin, daca il tine ??? 
 
 
