@@ -5,23 +5,20 @@ DotKernel 3 Official Documentation Repository
 ## [Documentation](docs)
 
 
-## [Roadmap April 2020]
+## Roadmap April 2020
 **TARGET:**
+  - [frontend](https://github.com/dotkernel/frontend) release  v 3.x
+  - [admin](https://github.com/dotkernel/admin)    release  v 3.x
+  - [API](https://github.com/dotkernel/api)      release  v 3.x 
 
-  frontend release   v 3.x
-  admin    release   v 3.x
-  API      release 3.0 ?? to use v 3 of the packages 
-
-**IDEA:** 
+**NEW APPLICATIONS ** 
 - api-mail ? service to send emails only 
-- queue system + to do something , as a service [PINGU]
+- [PINGU](https://github.com/dotkernel/pingu) queue system, based on Redis + swoole + Mezzio + deployed as a standalone service
 
 **Package versioning:**
-1. version 1.x related to Zend Framework  and Expressive [deprecated]
-
-2. version 2.x related to Mezzio and Laminas, without modification of the flow. No new functions, only compatibility [deprecated]
-
-3. version 3.x related to the new Mezzio and Laminas architecture , in preparation for DK3 version 3
+  1. version 1.x related to Zend Framework  and Expressive [deprecated]
+  2. version 2.x related to Mezzio and Laminas, without modification of the flow. No new functions, only compatibility [deprecated]
+  3. version 3.x related to the new Mezzio and Laminas architecture , in preparation for DK3 version 3
 
 Documentation on each package please !!!!
 
