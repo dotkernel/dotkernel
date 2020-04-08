@@ -2,7 +2,7 @@
 
 DotKernel 3 Official Documentation Repository
 
-## [Documentation](docs)
+## [Documentation](docs)  ( related to version 1.0 , based on Zend namespace and Zend Expressive )
 
 
 ## Roadmap April 2020
@@ -11,7 +11,7 @@ DotKernel 3 Official Documentation Repository
   - [admin](https://github.com/dotkernel/admin)    release  v 3.x
   - [API](https://github.com/dotkernel/api)      release  v 3.x 
 
-**NEW APPLICATIONS ** 
+**NEW APPLICATIONS** 
 - api-mail ? service to send emails only 
 - [PINGU](https://github.com/dotkernel/pingu) queue system, based on Redis + swoole + Mezzio + deployed as a standalone service
 
@@ -20,24 +20,24 @@ DotKernel 3 Official Documentation Repository
   2. version 2.x related to Mezzio and Laminas, without modification of the flow. No new functions, only compatibility [deprecated]
   3. version 3.x related to the new Mezzio and Laminas architecture , in preparation for DK3 version 3
 
-Documentation on each package please !!!!
+  *Documentation on each package please !!!!*
 
-**Requirements:**
+**Requirements for V 3:**
 - php 7.4 compatible 
 - doctrine 2.7.x ( latest) 
 - twig 3.x (latest)
 
 **Package list:**
 
-- annotating service Mario
-- error handler  Bidi 
-- event Radu
+- [annotating service](https://github.com/dotkernel/dot-annotated-services)  Maintainer: [MarioRadu](https://github.com/MarioRadu)
+- [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
+- [event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
 - [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
-- forms Iulica
-- helpers  ALex
-- dot _log Andriusha
-- dot_mail, extended to use mailchimp//sendgrid  Iulica ( de vazut cu cretzu ) 
-- dot-navigation Roli
-- dot-twig-rendered  Calin, daca il tine ??? 
+- [forms](https://github.com/dotkernel/dot-form) Admin: [dotcostin](https://github.com/dotcostin)
+- [helpers](https://github.com/dotkernel/dot-helpers)  Admin: [alexmerlin](https://github.com/alexmerlin)
+- [log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
+- [mail](https://github.com/dotkernel/dot-mail) extended to use mailchimp//sendgrid  Admin: [dotcostin](https://github.com/dotcostin) 
+- [navigation](https://github.com/dotkernel/dot-navigation) Roli ???
+- [twig-rendered](https://github.com/dotkernel/dot-twigrenderer)  ????
 
 
