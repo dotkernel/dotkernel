@@ -33,7 +33,7 @@ Package list:
 - annotating service Mario
 - error handler  Bidi 
 - event Radu
-- flash messenger [https://github.com/dotkernel/dot-flashmessenger] Maintainer: kakapiciu
+- [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
 - forms Iulica
 - helpers  ALex
 - dot _log Andriusha
