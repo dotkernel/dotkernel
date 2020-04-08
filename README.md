@@ -12,7 +12,7 @@ TARGET:
 
 IDEE: 
 - api-mail ? service to send emails only 
-- queue system + to do something , as a service 
+- queue system + to do something , as a service [PINGU]
 
 Package versioning :
 1. version 1.x related to Zend Framework  and Expressive [deprecated]
@@ -33,7 +33,7 @@ Package list:
 - annotating service Mario
 - error handler  Bidi 
 - event Radu
-- flash messenger Sergiu
+- flash messenger [https://github.com/dotkernel/dot-flashmessenger] Maintainer: kakapiciu
 - forms Iulica
 - helpers  ALex
 - dot _log Andriusha
