@@ -21,6 +21,7 @@ Package versioning :
 
 3. version 3.x related to the new Mezzio and Laminas architecture , in preparation for DK3 version 3
 
+Documentation on each package please !!!!
 
 Requirements:
 - php 7.4 compatible 
