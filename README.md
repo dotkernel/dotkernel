@@ -4,17 +4,17 @@ DotKernel 3 Official Documentation Repository
 
 # [Documentation](docs)
 
-TARGET: 
+**TARGET:**
 
   frontend release   v 3.x
   admin    release   v 3.x
   API      release 3.0 ?? to use v 3 of the packages 
 
-IDEE: 
+**IDEA:** 
 - api-mail ? service to send emails only 
 - queue system + to do something , as a service [PINGU]
 
-Package versioning :
+**Package versioning:**
 1. version 1.x related to Zend Framework  and Expressive [deprecated]
 
 2. version 2.x related to Mezzio and Laminas, without modification of the flow. No new functions, only compatibility [deprecated]
@@ -23,12 +23,12 @@ Package versioning :
 
 Documentation on each package please !!!!
 
-Requirements:
+**Requirements:**
 - php 7.4 compatible 
 - doctrine 2.7.x ( latest) 
 - twig 3.x (latest)
 
-Package list:
+**Package list:**
 
 - annotating service Mario
 - error handler  Bidi 
