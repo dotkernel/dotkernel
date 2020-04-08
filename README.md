@@ -10,7 +10,9 @@ TARGET:
   admin    release   v 3.x
   API      release 3.0 ?? to use v 3 of the packages 
 
-IDEE: api-mail ? service to send emails only 
+IDEE: 
+- api-mail ? service to send emails only 
+- queue system + to do something , as a service 
 
 Package versioning :
 1. version 1.x related to Zend Framework  and Expressive [deprecated]
