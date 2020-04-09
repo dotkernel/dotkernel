@@ -28,8 +28,13 @@ DotKernel 3 Official Documentation Repository
 - twig 3.x (latest)
 - update documentation to reflect changes ( readme.md)
 
-**Package list:**
+**How to:**
+   - create the branch 3.0 from 2.0 !!! 
+   - make default branch 3.0  ( not master anymore ) 
+   - enjoy 
 
+**Package list:**
+  
 - [annotating service](https://github.com/dotkernel/dot-annotated-services)  Maintainer: [MarioRadu](https://github.com/MarioRadu)
 - [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
 - [event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
