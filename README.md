@@ -26,6 +26,7 @@ DotKernel 3 Official Documentation Repository
 - bump require version of PHP to 7.3, and be sure is 7.4 compatible 
 - doctrine 2.7.x ( latest) 
 - twig 3.x (latest)
+- update documentation to reflect changes ( readme.md)
 
 **Package list:**
 
