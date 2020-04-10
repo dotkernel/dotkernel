@@ -44,6 +44,6 @@ DotKernel 3 Official Documentation Repository
 - [log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
 - [mail](https://github.com/dotkernel/dot-mail) extended to use mailchimp//sendgrid  Admin: [dotcostin](https://github.com/dotcostin) 
 - [navigation](https://github.com/dotkernel/dot-navigation) Maintainer: [roli85]( https://github.com/roli85)
-- [twig-rendered](https://github.com/dotkernel/dot-twigrenderer)  ????
+- [twig-rendered](https://github.com/dotkernel/dot-twigrenderer)  Maintainer: [Calin23]( https://github.com/Calin23)
 
 
