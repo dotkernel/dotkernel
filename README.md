@@ -1,8 +1,12 @@
 ![DotKernel 3 Logo ](logo1.png)
 
+[![GitHub issues](https://img.shields.io/github/issues/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/issues)
+[![GitHub forks](https://img.shields.io/github/forks/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/network)
+[![GitHub stars](https://img.shields.io/github/stars/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/stargazers)
+
 DotKernel 3 Official Documentation Repository
 
-## [Documentation](docs)  ( related to version 1.0 , based on Zend namespace and Zend Expressive )
+## [Documentation](docs)  ( version 1.0 , based on Zend namespace and Zend Expressive )
 
 
 ## Roadmap April 2020
