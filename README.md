@@ -3,6 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/issues)
 [![GitHub forks](https://img.shields.io/github/forks/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/network)
 [![GitHub stars](https://img.shields.io/github/stars/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/stargazers)
+[![GitHub license](https://img.shields.io/github/license/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/blob/master/LICENSE.md)
 
 DotKernel 3 Official Documentation Repository
 
