@@ -41,18 +41,16 @@ DotKernel 3 Official Documentation Repository
 
 **Package list:**
   
-- [annotating service](https://github.com/dotkernel/dot-annotated-services)  Maintainer: [MarioRadu](https://github.com/MarioRadu)
-- [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
-- [event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
-- [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
-- [forms](https://github.com/dotkernel/dot-form) Admin: [dotcostin](https://github.com/dotcostin)
-- [helpers](https://github.com/dotkernel/dot-helpers)  Admin: [alexmerlin](https://github.com/alexmerlin)
-- [log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
-- [mail](https://github.com/dotkernel/dot-mail)  Admin: [dotcostin](https://github.com/dotcostin) 
-      ![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/dot-mail)
-- [authorization](https://github.com/dotkernel/dot-authorization)  Maintainer: [dotcostin](https://github.com/dotcostin)
-      ![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/dot-authorization)
-- [navigation](https://github.com/dotkernel/dot-navigation) Maintainer: [roli85]( https://github.com/roli85)
-- [twig-rendered](https://github.com/dotkernel/dot-twigrenderer)  Maintainer: [Calin23]( https://github.com/Calin23)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)[annotating service](https://github.com/dotkernel/dot-annotated-services)  Maintainer: [MarioRadu](https://github.com/MarioRadu)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)[error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)[event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)[flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-form)[forms](https://github.com/dotkernel/dot-form) Admin: [dotcostin](https://github.com/dotcostin)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-helpers)[helpers](https://github.com/dotkernel/dot-helpers)  Admin: [alexmerlin](https://github.com/alexmerlin)
+- ![Packagist Version ](https://img.shields.io/packagist/v/dotkernel/dot-log)[log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-mail) [mail](https://github.com/dotkernel/dot-mail)  Admin: [dotcostin](https://github.com/dotcostin)       
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-authorization)[authorization](https://github.com/dotkernel/dot-authorization)  Maintainer: [dotcostin](https://github.com/dotcostin)      
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-navigation)[navigation](https://github.com/dotkernel/dot-navigation) Maintainer: [roli85]( https://github.com/roli85)
+- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-twigrenderer)[twig-rendered](https://github.com/dotkernel/dot-twigrenderer)  Maintainer: [Calin23]( https://github.com/Calin23)
 
 
