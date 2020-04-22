@@ -6,6 +6,8 @@
 [![GitHub license](https://img.shields.io/github/license/dotkernel/dotkernel)](https://github.com/dotkernel/dotkernel/blob/master/LICENSE.md)
 
 
+![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/frontend?include_prereleases)
+
 DotKernel 3 Official Documentation Repository
 
 ## [Documentation](docs)  ( version 1.0 , based on Zend namespace and Zend Expressive )
