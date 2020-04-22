@@ -49,6 +49,7 @@ DotKernel 3 Official Documentation Repository
 - [helpers](https://github.com/dotkernel/dot-helpers)  Admin: [alexmerlin](https://github.com/alexmerlin)
 - [log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
 - [mail](https://github.com/dotkernel/dot-mail)  Admin: [dotcostin](https://github.com/dotcostin) 
+      ![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/dot-mail)
 - [authorization](https://github.com/dotkernel/dot-authorization)  Maintainer: [dotcostin](https://github.com/dotcostin)
       ![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/dot-authorization)
 - [navigation](https://github.com/dotkernel/dot-navigation) Maintainer: [roli85]( https://github.com/roli85)
