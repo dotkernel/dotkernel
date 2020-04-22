@@ -7,6 +7,7 @@
 
 
 ![Packagist Version (including pre-releases)](https://img.shields.io/packagist/v/dotkernel/frontend?include_prereleases)
+![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/frontend)
 
 DotKernel 3 Official Documentation Repository
 
