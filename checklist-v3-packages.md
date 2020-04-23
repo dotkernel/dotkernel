@@ -6,9 +6,9 @@
 | --- | --- |--- | --- |--- |--- |--- |--- |
 | [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|@2020 Apidemia| `WIP` |**Yes** |**Yes**|**^7.4** |
 | [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|@2020 Apidemia| `WIP` |**Yes**|**Yes**|**^7.4** |
-| [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4** |
-| [flashmessenger](https://github.com/dotkernel/dot-flashmessenger) | [kakapiciu](https://github.com/kakapiciu) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4** |
-| [form](https://github.com/dotkernel/dot-form) | [dotcostin](https://github.com/dotcostin)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-form)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4** |
+| [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|@2020 Apidemia| `WIP` |**Yes**|**Yes** |**^7.4** |
+| [flashmessenger](https://github.com/dotkernel/dot-flashmessenger) | [kakapiciu](https://github.com/kakapiciu) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)|@2020 Apidemia| `WIP` |**Yes** |**Yes**  |**^7.4** |
+| [form](https://github.com/dotkernel/dot-form) | [dotcostin](https://github.com/dotcostin)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-form)|@2020 Apidemia| `WIP` |**Yes**  |**Yes**  |**^7.4** |
 | [helpers](https://github.com/dotkernel/dot-helpers) | [alexmerlin](https://github.com/alexmerlin)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-helpers)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4**|
 | [log](https://github.com/dotkernel/dot-log) | [bircaandrian](https://github.com/bircaandrian)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-log)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4**|
 | [mail](https://github.com/dotkernel/dot-mail) | [dotcostin](https://github.com/dotcostin) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-mail)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4** |
