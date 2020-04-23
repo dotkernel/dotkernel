@@ -13,6 +13,6 @@
 | [log](https://github.com/dotkernel/dot-log) | [bircaandrian](https://github.com/bircaandrian)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-log)|@2020 Apidemia| `WIP` |*new release*|**Yes** |**^7.4**|
 | [mail](https://github.com/dotkernel/dot-mail) | [dotcostin](https://github.com/dotcostin) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-mail)|@2020 Apidemia| `WIP` |**Yes**  |**Yes**  |**^7.4** |
 | [authorization](https://github.com/dotkernel/dot-authorization) | [dotcostin](https://github.com/dotcostin) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-authorization)|@2020 Apidemia| `WIP` |**Yes** |**Yes** |**^7.4** |
- | [navigation](https://github.com/dotkernel/dot-navigation) | [roli85]( https://github.com/roli85) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-navigation)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4** | 
+ | [navigation](https://github.com/dotkernel/dot-navigation) | [roli85]( https://github.com/roli85) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-navigation)|@2020 Apidemia| `WIP` |*new release*|**Yes**  |**^7.4** | 
  | [twigrenderer](https://github.com/dotkernel/dot-twigrenderer) | [Calin23]( https://github.com/Calin23) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-twigrenderer)|@2020 Apidemia| `WIP` |`WIP` |`WIP` |**^7.4**| 
      
