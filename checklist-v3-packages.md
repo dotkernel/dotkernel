@@ -2,11 +2,12 @@
 
 ## April 23, 2020
 
-| Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore|
-| --- | --- |--- | --- |--- |--- |--- |
-| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |`WIP` |`WIP` |
-| [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-errorhandler)| `WIP` |`WIP` |`WIP` |
-| [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-event)| `WIP` |`WIP` |`WIP` |
+| Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore| PHP|
+| --- | --- |--- | --- |--- |--- |--- |--- |
+| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-annotated-services) |
+| [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-errorhandler)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler)|
+
+| [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-event)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler)|
 
  
 
