@@ -2,12 +2,11 @@
 
 ## April 23, 2020
 
-| Package Name  | Maintainer | Version | License | Composer( tested, keywords) |
+| Package Name  | Maintainer | Version | License | Composer( tested, keywords) | .gitignore|
 | --- | --- |--- | --- |--- |
-| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |
+| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` ||
 
-  
-- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)  [annotating service](https://github.com/dotkernel/dot-annotated-services)  Maintainer: [MarioRadu](https://github.com/MarioRadu)
+ 
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)  [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)  [event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)  [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
