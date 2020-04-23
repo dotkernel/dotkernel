@@ -5,9 +5,9 @@
 | Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore|
 | --- | --- |--- | --- |--- |--- |--- |
 | [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |`WIP` |`WIP` |
+| [annotated service](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-errorhandler)| `WIP` |`WIP` |`WIP` |
 
  
-- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)  [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)  [event](https://github.com/dotkernel/dot-event) Maintainer:  [d3aq](https://github.com/d3aq)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)  [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-form)  [forms](https://github.com/dotkernel/dot-form) Admin: [dotcostin](https://github.com/dotcostin)
