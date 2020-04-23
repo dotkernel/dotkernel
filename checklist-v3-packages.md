@@ -2,9 +2,9 @@
 
 ## April 23, 2020
 
-| Package Name  | Maintainer | Version | License | Composer( tested, keywords) | .gitignore|
-| --- | --- |--- | --- |--- |--- |
-| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` ||
+| Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore|
+| --- | --- |--- | --- |--- |--- |--- |
+| [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |`WIP` |`WIP` |
 
  
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)  [error handler](https://github.com/dotkernel/dot-errorhandler) Maintainer:  [bidi47](https://github.com/bidi47)
