@@ -7,10 +7,9 @@
 | [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-annotated-services)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-annotated-services) |
 | [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-errorhandler)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler)|
 | [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-event)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-errorhandler)|
+| [flashmessenger](https://github.com/dotkernel/dot-flashmessenger) | [kakapiciu](https://github.com/kakapiciu) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)|![GitHub](https://img.shields.io/github/license/dotkernel/dot-flashmessenger)| `WIP` |`WIP` |`WIP` |![PHP from Packagist](https://img.shields.io/packagist/php-v/dotkernel/dot-flashmessenger)|
 
  
-
-- ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-flashmessenger)  [flash messenger](https://github.com/dotkernel/dot-flashmessenger) Maintainer: [kakapiciu](https://github.com/kakapiciu)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-form)  [forms](https://github.com/dotkernel/dot-form) Admin: [dotcostin](https://github.com/dotcostin)
 - ![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-helpers)  [helpers](https://github.com/dotkernel/dot-helpers)  Admin: [alexmerlin](https://github.com/alexmerlin)
 - ![Packagist Version ](https://img.shields.io/packagist/v/dotkernel/dot-log)  [log](https://github.com/dotkernel/dot-log) Maintainer: [bircaandrian](https://github.com/bircaandrian)
