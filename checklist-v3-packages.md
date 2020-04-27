@@ -15,5 +15,5 @@
 | [authorization](https://github.com/dotkernel/dot-authorization) | [dotcostin](https://github.com/dotcostin) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-authorization)|@2020 Apidemia| `WIP` |**Yes** |**Yes** |**^7.4** |
  | [navigation](https://github.com/dotkernel/dot-navigation) | [roli85]( https://github.com/roli85) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-navigation)|@2020 Apidemia| `WIP` |*new release*|**Yes**  |**^7.4** | 
  | [twigrenderer](https://github.com/dotkernel/dot-twigrenderer) | [Calin23]( https://github.com/Calin23) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-twigrenderer)|@2020 Apidemia| `WIP` |**Yes** |**Yes** |**^7.4**| 
- | [session](https://github.com/dotkernel/dot-session) | [kakapiciu](https://github.com/kakapiciu) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-session)|@2020 Apidemia| **Yes** |**Yes** |**Yes** |**^7.4**| 
+ | [session](https://github.com/dotkernel/dot-session) | [kakapiciu](https://github.com/kakapiciu) |![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-session)|@2020 Apidemia| `WIP`|**Yes** |**Yes** |**^7.4**| 
      
