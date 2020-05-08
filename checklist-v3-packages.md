@@ -4,6 +4,7 @@
 
 | Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore| PHP|
 | --- | --- |--- | --- |--- |--- |--- |--- |
+| [controller](https://github.com/dotkernel/dot-controller) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-controller)|@2020 Apidemia| `WIP` |`WIP` |`WIP`|`WIP` |
 | [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|@2020 Apidemia| `WIP` |**Yes** |**Yes**|**^7.4** |
 | [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|@2020 Apidemia| `WIP` |**Yes**|**Yes**|**^7.4** |
 | [dot-event](https://github.com/dotkernel/dot-event) | [d3aq](https://github.com/d3aq)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-event)|@2020 Apidemia| `WIP` |**Yes**|**Yes** |**^7.4** |
