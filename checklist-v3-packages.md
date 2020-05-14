@@ -4,6 +4,8 @@
 
 | Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore| PHP|
 | --- | --- |--- | --- |--- |--- |--- |--- |
+| [rbac](https://github.com/dotkernel/dot-rbac) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-rbac)|`WIP`| `WIP` |`WIP` |`WIP`|`WIP` |
+| [rbac-guard](https://github.com/dotkernel/dot-rbac-guard) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-rbac-guard)|`WIP`| `WIP` |`WIP` |`WIP`|`WIP` |
 | [controller](https://github.com/dotkernel/dot-controller) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-controller)|@2020 Apidemia| `WIP` |`WIP` |`WIP`|`WIP` |
 | [annotated service](https://github.com/dotkernel/dot-annotated-services) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-annotated-services)|@2020 Apidemia| `WIP` |**Yes** |**Yes**|**^7.4** |
 | [errorhandler](https://github.com/dotkernel/dot-errorhandler) | [bidi47](https://github.com/bidi47)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-errorhandler)|@2020 Apidemia| `WIP` |**Yes**|**Yes**|**^7.4** |
