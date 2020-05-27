@@ -4,6 +4,7 @@
 
 | Package Name  | Maintainer | Version | License | Composer | keywords | .gitignore| PHP|
 | --- | --- |--- | --- |--- |--- |--- |--- |
+| [console](https://github.com/dotkernel/dot-console) | [Calin23](https://github.com/Calin23)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-console)|`WIP` | `WIP` |`WIP` |`WIP` |`WIP`|
 | [rbac](https://github.com/dotkernel/dot-rbac) | [Calin23](https://github.com/Calin23)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-rbac)|@2020 Apidemia| `WIP` |**Yes**|**Yes**|**^7.4** |
 | [rbac-guard](https://github.com/dotkernel/dot-rbac-guard) | [Calin23](https://github.com/Calin23)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-rbac-guard)|@2020 Apidemia| `WIP` |**Yes** |**Yes**|**^7.4** |
 | [controller](https://github.com/dotkernel/dot-controller) | [MarioRadu](https://github.com/MarioRadu)|![Packagist Version](https://img.shields.io/packagist/v/dotkernel/dot-controller)|@2020 Apidemia| `WIP` |**Yes**|**Yes**|**^7.4** |
